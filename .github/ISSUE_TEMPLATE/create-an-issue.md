@@ -16,7 +16,6 @@ assignees: ''
 - Create a new folder for your script and file/folder name should be appropriate.
 - Create a README.md in your folder for program Instructions
 - add requirements.txt if needed
-- add your program name & Author name in the main readme
 
 Please add/delete options that are not relevant.
 
