@@ -14,7 +14,19 @@ before making a Pull Request
 - Create a README.md in your folder for program Instructions
 - add requirements.txt if needed
 
+## Scripts and contributorss
+> Only Admin/Maintainer can edit this Section
+<!--Restrictions -->
+<!-- Don't change under this line -->
+<!-- Only Admin/Maintainer can edit this Section -->
+
 | Script Name      | Author | Short introduction to program  |
 | :---        |    :----:   |   ---: |
 |  send-discord_message     | CodePerfectplus | Send Github repo notification to Discord with webhooks |
-| propenster-scripts | Propenster        | This Script gets some system info of the user's device....|
+| propenster-scripts | Propenster        | This Script gets some system info of the user's device |
+| scrap_github_repos | CodePerfectplus | Scrap GitHub user repos and save it in csv |
+| email_sending_script || send email using smptlib|
+| html2pdf || convert website to html with CLI|
+| sms_sending_script || send sms with python CLI|
+| scrap_all_links || Scrap link from website using Python CLI|
+| remove_punctuation_number || Remove Punctuation/Number from text file|
