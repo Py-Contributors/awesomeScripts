@@ -26,7 +26,7 @@ before making a Pull Request
 | propenster-scripts | Propenster        | This Script gets some system info of the user's device |
 | scrap_github_repos | CodePerfectplus | Scrap GitHub user repos and save it in csv |
 | email_sending_script || send email using smptlib|
-| html2pdf || convert website to html with CLI|
+| html2pdf || convert website html to pdf with CLI|
 | sms_sending_script || send sms with python CLI|
 | scrap_all_links || Scrap link from website using Python CLI|
 | remove_punctuation_number || Remove Punctuation/Number from text file|
