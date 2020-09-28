@@ -1,7 +1,7 @@
 ---
 name: Create an Issue
 about: For creating isssue for HacktoberFest
-title: 'Algorithm name | Category | Language'
+title: ''
 labels: good first issue, hacktoberfest
 assignees: ''
 
