@@ -1,5 +1,5 @@
 '''
-Now, Let's use lib_platform 
+Now, Let's use lib_platform
 to get practical, refined info about our system....
 
 Script Date: Sept, 27th, 2020
@@ -46,6 +46,3 @@ print(f'System Family: {sysinfo.SystemFamily}')
 
 #Be more dynamic
 print('User:  %s is currently logged in on a %s laptop - %s'%(lib_platform.username, sysinfo.Manufacturer, sysinfo.Name))
-
-
- 
