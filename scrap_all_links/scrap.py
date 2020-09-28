@@ -25,7 +25,7 @@ class Scraper:
 
         link_arg = args.link[0]
         if not checkers.is_url(link_arg):
-            raise Exception(link_arg + " is not a valid URL") 
+            raise Exception(link_arg + " is not a valid URL")
         response = requests.get(link_arg)
 
         for link in BeautifulSoup(response.text, features="html.parser", parse_only=SoupStrainer('a')):
