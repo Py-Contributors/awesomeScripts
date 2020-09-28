@@ -13,7 +13,6 @@ before making a Pull Request
 - Create a new folder for your script and file/folder name should be appropriate.
 - Create a README.md in your folder for program Instructions
 - add requirements.txt if needed
-- Add your program name & author name below too.
 
 | Script Name      | Author | Short introduction to program  |
 | :---        |    :----:   |   ---: |
