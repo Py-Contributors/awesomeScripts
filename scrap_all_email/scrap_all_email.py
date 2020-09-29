@@ -9,4 +9,4 @@ html = website.text
 
 emails = re.findall(r'[\w\.-]+@[\w\.-]+', html)
 
-print(list(emails))
+print(emails)
