@@ -1,13 +1,10 @@
-try:
-    from discord_webhook import DiscordWebhook
-except ImportError:
-    from pip._internal import main as pip
-
-    pip(["install", "--user", "discord-webhook"])
-    from discord_webhook import DiscordWebhook
+# https://discordapp.com/api/webhooks/758774597415338025/usJ39_wEkWja9ynPB0J-C51IGJg4zXVhs9xHCi6jrxj6haUCQulDD5dqoRD6GlgTUmz8
+import requests
 from auth import WEBHOOK_URL
 
-webhook = DiscordWebhook(url=WEBHOOK_URL, content="Here is the content")
-response = webhook.execute()
-
-# documentation :- https://github.com/lovvskillz/python-discord-webhook
+data= {
+  "content": "Hello, World!",
+  'username' : 'Notification_Bot'
+}
+r = requests.post(WEBHOOK_URL, json =data)
+print(r)
