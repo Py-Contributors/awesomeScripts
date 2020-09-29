@@ -35,4 +35,4 @@ before making a Pull Request
 ## Maintainers
 
 - [Deepak Raj](https://github.com/CodePerfectPlus)
-- [Ayush Modi](https://github.com/hot9cups)
+- [rex_divakar](https://github.com/rexdivakar)
