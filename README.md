@@ -7,7 +7,7 @@ A Collection of Awesome Scripts in Javascript, Python.
 You can contribute by adding new scripts, improving current scripts or Documentation.Here are some Instructions
 before making a Pull Request
 
-- Before creating a new issue please check the scripts exist in Repository as well in open issues
+- Before creating a new issue please check the scripts doesn't exist in Repository as well in open issues
 - Check isssue for new scrips or create your new issue.
 - Make sure to be assigned on issue before making a `Pull Request`.
 - Create a new folder for your script and file/folder name should be appropriate.
@@ -31,6 +31,8 @@ before making a Pull Request
 | scrap_all_links                  |                            |         Scrap link from website using Python CLI                 |
 | remove_punctuation_number        |                            |         Remove Punctuation/Number from text file                 |
 | countries_trivia_game            |   Propenster               |         Simple trivia quiz game that loads questions and answers from a CSV file|
+| scrap_all_email        |    CodePerfectPlus         |    Scrap all email from input website |
+| jpeg_to_png            |    CodePerfectPlus         | Convert image format jpeg_to_png CLI tool     |
 
 ## Maintainers
 
