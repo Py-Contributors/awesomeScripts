@@ -20,13 +20,19 @@ before making a Pull Request
 <!-- Don't change under this line -->
 <!-- Only Admin/Maintainer can edit this Section -->
 
-| Script Name      | Author | Short introduction to program  |
-| :---        |    :----:   |   ---: |
-|  send-discord_message     | CodePerfectplus | Send Github repo notification to Discord with webhooks |
-| propenster-scripts | Propenster        | This Script gets some system info of the user's device |
-| scrap_github_repos | CodePerfectplus | Scrap GitHub user repos and save it in csv |
-| email_sending_script || send email using smptlib|
-| html2pdf || convert website to html with CLI|
-| sms_sending_script || send sms with python CLI|
-| scrap_all_links || Scrap link from website using Python CLI|
-| remove_punctuation_number || Remove Punctuation/Number from text file|
+|            Script Name           |    Author                  |                Short introduction to program                     |
+|               :---               |        :----:              |                                 ---:                             |
+| send-discord_message             |    CodePerfectplus         |         Send Github repo notification to Discord with webhooks   |
+| propenster-scripts               |    Propenster              |         This Script gets some system info of the user's device   |
+| scrap_github_repos               |    CodePerfectplus         |         Scrap GitHub user repos and save it in csv               |
+| email_sending_script             |                            |         send email using smptlib                                 |
+| html2pdf                         |                            |         convert website to html with CLI                         |
+| sms_sending_script               |                            |         send sms with python CLI                                 |
+| scrap_all_links                  |                            |         Scrap link from website using Python CLI                 |
+| remove_punctuation_number        |                            |         Remove Punctuation/Number from text file                 |
+| countries_trivia_game            |   Propenster               |         Simple trivia quiz game that loads questions and answers from a CSV file|
+
+## Maintainers
+
+- [Deepak Raj](https://github.com/CodePerfectPlus)
+- [Ayush Modi](https://github.com/hot9cups)
