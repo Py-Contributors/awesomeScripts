@@ -21,7 +21,7 @@ before making a Pull Request
 <!-- Only Admin/Maintainer can edit this Section -->
 
 |            Script Name           |    Author                  |                Short introduction to program                     |
-|               :---               |        :----:              |                                 ---:                             |
+|               :---               |        :----:              |                            :---:                            |
 | send-discord_message             |    CodePerfectplus         |         Send Github repo notification to Discord with webhooks   |
 | propenster-scripts               |    Propenster              |         This Script gets some system info of the user's device   |
 | scrap_github_repos               |    CodePerfectplus         |         Scrap GitHub user repos and save it in csv               |
@@ -33,6 +33,7 @@ before making a Pull Request
 | countries_trivia_game            |   Propenster               |         Simple trivia quiz game that loads questions and answers from a CSV file|
 | scrap_all_email        |    CodePerfectPlus         |    Scrap all email from input website |
 | jpeg_to_png            |    CodePerfectPlus         | Convert image format jpeg_to_png CLI tool     |
+| website_cloner | CodePerfectPlus | clone website using python |
 
 ## Maintainers
 
