@@ -21,3 +21,4 @@ merger.write(result)
 merger.close()
 
 print("\nYour PDF has been merged :)\n Thank You for using this Script :D Cheers !!! \n")
+
