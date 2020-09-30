@@ -15,6 +15,7 @@ before making a Pull Request
 - add requirements.txt if needed
 
 ## Scripts and contributorss
+
 > Only Admin/Maintainer can edit this Section
 <!--Restrictions -->
 <!-- Don't change under this line -->
@@ -22,18 +23,18 @@ before making a Pull Request
 
 |            Script Name           |    Author                  |                Short introduction to program                     |
 |               :---               |        :----:              |                            :---:                            |
-| send-discord_message             |    CodePerfectplus         |         Send Github repo notification to Discord with webhooks   |
-| propenster-scripts               |    Propenster              |         This Script gets some system info of the user's device   |
-| scrap_github_repos               |    CodePerfectplus         |         Scrap GitHub user repos and save it in csv               |
+| [send-discord_message](/send-discord_message/annoucements.py)|[CodePerfectplus](https://github.com/codeperfectplus)|     Send Github repo notification to Discord with webhooks |
+| [propenster-scripts](/propenster-scripts/sysinfo.py)               |    [Propenster](https://github.com/propenster)            |         This Script gets some system info of the user's device   |
+| [scrap_github_repos](/scrap_github_repos/scrap_github_repos.py)               | [CodePerfectplus](https://github.com/codeperfectplus)         |         Scrap GitHub user repos and save it in csv               |
 | email_sending_script             |                            |         send email using smptlib                                 |
 | html2pdf                         |                            |         convert website to html with CLI                         |
 | sms_sending_script               |                            |         send sms with python CLI                                 |
 | scrap_all_links                  |                            |         Scrap link from website using Python CLI                 |
 | remove_punctuation_number        |                            |         Remove Punctuation/Number from text file                 |
-| countries_trivia_game            |   Propenster               |         Simple trivia quiz game that loads questions and answers from a CSV file|
-| scrap_all_email        |    CodePerfectPlus         |    Scrap all email from input website |
-| jpeg_to_png            |    CodePerfectPlus         | Convert image format jpeg_to_png CLI tool     |
-| website_cloner | CodePerfectPlus | clone website using python |
+| [countries_trivia_game](/countries_trivia_game/countries_trivia.py)            |   [Propenster](https://github.com/propenster)               |         Simple trivia quiz game that loads questions and answers from a CSV file|
+| [scrap_all_email](/scrap_all_email/scrap_all_email.py)        |  [CodePerfectplus](https://github.com/codeperfectplus)      |    Scrap all email from input website |
+| [jpeg_to_png](/jpeg_to_png/jpeg_to_png.py)            |    [CodePerfectplus](https://github.com/codeperfectplus)         | Convert image format jpeg_to_png CLI tool     |
+| [website_cloner](/website_cloner/website_cloner.py) | [CodePerfectplus](https://github.com/codeperfectplus) | clone website using python |
 
 ## Maintainers
 
