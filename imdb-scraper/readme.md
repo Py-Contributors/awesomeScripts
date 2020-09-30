@@ -1,4 +1,4 @@
-# imdb-scrape
+# imdb-scraper
 
 ## implement title based and user ratings based search
 
