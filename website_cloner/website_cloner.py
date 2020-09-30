@@ -32,7 +32,7 @@ class CloneWebsite:
         ''' This function will save website to respective folder '''
         folder_name = self.create_folder()
         content = self.crawl_website()
-        with open(f"{folder_name}/index.html", "w") as file:
+        with open(f"{folder_name}/index.html", "w",encoding='ascii',errors='ignore') as file:
             file.write(content.text)
 
 if __name__ == "__main__":
