@@ -42,7 +42,7 @@ with smtplib.SMTP_SSL("smtp.gmail.com", port, context=context) as server:
                 maintype, subtype = ctype.split('/', 1)
                 if maintype == 'text':
                     fb = open(path)
-                    files = MIMEText(fp.read(),_subtype=subtype)
+                    files = MIMEText(fb.read(),_subtype=subtype)
                     filename = fb.name
                     fb.close()
                 elif maintype == 'image':
