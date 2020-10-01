@@ -9,6 +9,7 @@ parser.add_argument('-o', metavar='outputFile', type=str, nargs=1, help='Outputs
 args = parser.parse_args()
 
 class Scraper:
+    
     def __init__(self, args):
         self.args = args
         self.greet()
