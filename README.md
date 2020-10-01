@@ -10,6 +10,8 @@
 ![open_pr](https://img.shields.io/github/issues-pr-raw/Py-contributors/awesomescripts)
 ![open_pr](https://img.shields.io/github/issues-pr-closed-raw/Py-contributors/awesomescripts)
 
+![hacktober-issue](https://img.shields.io/github/hacktoberfest/2020/py-contributors/awesomescripts)
+
 ![forks](https://img.shields.io/github/forks/Py-Contributors/awesomeScripts)
 ![stars](https://img.shields.io/github/stars/Py-Contributors/awesomeScripts)
 ![license](https://img.shields.io/github/license/Py-Contributors/awesomeScripts)
