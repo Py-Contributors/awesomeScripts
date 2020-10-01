@@ -18,7 +18,8 @@ def getLinksFromHTML(html):
 
 
 def find_broken_links(domainToSearch, URL, parentURL):
-    if (not (URL in searched_links)) and (not URL.startswith("mailto:")) and (not ("javascript:" in URL)) and (not URL.endswith(".png")) and (not URL.endswith(".jpg")) and (not URL.endswith(".jpeg")):
+    if (not (URL in searched_links)) and (not URL.startswith("mailto:")) and (not ("javascript: \
+    " in URL)) and (not URL.endswith(".png")) and (not URL.endswith(".jpg")) and (not URL.endswith(".jpeg")):
         try:
             requestObj = requests.get(URL)
             searched_links.append(URL)
