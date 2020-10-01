@@ -64,7 +64,7 @@ READ more at [CONTRIBUTING.md](/CONTRIBUTING.md)
 | [email_sending_script](/email_sending_script/email_sending_script.py)          |     nis130      | email sending automation in pyton                                        |
 | [merge_2_pdfs](/Merge_2_Pdf's/mergepdf.py)                                     |   uditmore99    | The above script will merge two PDF's at once !                          |
 | [video_player](/video_player/video_player.py)                                  |     brtymn      | video plater with opencv                                                 |
-| [auto_wifi_connector](/Auto_Wifi_Connector/autoWifiConnector.py)               |  AmeyaJain-25   | Automatically connects to the available WIFI connections.                |
+| [auto_wifi_connector](/Auto_Wifi_Connector/autoWifiConnector.py)               |  AmeyaJain-25   | Automatically connects to the available WIFI.                            |
 | [pdf_redaction](/pdf_redaction/pdf_redaction.py)                               |  debdutgoswami  | redact a pdf in Python                                                   |
 | [word-cloud](/word_cloud_generator/main.py)                                    |  saswatamcode   | create word-cloud using flask                                            |
 
