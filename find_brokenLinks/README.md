@@ -13,3 +13,7 @@
 ```pip install -r requirements.txt ```
 
 ```python brokenlinksfinder.py <website>```
+
+
+## Authors
+- [Hruday](https://github.com/hruday007)
