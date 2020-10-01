@@ -7,7 +7,7 @@
 ![license](https://img.shields.io/github/license/Py-Contributors/awesomeScripts)
 ![twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FPy-Contributors%2FawesomeScripts)
 
-A Collection of Awesome Scripts in Python.
+A Collection of Awesome Problem Solving Scripts in Python.
 
 ## How to Contribute
 
@@ -60,3 +60,5 @@ before making a Pull Request
 
 - [Discord/PyContributors](https://discord.gg/FXyh2S3)
 - [Telegram/PyContributors](https://t.me/pycontributors)
+
+![footer](https://capsule-render.vercel.app/api?type=slice&color=009ACD&height=30&section=footer&fontSize=90%&)
