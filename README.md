@@ -1,11 +1,16 @@
 ![header](https://capsule-render.vercel.app/api?type=rect&color=009ACD&height=100&section=header&text=awesomeScripts&fontSize=90%&fontColor=ffffff)
 
+![Discord](https://img.shields.io/discord/758030555005714512)
+![org](https://img.shields.io/github/stars/:Py-Contributors)
+![last commit](https://img.shields.io/github/last-commit/py-contributors/awesomescripts)
+![contributors](https://img.shields.io/github/contributors/py-contributors/awesomeScripts)
+
 ![python](https://img.shields.io/badge/language-python-blue)
 ![issues](https://img.shields.io/github/issues/Py-Contributors/awesomeScripts)
 ![forks](https://img.shields.io/github/forks/Py-Contributors/awesomeScripts)
 ![stars](https://img.shields.io/github/stars/Py-Contributors/awesomeScripts)
 ![license](https://img.shields.io/github/license/Py-Contributors/awesomeScripts)
-![twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FPy-Contributors%2FawesomeScripts)
+
 
 A Collection of Awesome Problem Solving Scripts in Python.
 
