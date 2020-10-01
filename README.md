@@ -5,9 +5,9 @@
 ![stars](https://img.shields.io/github/stars/Py-Contributors/awesomeScripts?style=for-the-badge)
 ![license](https://img.shields.io/github/license/Py-Contributors/awesomeScripts?style=for-the-badge)
 
-![Discord](https://img.shields.io/discord/758030555005714512?style=flat-square)
-![last commit](https://img.shields.io/github/last-commit/py-contributors/awesomescripts?style=flat-square)
-![contributors](https://img.shields.io/github/contributors/py-contributors/awesomeScripts?style=flat-square)
+![Discord](https://img.shields.io/discord/758030555005714512?style=for-the-badge)
+![last commit](https://img.shields.io/github/last-commit/py-contributors/awesomescripts?style=for-the-badge)
+![contributors](https://img.shields.io/github/contributors/py-contributors/awesomeScripts?style=for-the-badge)
 
 ![python](https://img.shields.io/badge/language-python-blue?style=for-the-badge)
 ![open issues](https://img.shields.io/github/issues-raw/Py-Contributors/awesomeScripts?style=social)
