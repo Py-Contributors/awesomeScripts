@@ -2,6 +2,7 @@ import shlex
 import requests
 from subprocess import Popen, PIPE
 
+
 def execute_and_return(cmd):
     """
     Execute the external command and get its exitcode, stdout and stderr.
@@ -11,25 +12,31 @@ def execute_and_return(cmd):
     out, err = proc.communicate()
     return out, err
 
+
 def make_request(error):
-    print("Searching for "+error)
-    resp  = requests.get("https://api.stackexchange.com/"+"2.2/search?order=desc&tagged=python&sort=activity&intitle={}&site=stackoverflow".format(error))
+    print("Searching for " + error)
+    resp = requests.get(
+        "https://api.stackexchange.com/"
+        + "2.2/search?order=desc&tagged=python&sort=activity&intitle={}&site=stackoverflow".format(
+            error
+        )
+    )
     return resp.json()
+
 
 def get_urls(json_dict):
     url_list = []
     count = 0
-    for i in json_dict['items']:
+    for i in json_dict["items"]:
         if i["is_answered"]:
             url_list.append(i["link"])
-        count+=1
+        count += 1
         if count == len(i) or count == 3:
             break
     import webbrowser
+
     for i in url_list:
         webbrowser.open(i)
-
-
 
 
 if __name__ == "__main__":
@@ -48,4 +55,3 @@ if __name__ == "__main__":
         get_urls(json)
     else:
         print("No errors")
-

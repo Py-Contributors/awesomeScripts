@@ -12,3 +12,5 @@
 - [ ] My file is in proper folder
 - [ ] I am following clean code and Documentation.
 - [ ] I have added README.md with my script
+
+### Add your Script|Author_Name|ShortItroduction in Main README.
