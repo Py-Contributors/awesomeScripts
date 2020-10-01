@@ -10,11 +10,11 @@
 ![last commit](https://img.shields.io/github/last-commit/py-contributors/awesomescripts)
 ![contributors](https://img.shields.io/github/contributors/py-contributors/awesomeScripts)
 
-![python](https://img.shields.io/badge/language-python-blue)
-![open issues](https://img.shields.io/github/issues-raw/Py-Contributors/awesomeScripts)
-![close issue](https://img.shields.io/github/issues-closed-raw/py-contributors/awesomescripts)
-![open_pr](https://img.shields.io/github/issues-pr-raw/Py-contributors/awesomescripts)
-![open_pr](https://img.shields.io/github/issues-pr-closed-raw/Py-contributors/awesomescripts)
+![python](https://img.shields.io/badge/language-python-blue?style=for-the-badge)
+![open issues](https://img.shields.io/github/issues-raw/Py-Contributors/awesomeScripts?style=social)
+![close issue](https://img.shields.io/github/issues-closed-raw/py-contributors/awesomescripts?style=social)
+![open_pr](https://img.shields.io/github/issues-pr-raw/Py-contributors/awesomescripts?style=social)
+![open_pr](https://img.shields.io/github/issues-pr-closed-raw/Py-contributors/awesomescripts?style=social)
 
 A Collection of Awesome Problem Solving Scripts in Python.
 
