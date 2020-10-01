@@ -43,8 +43,8 @@ READ more at [CONTRIBUTING.md](/CONTRIBUTING.md)
 | [propenster-scripts](/propenster-scripts/sysinfo.py)| Propenster |  This Script gets some system info of the user's device|
 | [scrap_github_repos](/scrap_github_repos/scrap_github_repos.py) | CodePerfectplus |Scrap GitHub user repos and save it in csv|
 | html2pdf  |                               | convert website to html with CLI|
-| sms_sending_script|                       | send sms with python CLI|
-| scrap_all_links  |                        | Scrap link from website using Python CLI|
+| sms_sending_script|                   | send sms with python CLI|
+| scrap_all_links  |       oxigen96        | Scrap link from website using Python CLI|
 | remove_punctuation_number|                | Remove Punctuation/Number from text file|
 | [countries_trivia_game](/countries_trivia_game/countries_trivia.py)|Propenster|Simple trivia quiz game that loads questions and answers from a CSV file|
 | [scrap_all_email](/scrap_all_email/scrap_all_email.py) | CodePerfectplus |    Scrap all email from input website|
