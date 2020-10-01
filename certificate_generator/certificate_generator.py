@@ -36,7 +36,7 @@ coordinate_y_adjustment = -120
 
 coordinate_x_adjustment = 7
 
-print 'Ceritificate Generation Started ...'
+print('Ceritificate Generation Started ...')
 
 with open(input_txt_file) as input_list:
 
