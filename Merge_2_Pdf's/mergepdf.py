@@ -1,6 +1,7 @@
 from PyPDF2 import PdfFileMerger
 
-print("\nMake sure you have copied two pdfs in the same FOLDER as this script :) \n")
+print("\nMake sure you have copied two pdfs \
+            in the same FOLDER as this script :) \n")
 
 input("\nPress ENTER to begin the SCRIPT !!!\n")
 
@@ -20,5 +21,7 @@ for pdf in pdfs:
 merger.write(result)
 merger.close()
 
-print("\nYour PDF has been merged :)\n Thank You for using this Script :D Cheers !!! \n")
-
+print(
+    "\nYour PDF has been merged :)\n \
+     Thank You for using this Script :D Cheers !!! \n"
+)

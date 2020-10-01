@@ -22,7 +22,7 @@ def epub_to_awz3(file_path):
 
 def get_output_path(file_path):
     """
-    Helper Function That Returns Output Filepath At 
+    Helper Function That Returns Output Filepath At
     The Same Location Of Source With Changed Extension
     """
     output_path = file_path.split(".")

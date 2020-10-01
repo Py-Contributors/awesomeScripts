@@ -2,7 +2,8 @@ import urllib.request
 import string
 
 dictionary = (
-    "https://raw.githubusercontent.com/dwyl/english-words/master/words_alpha.txt"
+    "https://raw.githubusercontent.com/dwyl/ \
+    english-words/master/words_alpha.txt"
 )
 
 alphabet = {letter: 0 for letter in string.ascii_lowercase}
@@ -18,7 +19,8 @@ with urllib.request.urlopen(dictionary) as req:
 
 for letter in alphabet:
     print(
-        f"{letter.upper()}:\t{alphabet[letter]}\t{round(alphabet[letter]/total_amount*100, 2)}%"
+        f"{letter.upper()}:\t{alphabet[letter]}\
+         t{round(alphabet[letter]/total_amount*100, 2)}%"
     )
 
 print("--------------------------")
