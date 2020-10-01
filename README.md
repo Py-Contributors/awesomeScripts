@@ -1,4 +1,11 @@
-# awesomeScripts
+![header](https://capsule-render.vercel.app/api?type=rect&color=009ACD&height=100&section=header&text=awesomeScripts&fontSize=90%&fontColor=ffffff)
+
+![python](https://img.shields.io/badge/language-python-blue)
+![issues](https://img.shields.io/github/issues/Py-Contributors/awesomeScripts)
+![forks](https://img.shields.io/github/forks/Py-Contributors/awesomeScripts)
+![stars](https://img.shields.io/github/stars/Py-Contributors/awesomeScripts)
+![license](https://img.shields.io/github/license/Py-Contributors/awesomeScripts)
+![twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FPy-Contributors%2FawesomeScripts)
 
 A Collection of Awesome Scripts in Javascript, Python.
 
