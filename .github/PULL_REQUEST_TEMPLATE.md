@@ -14,3 +14,5 @@
 - [ ] I have added README.md with my script
 
 If issue was not assigned to you Please don't make a PR. It will marked as invalid.
+
+if check failed please check details and make necessary change. Use flake8 for clean code.
