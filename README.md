@@ -49,13 +49,13 @@ before making a Pull Request
 | [stackoverflow parse](/Stack_Overflow_Parser-master/main_.py) | ParijatDhar97 | Parses SO for your error messages|
 | [sudoku_solver](/sudoku_solver/sudoku_solver.py) | basscoder2808 | solve sudoku puzzles using backtracking|
 | [word_counter](/word-counter/word-counter.py)| p014ri5| count the word|
-| duplicate_image_remover |p014ri5| remove deuplicate image from pc|
-| cartoonify |brtymn| cartoonify input image in python |
-| email_sending_script | nis130| email sending automation in pyton |
-| merge_2_pdfs | uditmore99| The above script will merge two PDF's at once ! |
-| video_player | brtymn | video plater with opencv |
-| pdf_redaction | debdutgoswami  | redact a pdf in Python |
-| word-cloud | saswatamcode| create word-cloud using flask |
+| [duplicate_image_remover](/duplicate-image-remover/duplicate-image-remover.py) |p014ri5| remove deuplicate image from pc|
+| [cartoonify](/cartoonifier/cartoonifier.py) |brtymn| cartoonify input image in python |
+| [email_sending_script](/email_sending_script/email_sending_script.py) | nis130| email sending automation in pyton |
+| [merge_2_pdfs](/Merge_2_Pdf's/mergepdf.py) | uditmore99| The above script will merge two PDF's at once ! |
+| [video_player](/video_player/video_player.py) | brtymn | video plater with opencv |
+| [pdf_redaction](/pdf_redaction/pdf_redaction.py) | debdutgoswami  | redact a pdf in Python |
+| [word-cloud](/word_cloud_generator/main.py) | saswatamcode| create word-cloud using flask |
 
 ## Maintainers
 
