@@ -3,14 +3,14 @@
 
 ### What have you Changed -
 
-### Issue no.(must) -
+### Issue no.(must) - #
 
 ### Self Check(Tick After Making pull Request)
 
 - [ ] This issue was assigned to me
-- [x] One Change in one Pull Request
+- [ ] One Change in one Pull Request
 - [ ] My file is in proper folder
 - [ ] I am following clean code and Documentation.
 - [ ] I have added README.md with my script
 
-### Add your Script|Author_Name|ShortItroduction in Main README.
+If issue was not assigned to you Please don't make a PR. It will marked as invalid.
