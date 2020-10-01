@@ -28,6 +28,7 @@ before making a Pull Request
 - Create a new folder for your script and file/folder name should be appropriate.
 - Create a README.md in your folder for program Instructions
 - add requirements.txt if needed
+- Use Flake8 locally for linting Python Code. `pip install flake8`. (We have linting checks so if your code fails it we will not merge the PR.)
 - add your script information below in table
 
 ## Scripts and contributorss
