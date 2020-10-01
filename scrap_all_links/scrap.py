@@ -8,6 +8,7 @@ parser.add_argument('link', metavar='link', type=str, nargs=1, help='Link of the
 parser.add_argument('-o', metavar='outputFile', type=str, nargs=1, help='Outputs results into a file')
 args = parser.parse_args()
 
+
 class Scraper:
 
     def __init__(self, args):
