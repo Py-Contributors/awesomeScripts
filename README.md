@@ -55,6 +55,7 @@ before making a Pull Request
 | merge_2_pdfs | uditmore99| The above script will merge two PDF's at once ! |
 | video_player | brtymn | video plater with opencv |
 | pdf_redaction | debdutgoswami  | redact a pdf in Python |
+| word-cloud | saswatamcode| create word-cloud using flask |
 
 ## Maintainers
 
