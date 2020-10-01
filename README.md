@@ -43,7 +43,7 @@ READ more at [CONTRIBUTING.md](/CONTRIBUTING.md)
 | [send-discord_message](/send-discord_message/annoucements.py)                  | CodePerfectplus | Send Github repo notification to Discord with webhooks                   |
 | [propenster-scripts](/propenster-scripts/sysinfo.py)                           |   Propenster    | This Script gets some system info of the user's device                   |
 | [scrap_github_repos](/scrap_github_repos/scrap_github_repos.py)                | CodePerfectplus | Scrap GitHub user repos and save it in csv                               |
-| html2pdf                                                                       |                 | convert website to html with CLI                                         |
+| [html2pdf](/html2pdf/html2pdf.py)                                              |   hpnightowl    | convert website to html with CLI                                         |
 | sms_sending_script                                                             |                 | send sms with python CLI                                                 |
 | scrap_all_links                                                                |    oxigen96     | Scrap link from website using Python CLI                                 |
 | remove_punctuation_number                                                      |                 | Remove Punctuation/Number from text file                                 |
