@@ -4,8 +4,10 @@ from bs4 import BeautifulSoup, SoupStrainer
 from validator_collection import checkers
 
 parser = argparse.ArgumentParser(description='Scrape them all!')
-parser.add_argument('link', metavar='link', type=str, nargs=1, help='Link of the target website')
-parser.add_argument('-o', metavar='outputFile', type=str, nargs=1, help='Outputs results into a file')
+parser.add_argument('link', metavar='link',
+                    type=str, nargs=1, help='Link of the target website')
+parser.add_argument('-o', metavar='outputFile',
+                    type=str, nargs=1, help='Outputs results into a file')
 args = parser.parse_args()
 
 
@@ -30,7 +32,8 @@ class Scraper:
             raise Exception(link_arg + " is not a valid URL")
         response = requests.get(link_arg)
 
-        for link in BeautifulSoup(response.text, features="html.parser", parse_only=SoupStrainer('a')):
+        for link in BeautifulSoup(response.text, features="html.parser",
+                                  parse_only=SoupStrainer('a')):
             if link.has_attr('href') and link['href'].startswith("http"):
                 links.append(link['href'])
 
