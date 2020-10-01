@@ -77,14 +77,14 @@ with open(input_txt_file) as input_list:
             font_size,
             font_color,
             10,
-		)
+        )
         certi_path = output_directory_path + certi_name + '.png'
         cv2.imwrite(certi_path, img)
 
 cv2.destroyAllWindows()
 
-print ('''Ceritificate Generation Completed.
+print(
+    '''Ceritificate Generation Completed.
 
-Find your generated certificates in '''
-    + output_directory_path[2::]
+    Find your generated certificates in ''' + output_directory_path[2::]
 )
