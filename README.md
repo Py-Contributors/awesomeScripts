@@ -7,7 +7,7 @@
 ![license](https://img.shields.io/github/license/Py-Contributors/awesomeScripts)
 ![twitter](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FPy-Contributors%2FawesomeScripts)
 
-A Collection of Awesome Scripts in Javascript, Python.
+A Collection of Awesome Scripts in Python.
 
 ## How to Contribute
 
