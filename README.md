@@ -51,6 +51,9 @@ before making a Pull Request
 | [sudoku_solver](/sudoku_solver/sudoku_solver.py) | basscoder2808 | solve sudoku puzzles using backtracking|
 | [word_counter](/word-counter/word-counter.py)| p014ri5| count the word|
 | duplicate_image_remover |p014ri5| remove deuplicate image from pc|
+| cartoonify |brtymn| cartoonify input image in python |
+| email_sending_script | nis130| email sending automation in pyton |
+| merge_2_pdfs | uditmore99| The above script will merge two PDF's at once ! |
 
 ## Maintainers
 
