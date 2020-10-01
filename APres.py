@@ -6,6 +6,7 @@
 # # d = difference
 # # nterm of the n_value
 
+# Defining Functions for the formulas
 def nth_value():
     '''
     This function help to find the nth value when 1st and 2nd term are given..
@@ -20,18 +21,7 @@ def nth_value():
     d = b - a
     nth = a + (n - 1)*d
     print (f"The value of {n}th term is {nth} ")
-    # yes_no = str(input("Do you want the AP of the above values..? (y/n)"))
-    # for i in yes_no:
-    #     if yes_no == 'y':
-    #         j = 0
-    #         while True:
-    #
-    #             vals =
-    #     elif yes_no == 'n':
-    #         pass
-    #     else:
-    #         print("Enter appropriate alphabet :")
-    # return yes_no
+
 def nth_term():
     '''
     This function help to find the nth term while nth value, 1st and 2nd term are given..
