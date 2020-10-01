@@ -18,7 +18,8 @@ def filter_func(tup):
         if len(word) < args.minWordLength:
             return False
         elif re.search(
-            "http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+",
+            "http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]| \
+            [!*(),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+",
             word,
         ):
             return False
@@ -34,5 +35,6 @@ with open(args.file, "r") as f:
     words = re.findall(r"\S+", content)
     for i in range(1, args.maxTuples + 1):
         print("\n=== Sliding Window: {} ===".format(i))
-        for tup in Counter(filtered_window(words, i)).most_common(args.numWords):
+        for tup in Counter(filtered_window(words,
+                                           i)).most_common(args.numWords):
             print("    {}: '{}'".format(tup[1], " ".join(tup[0])))

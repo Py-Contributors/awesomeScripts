@@ -17,7 +17,8 @@ def make_request(error):
     print("Searching for " + error)
     resp = requests.get(
         "https://api.stackexchange.com/"
-        + "2.2/search?order=desc&tagged=python&sort=activity&intitle={}&site=stackoverflow".format(
+        + "2.2/search?order=desc&tagged=python&sort= \
+        activity&intitle={}&site=stackoverflow".format(
             error
         )
     )

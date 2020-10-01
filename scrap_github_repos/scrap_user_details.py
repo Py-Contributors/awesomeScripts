@@ -34,7 +34,7 @@ class GithubUserScraper:
                 print(f"{object.title()} : {details}")
         except Exception:
             print(
-                f"User doesn't exist on Github. \
+                "User doesn't exist on Github. \
                     Try Again with Proper Details"
             )
 
