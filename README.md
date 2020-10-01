@@ -54,6 +54,7 @@ before making a Pull Request
 | email_sending_script | nis130| email sending automation in pyton |
 | merge_2_pdfs | uditmore99| The above script will merge two PDF's at once ! |
 | video_player | brtymn | video plater with opencv |
+| pdf_redaction | debdutgoswami  | redact a pdf in Python |
 
 ## Maintainers
 
