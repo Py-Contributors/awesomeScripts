@@ -35,6 +35,7 @@ before making a Pull Request
 | [scrap_all_email](/scrap_all_email/scrap_all_email.py)        |  [CodePerfectplus](https://github.com/codeperfectplus)      |    Scrap all email from input website |
 | [jpeg_to_png](/jpeg_to_png/jpeg_to_png.py)            |    [CodePerfectplus](https://github.com/codeperfectplus)         | Convert image format jpeg_to_png CLI tool     |
 | [website_cloner](/website_cloner/website_cloner.py) | [CodePerfectplus](https://github.com/codeperfectplus) | clone website using python |
+| [sorting_visualizer](/sorting_visualizer/sorting_visualizer.py) | [debdutgoswami](https://github.com/debdutgoswami) | visualizes various sorting algorithm using python |
 
 ## Maintainers
 
