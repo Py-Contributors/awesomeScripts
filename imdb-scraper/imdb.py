@@ -14,12 +14,12 @@ class imdb:
         self.more = []
 
     def find_name_episode(self, film):
-        name = episode = ""
         names_list = film.find_all("h3")[0].find_all("a")
         years_list = film.find_all("h3")[0].find_all("span")
         self.name = names_list[0].text + " " + years_list[1].text.strip()
         if len(names_list) == 2:
-            self.episode = names_list[1].text + " " + years_list[2].text.strip()
+            self.episode = names_list[1].text + " " \
+                                                + years_list[2].text.strip()
 
     def find_about(self, film):
         self.about = (
@@ -42,7 +42,8 @@ class imdb:
             self.rating = rating_list[0].text.replace("\n", "")
 
     def find_director_stars(self, film):
-        stars_list = film.find_all("p")[2].text.replace("\n", " ").strip().split("|")
+        stars_list = film.find_all("p")[2].text.replace("\n",
+                                                        " ").strip().split("|")
         if len(stars_list) == 2:
             self.directors = stars_list[0].split(":")[1].strip()
             self.stars = stars_list[1].split(":")[1].strip()
@@ -138,7 +139,8 @@ def main():
             else:
                 c = ""
                 print(
-                    "Type 'q' and enter to quit, another key and enter to see next set of entries : ",
+                    "Type 'q' and enter to quit, another key \
+                    and enter to see next set of entries : ",
                     end="",
                 )
                 while c == "":

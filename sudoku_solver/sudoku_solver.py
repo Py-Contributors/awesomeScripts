@@ -51,7 +51,10 @@ def if_unassigned(row, col):
 # This function is used to check if the value which we have passes
 # Satisfies all the conditions or not
 # If the conditions are not satisfied we return False else True
-# Here we check the conditions in all cases i.e in each row, in each column, in each sub 3x3 matrix
+# Here we check the conditions in all cases i.e in each row, in each column,
+# in each sub 3x3 matrix
+
+
 def check_safe(n, r, c):
     # row check
     for i in range(0, MAX_SIZE):
