@@ -22,14 +22,14 @@ A Collection of Awesome Problem Solving Scripts in Python.
 You can contribute by adding new scripts, improving current scripts or Documentation.Here are some Instructions
 before making a Pull Request
 
-- Before creating a new issue please check the scripts doesn't exist in Repository as well in open issues
-- Check isssue for new scrips or create your new issue.
-- Make sure to be assigned on issue before making a `Pull Request`.
-- Create a new folder for your script and file/folder name should be appropriate.
-- Create a README.md in your folder for program Instructions
-- add requirements.txt if needed
-- Use Flake8 locally for linting Python Code. `pip install flake8`. (We have linting checks so if your code fails it we will not merge the PR.)
-- add your script information below in table
+### Here are the steps to Make contribute
+
+- Create an issue for making any change to code. when issue will be approve you can make a change.
+- Add your file in proper folder with README.md in it. Add requirements.txt if needed.
+- Use Flake8 locally for linting Python Code.(We have linting checks so if your code fails it we will not merge the PR.)
+  - `pip install flake8`
+
+READ more at [CONTRIBUTING.md](/CONTRIBUTING.md)
 
 ## Scripts and contributorss
 
