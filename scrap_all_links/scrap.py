@@ -1,7 +1,7 @@
 import requests
 import argparse
 from bs4 import BeautifulSoup, SoupStrainer
-from validator_collection import validators, checkers
+from validator_collection import checkers
 
 parser = argparse.ArgumentParser(description='Scrape them all!')
 parser.add_argument('link', metavar='link', type=str, nargs=1, help='Link of the target website')
@@ -9,7 +9,7 @@ parser.add_argument('-o', metavar='outputFile', type=str, nargs=1, help='Outputs
 args = parser.parse_args()
 
 class Scraper:
-    
+
     def __init__(self, args):
         self.args = args
         self.greet()
@@ -52,6 +52,7 @@ class Scraper:
 
     def run(self):
         self.pretty_print(self.scrape(self.args))
+
 
 if __name__ == "__main__":
     scraper = Scraper(args)
