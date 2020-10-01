@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=rect&color=009ACD&height=100&section=header&text=awesomeScripts&fontSize=90%&fontColor=ffffff)
+![header](https://capsule-render.vercel.app/api?type=rect&color=009ACD&height=100&section=header&text=awesomeScripts&fontSize=80%&fontColor=ffffff)
 
 ![hacktober-issue](https://img.shields.io/github/hacktoberfest/2020/py-contributors/awesomescripts?style=for-the-badge)
 ![forks](https://img.shields.io/github/forks/Py-Contributors/awesomeScripts?style=for-the-badge)
