@@ -22,7 +22,7 @@ count_of_internships = int(soup.find("div", class_="heading_4_6").text.split()[0
 
 num_of_pages = int((count_of_internships / 40) + 1)
 # A loop that will go to each page and will scrape the data
-for i in range(1, num_of_pages+1):
+for i in range(1, num_of_pages + 1):
 
     # ------------------- Scraping starts here ------------------------------------------
     response = requests.get("https://internshala.com/internships/computer%20science-internship/page-{0}".format(i))
