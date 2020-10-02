@@ -30,10 +30,10 @@ before making a Pull Request
 - Use Flake8 locally for linting Python Code.(We have linting checks so if your code fails it we will not merge the PR.)
   - `pip install flake8`
   
-```diff
-- READ more at [CONTRIBUTING.md](/CONTRIBUTING.md)
-```
-### Download Specific Scripts from Here - [Download from here](https://py-contributors.github.io/awesomeScripts/)
+### Projects links
+
+- [x] 📖 READ Contributions Guidelines at [CONTRIBUTING.md](/CONTRIBUTING.md)
+- [x] 🌐 Download Specific Scripts from Here - [Download](https://py-contributors.github.io/awesomeScripts/)
 
 ## Scripts and contributorss
 <!--Restrictions -->
@@ -78,7 +78,6 @@ before making a Pull Request
 ## Maintainers
 
 - [Deepak Raj](https://github.com/CodePerfectPlus)
-- [rex_divakar](https://github.com/rexdivakar)
 
 ## Social Channel - Connect with like minded people
 
