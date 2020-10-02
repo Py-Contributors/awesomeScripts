@@ -21,7 +21,7 @@ def detector(img):
     detected_img = haar_cascades.detectMultiScale(grey_img, 1.3, 5)  # Detect
 
     box_lst = []
-    confidences = []
+
 
     if detected_img is not None:
         for (x, y, w, h) in detected_img:
