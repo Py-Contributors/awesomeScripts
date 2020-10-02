@@ -1,6 +1,8 @@
 <p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=009ACD&height=100&section=header&text=awesomeScripts&fontSize=80%&fontColor=ffffff">
+  <h2 align="center">👉 A Collection of Awesome Problem Solving Scripts in Python.👈</h2>
 </p>
+
 <hr>
 
 <p align="center">
@@ -23,10 +25,6 @@
 <img src="https://img.shields.io/discord/758030555005714512?style=for-the-badge">
 <img src="https://img.shields.io/github/last-commit/py-contributors/awesomescripts?style=for-the-badge">
 <img src="https://img.shields.io/github/contributors/py-contributors/awesomeScripts?style=for-the-badge">
-</p>
-
-<p align="center">
- <h2>👉 A Collection of Awesome Problem Solving Scripts in Python.👈</h2>
 </p>
 
 ## How to Contribute
