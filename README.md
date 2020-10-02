@@ -17,7 +17,7 @@
 </p>
 <p align="center">
 <img src="https://img.shields.io/github/hacktoberfest/2020/py-contributors/awesomescripts?style=for-the-badge">
-<img src-"https://img.shields.io/github/license/Py-Contributors/awesomeScripts?style=for-the-badge">
+<img src="https://img.shields.io/github/license/Py-Contributors/awesomeScripts?style=for-the-badge">
 </p>
 <p align="center">
 <img src="https://img.shields.io/discord/758030555005714512?style=for-the-badge">
