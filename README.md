@@ -38,15 +38,15 @@ READ more at [CONTRIBUTING.md](/CONTRIBUTING.md)
 <!--Restrictions -->
 <!-- Add your script in last line -->
 
-| Script Name                                                                    |     Author      | Short introduction to program                                            |
+| Script Name                                                                    |     Author(GitHub username)      | Short introduction to program                                            |
 | :----------------------------------------------------------------------------- | :-------------: | :----------------------------------------------------------------------- |
-| [send-discord_message](/send-discord_message/annoucements.py)                  | CodePerfectplus | Send Github repo notification to Discord with webhooks                   |
-| [propenster-scripts](/propenster-scripts/sysinfo.py)                           |   Propenster    | This Script gets some system info of the user's device                   |
-| [scrap_github_repos](/scrap_github_repos/scrap_github_repos.py)                | CodePerfectplus | Scrap GitHub user repos and save it in csv                               |
-| html2pdf                                                                       |                 | convert website to html with CLI                                         |
-| sms_sending_script                                                             |                 | send sms with python CLI                                                 |
-| scrap_all_links                                                                |    oxigen96     | Scrap link from website using Python CLI                                 |
-| remove_punctuation_number                                                      |                 | Remove Punctuation/Number from text file                                 |
+| [send-discord_message](/send-discord_message/annoucements.py)| CodePerfectplus | Send Github repo notification to Discord with webhooks                   |
+| [propenster-scripts](/propenster-scripts/sysinfo.py)|   Propenster    | This Script gets some system info of the user's device                   |
+| [scrap_github_repos](/scrap_github_repos/scrap_github_repos.py)   | CodePerfectplus | Scrap GitHub user repos and save it in csv                               |
+| [html2pd](/html2pdf/html2pdf.py)         |       hpnightowl          | convert website to html with CLI     |
+| sms_sending_script        |                 | send sms with python CLI                |
+| [scrap_all_links](/scrap_all_links/scrap.py) |    oxigen96     | Scrap link from website using Python CLI                                 |
+| remove_punctuation_number        |                 | Remove Punctuation/Number from text file                                 |
 | [countries_trivia_game](/countries_trivia_game/countries_trivia.py)            |   Propenster    | Simple trivia quiz game that loads questions and answers from a CSV file |
 | [scrap_all_email](/scrap_all_email/scrap_all_email.py)                         | CodePerfectplus | Scrap all email from input website                                       |
 | [jpeg_to_png](/jpeg_to_png/jpeg_to_png.py)                                     | CodePerfectplus | Convert image format jpeg_to_png CLI tool                                |
@@ -64,9 +64,16 @@ READ more at [CONTRIBUTING.md](/CONTRIBUTING.md)
 | [email_sending_script](/email_sending_script/email_sending_script.py)          |     nis130      | email sending automation in pyton                                        |
 | [merge_2_pdfs](/Merge_2_Pdf's/mergepdf.py)                                     |   uditmore99    | The above script will merge two PDF's at once !                          |
 | [video_player](/video_player/video_player.py)                                  |     brtymn      | video plater with opencv                                                 |
+| [encrypt_pdf](/Encrypt_PDF/encryptPDF.py)                                      |  AmeyaJain-25   | The code will help to encrypt the PDF with an password.                  |
 | [pdf_redaction](/pdf_redaction/pdf_redaction.py)                               |  debdutgoswami  | redact a pdf in Python                                                   |
 | [word-cloud](/word_cloud_generator/main.py)                                    |  saswatamcode   | create word-cloud using flask                                            |
-| [auto_wifi_connector](/Auto_Wifi_Connector/autoWifiConnector.py)               |  AmeyaJain-25   | Automatically connects to the available WIFI.                            |
+| [Torrent_to_goolge_drive](/Torrent%20to%20Google%20Drive%20Downloader/torrent_to_google_drive_downloader.py) | vaibhav jain| Torrent to Google Drive Downloader with colab|
+| [certificate_generator](/certificate_generator/certificate_generator.py) | alpha037 | certificate automation in python|
+| [internshala_scrapper]() | techTarun | scrap internship from internshala and save into csv |
+| [png_to_jpeg]() | hot9cups | convert png image to Jpeg with Pytho-pillow|
+| [auto_wifi_connecter]() | AmeyaJain-25 | automatically connect to your available WIFI connections|
+
+
 
 ## Maintainers
 
