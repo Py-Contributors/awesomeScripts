@@ -15,7 +15,7 @@ def finding_text_similarity_using_cosine_distance(s1, s2):
     # distance of similarity
     cosine = distance.cosine(text_to_vector_v1, text_to_vector_v2)
     print('Using Count Vectorizer :Similarity of two sentences are equal to ',
-          round((1 - cosine)*100, 2), '%')
+          round((1 - cosine) * 100, 2), '%')
 
     # Using TFIDF Vectorizer
     tfidf_vectorizer = TfidfVectorizer()
