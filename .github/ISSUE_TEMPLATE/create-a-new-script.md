@@ -1,6 +1,6 @@
 ---
 name: Create a new script
-about: For creating isssue for HacktoberFest
+about: add new script to project
 title: ''
 labels: good first issue, hacktoberfest
 assignees: ''
