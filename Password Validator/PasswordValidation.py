@@ -8,7 +8,7 @@ inp = input("Input your password :")
 con = True
 
 while con:  
-    if (len(p) < 7 or len(p) > 15):
+    if (len(inp) < 7 or len(inp) > 15):
         break
     elif not re.search("[a-z]", inp):
         break
@@ -17,8 +17,6 @@ while con:
     elif not re.search("[A-Z]", inp):
         break
     elif not re.search("[$#@]", inp):
-        break
-    elif re.search("\s", p):
         break
     else:
         print("Valid Password")
