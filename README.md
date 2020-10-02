@@ -74,6 +74,7 @@ before making a Pull Request
 | [internshala_scrapper](/internshala_scraper/scrape_internshala_internships.py) | techTarun | scrap internship from internshala and save into csv |
 | [png_to_jpeg](/image_converter/convert2jpg.py) | hot9cups | convert png image to Jpeg with Pytho-pillow|
 | [auto_wifi_connecter](/Auto_Wifi_Connector/autoWifiConnector.py) | AmeyaJain-25 | automatically connect to your available WIFI connections|
+| [img-to-text]()| hot9cups | take a screenshot of the area on your screen, or a screenshot of an image on your screen and fetches the text from the image to the clipboard.|
 
 ## Maintainers
 
