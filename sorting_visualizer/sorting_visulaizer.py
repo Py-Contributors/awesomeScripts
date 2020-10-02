@@ -78,4 +78,4 @@ def visualize(algo: str, *args, **kwargs):
 
 
 if __name__ == "__main__":
-    visualize("mergesort", size=50, save=True)
+    visualize("mergesort", size=10, save=True)
