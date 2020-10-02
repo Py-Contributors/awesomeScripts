@@ -1,6 +1,6 @@
 ---
-name: Create an Issue
-about: For creating isssue for HacktoberFest
+name: Create a new script
+about: add new script to project
 title: ''
 labels: good first issue, hacktoberfest
 assignees: ''
