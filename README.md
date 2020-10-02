@@ -4,27 +4,31 @@
 <hr>
 
 <p align="center">
-
 <img src="https://img.shields.io/badge/language-python-blue?style=for-the-badge">
 <img src="https://img.shields.io/github/stars/Py-Contributors/awesomeScripts?style=for-the-badge" >
 <img src="https://img.shields.io/github/forks/Py-Contributors/awesomeScripts?style=for-the-badge" >
 <img src="https://img.shields.io/github/languages/code-size/py-contributors/awesomescripts?style=for-the-badge" >
-<hr>
+  </p><hr>
+  <p align="center">
 <img src="https://img.shields.io/github/issues-raw/Py-Contributors/awesomeScripts?style=for-the-badge" >
 <img src="https://img.shields.io/github/issues-closed-raw/py-contributors/awesomescripts?style=for-the-badge" >
 <img src="https://img.shields.io/github/issues-pr-raw/Py-contributors/awesomescripts?style=for-the-badge" >
 <img src="https://img.shields.io/github/issues-pr-closed-raw/Py-contributors/awesomescripts?style=for-the-badge" >
-<hr>
+</p><hr>
+<p align="center">
 <img src="https://img.shields.io/github/hacktoberfest/2020/py-contributors/awesomescripts?style=for-the-badge">
-<img src-"https://img.shields.io/github/license/Py-Contributors/awesomeScripts?style=for-the-badge"
-<hr>
+<img src-"https://img.shields.io/github/license/Py-Contributors/awesomeScripts?style=for-the-badge">
+</p><hr>
+<p align="center">
 <img src="https://img.shields.io/discord/758030555005714512?style=for-the-badge">
 <img src="https://img.shields.io/github/last-commit/py-contributors/awesomescripts?style=for-the-badge">
 <img src="https://img.shields.io/github/contributors/py-contributors/awesomeScripts?style=for-the-badge">
 <hr>
 </p>
 
-A Collection of Awesome Problem Solving Scripts in Python.
+<p align="center">
+ <h2>👉 A Collection of Awesome Problem Solving Scripts in Python.👈</h2>
+</p>
 
 ## How to Contribute
 
