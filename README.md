@@ -67,6 +67,7 @@ READ more at [CONTRIBUTING.md](/CONTRIBUTING.md)
 | [encrypt_pdf](/Encrypt_PDF/encryptPDF.py)                                      |  AmeyaJain-25   | The code will help to encrypt the PDF with an password.                  |
 | [pdf_redaction](/pdf_redaction/pdf_redaction.py)                               |  debdutgoswami  | redact a pdf in Python                                                   |
 | [word-cloud](/word_cloud_generator/main.py)                                    |  saswatamcode   | create word-cloud using flask                                            |
+| [Torrent_to_goolge_drive]() | vaibhav jain| Torrent to Google Drive Downloader with colab|
 
 ## Maintainers
 
