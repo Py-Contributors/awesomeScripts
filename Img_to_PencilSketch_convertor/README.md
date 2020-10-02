@@ -22,13 +22,7 @@
 <ul> inverted_images = 255 - gray_image </ul>
 <ol>  <b>Step-5: Smoothing the Inverted Image Using Gaussian Blur Technique</b> </ol>
 <ul> inverted_images = cv2.GaussianBlur(inverted_images, (21, 21), 0) </ul>
-<ol> <b> Step-6: Output the Final OpenCV sketch </b></ol>
-output = cv2.divide(gray_image, 255-inverted_images, scale=256.0)<br>
-cv2.namedWindow("Input_Image", cv2.WINDOW_AUTOSIZE) <br>
-cv2.namedWindow("Pencil_Sketch", cv2.WINDOW_AUTOSIZE)<br>
-cv2.imshow("Input_Image", image)<br>
-cv2.imshow("Pencil_Sketch", output)<br>
 
-cv2.waitKey(0)<br>
-cv2.destroyAllWindows()
+### SUGGESTIONS: <br>
+If any upgradation or Bug fixes kindly, Fork the Repo and make a PR. I Assure you that if it's good to be Merged, it will be Merged into Main branch.
 
