@@ -29,8 +29,11 @@ before making a Pull Request
 - Add your file in proper folder with README.md in it. Add requirements.txt if needed.
 - Use Flake8 locally for linting Python Code.(We have linting checks so if your code fails it we will not merge the PR.)
   - `pip install flake8`
-
-READ more at [CONTRIBUTING.md](/CONTRIBUTING.md)
+  
+```diff
+- READ more at [CONTRIBUTING.md](/CONTRIBUTING.md)
+```
+### Download Specific Scripts from Here - [Download from here](https://py-contributors.github.io/awesomeScripts/)
 
 ## Scripts and contributorss
 <!--Restrictions -->
