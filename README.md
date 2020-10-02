@@ -3,6 +3,7 @@
 ![hacktober-issue](https://img.shields.io/github/hacktoberfest/2020/py-contributors/awesomescripts?style=for-the-badge)
 ![forks](https://img.shields.io/github/forks/Py-Contributors/awesomeScripts?style=for-the-badge)
 ![stars](https://img.shields.io/github/stars/Py-Contributors/awesomeScripts?style=for-the-badge)
+![code_size](https://img.shields.io/github/languages/code-size/py-contributors/awesomescripts?style=for-the-badge)
 ![license](https://img.shields.io/github/license/Py-Contributors/awesomeScripts?style=for-the-badge)
 
 ![Discord](https://img.shields.io/discord/758030555005714512?style=for-the-badge)
