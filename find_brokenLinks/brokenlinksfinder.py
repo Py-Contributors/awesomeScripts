@@ -14,10 +14,8 @@ broken_links = []
 def getLinksFromHTML(html):
     def getLink(el):
         return el["href"]
-    return list(map(getLink, BeautifulSoup(html,
-                                           features="html.parser").select(
-                                           "a[href]"
-                                           )))
+    return list(map(getLink,
+                BeautifulSoup(html, features="html.parser").select("a[href]")))
 
 
 def find_broken_links(domainToSearch, URL, parentURL):
