@@ -1,4 +1,5 @@
-# This script will scrape all the internships with given url and create a CSV sheet out of it.
+# This script will scrape all the internships with given url
+# and create a CSV sheet out of it.
 
 # Necessary imports
 import requests
@@ -15,17 +16,18 @@ scraped_data = {
 }
 
 # First, find out total computer science internships available
-response = requests.get("https://internshala.com/internships/computer%20science-internship")
+url = "https://internshala.com/internships/computer%20science-internship"
+response = requests.get(url)
 data = response.text
 soup = BeautifulSoup(data, 'html.parser')
-count_of_internships = int(soup.find("div", class_="heading_4_6").text.split()[0])
+count_of_internships = int(soup.find("div",
+                                     class_="heading_4_6").text.split()[0])
 
 num_of_pages = int((count_of_internships / 40) + 1)
 # A loop that will go to each page and will scrape the data
 for i in range(1, num_of_pages + 1):
-
-    # ------------------- Scraping starts here ------------------------------------------
-    response = requests.get("https://internshala.com/internships/computer%20science-internship/page-{0}".format(i))
+    # ------------------- Scraping starts here -------------------------------
+    response = requests.get(f"{url}/page-{0}".format(i))
     print(response.status_code)  # Check out response whether its 200 or not
 
     # ........ if response is not 200, exit the script ..........
@@ -52,7 +54,7 @@ for i in range(1, num_of_pages + 1):
         name = name.rstrip(' ')
         scraped_data['company'].append(name)
 
-# # ------------------- Search for location of the Internship -------------------
+# # ------------------- Search for location of the Internship -----------------
 #     location_data = soup.find_all("a", class_="location_link")
 #     for loc in location_data:
 #         # Cleaning of data before saving it
@@ -64,8 +66,8 @@ for i in range(1, num_of_pages + 1):
 #         if loc != 'Work From Home':
 #             scraped_data['location'].append(loc)
 
-# # ------------------- Search for start date of the Internship -------------------
-#     start_date_data = soup.find_all("span", class_="start_immediately_desktop")
+# # ------------------- Search for start date of the Internship ---------------
+#   start_date_data = soup.find_all("span", class_="start_immediately_desktop")
 #     for date in start_date_data:
 #         date = date.text
 #         date = date.lstrip('\n')
@@ -84,7 +86,7 @@ for i in range(1, num_of_pages + 1):
         stipend = stipend.rstrip(' ')
         scraped_data['stipend'].append(stipend)
 
-# ------------------- Search for apply by date of the Internship -------------------
+# ------------------- Search for apply by date of the Internship -------------
     apply_by_data = soup.find_all("div", class_="apply_by")
     for apply_date in apply_by_data:
         apply_date = apply_date.find("div", class_="item_body").text
@@ -94,7 +96,7 @@ for i in range(1, num_of_pages + 1):
         apply_date = apply_date.rstrip(' ')
         scraped_data['apply_by'].append(apply_date)
 
-# ------------------- Search for logo of the company of the Internship -------------------
+# ------------------- Search for logo of the company of the Internship -------
     logo_data = soup.find_all("div", class_="internship_logo")
     for logo in logo_data:
         logo = logo.find("img")
