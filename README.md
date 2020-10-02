@@ -43,8 +43,6 @@ before making a Pull Request
 
 <img src="https://raw.githubusercontent.com/DrakeEntity/project-Image/master/carbon%20(1).png" alt="flake8 py">
 
-![flake8](https://raw.githubusercontent.com/DrakeEntity/project-Image/master/carbon%20(1).png)
-
 </details>
 
 ### Projects links 🔗
