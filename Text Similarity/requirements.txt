@@ -1,0 +1,10 @@
+flake8==3.8.3
+Keras==2.2.4
+Keras-Applications==1.0.8
+Keras-Preprocessing==1.1.0
+pipenv==2020.8.13
+pyflakes==2.2.0
+scikit-learn==0.20.3
+scipy==1.2.1
+sklearn==0.0
+tensorflow==1.0.0
