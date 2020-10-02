@@ -38,7 +38,7 @@ READ more at [CONTRIBUTING.md](/CONTRIBUTING.md)
 <!--Restrictions -->
 <!-- Add your script in last line -->
 
-| Script Name                                                                    |     Author      | Short introduction to program                                            |
+| Script Name                                                                    |     Author(GitHub username)      | Short introduction to program                                            |
 | :----------------------------------------------------------------------------- | :-------------: | :----------------------------------------------------------------------- |
 | [send-discord_message](/send-discord_message/annoucements.py)| CodePerfectplus | Send Github repo notification to Discord with webhooks                   |
 | [propenster-scripts](/propenster-scripts/sysinfo.py)|   Propenster    | This Script gets some system info of the user's device                   |
@@ -69,6 +69,9 @@ READ more at [CONTRIBUTING.md](/CONTRIBUTING.md)
 | [word-cloud](/word_cloud_generator/main.py)                                    |  saswatamcode   | create word-cloud using flask                                            |
 | [Torrent_to_goolge_drive](/Torrent%20to%20Google%20Drive%20Downloader/torrent_to_google_drive_downloader.py) | vaibhav jain| Torrent to Google Drive Downloader with colab|
 | [certificate_generator](/certificate_generator/certificate_generator.py) | alpha037 | certificate automation in python|
+| internshala_scrapper | techTarun | scrap internship from internshala and save into csv |
+| png_to_jpeg | hot9cups | convert png image to Jpeg with Pytho-pillow|
+
 
 ## Maintainers
 
