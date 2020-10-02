@@ -1,5 +1,10 @@
-![header](https://capsule-render.vercel.app/api?type=rect&color=009ACD&height=100&section=header&text=awesomeScripts&fontSize=80%&fontColor=ffffff)
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=009ACD&height=100&section=header&text=awesomeScripts&fontSize=80%&fontColor=ffffff">
+</p>
+<hr>
 
+<p align="center">
+  
 ![hacktober-issue](https://img.shields.io/github/hacktoberfest/2020/py-contributors/awesomescripts?style=for-the-badge)
 ![forks](https://img.shields.io/github/forks/Py-Contributors/awesomeScripts?style=for-the-badge)
 ![stars](https://img.shields.io/github/stars/Py-Contributors/awesomeScripts?style=for-the-badge)
@@ -16,6 +21,8 @@
 ![open_pr](https://img.shields.io/github/issues-pr-raw/Py-contributors/awesomescripts?style=for-the-badge)
 ![open_pr](https://img.shields.io/github/issues-pr-closed-raw/Py-contributors/awesomescripts?style=for-the-badge)
 
+</p>
+
 A Collection of Awesome Problem Solving Scripts in Python.
 
 ## How to Contribute
@@ -29,7 +36,13 @@ before making a Pull Request
 - Add your file in proper folder with README.md in it. Add requirements.txt if needed.
 - Use Flake8 locally for linting Python Code.(We have linting checks so if your code fails it we will not merge the PR.)
   - `pip install flake8`
+
+<details><summary><b>Show instructions</b></summary>
   
+![flake8](https://raw.githubusercontent.com/DrakeEntity/project-Image/master/carbon%20(1).png)
+
+</details>
+
 ### Projects links
 
 - [x] 📖 READ Contributions Guidelines at [CONTRIBUTING.md](/CONTRIBUTING.md)
