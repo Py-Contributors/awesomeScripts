@@ -1,3 +1,0 @@
-1. pip install IMDBpy (you can use pip3, depends on what you have)
-2. You should have intermediate level knowledge of python.
-3. This project uses lists - A python DataStructure, object oriented programming and covers some basics of databases.
