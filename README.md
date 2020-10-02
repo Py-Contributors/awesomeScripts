@@ -3,8 +3,6 @@
   <h2 align="center">👉 A Collection of Awesome Problem Solving Scripts in Python.👈</h2>
 </p>
 
-<hr>
-
 <p align="center">
 <img src="https://img.shields.io/badge/language-python-blue?style=for-the-badge">
 <img src="https://img.shields.io/github/stars/Py-Contributors/awesomeScripts?style=for-the-badge" >
@@ -27,12 +25,14 @@
 <img src="https://img.shields.io/github/contributors/py-contributors/awesomeScripts?style=for-the-badge">
 </p>
 
-## How to Contribute
+## How to Contribute 🤔
+
+<img align="right" alt="Coding" width="400" src="https://media.giphy.com/media/Y4ak9Ki2GZCbJxAnJD/giphy.gif">
 
 You can contribute by adding new scripts, improving current scripts or Documentation.Here are some Instructions
 before making a Pull Request
 
-### Here are the steps to Make contribute
+### Here are the steps to Make contribute 👣
 
 - Create an issue for making any change to code. when issue will be approve you can make a change.
 - Add your file in proper folder with README.md in it. Add requirements.txt if needed.
@@ -45,12 +45,12 @@ before making a Pull Request
 
 </details>
 
-### Projects links
+### Projects links 🔗
 
 - [x] 📖 READ Contributions Guidelines at [CONTRIBUTING.md](/CONTRIBUTING.md)
 - [x] 🌐 Download Specific Scripts from Here - [Download](https://py-contributors.github.io/awesomeScripts/)
 
-## Scripts and contributorss
+## 🤝 Scripts and contributorss 🤝
 <!--Restrictions -->
 <!--Don't make change under this line -->
 <!-- Please don't change this, It' making conflict with upstream branch-->
@@ -91,11 +91,11 @@ before making a Pull Request
 | [auto_wifi_connecter](/Auto_Wifi_Connector/autoWifiConnector.py) | AmeyaJain-25 | automatically connect to your available WIFI connections|
 | [img-to-text]()| hot9cups | take a screenshot of the area on your screen, or a screenshot of an image on your screen and fetches the text from the image to the clipboard.|
 
-## Maintainers
+## Maintainers 😎
 
 - [Deepak Raj](https://github.com/CodePerfectPlus)
 
-## Social Channel - Connect with like minded people
+## Social Channel 💻 - Connect with like minded people
 
 - [Discord/PyContributors](https://discord.gg/FXyh2S3)
 - [Telegram/PyContributors](https://t.me/pycontributors)
