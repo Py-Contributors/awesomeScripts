@@ -7,8 +7,9 @@ if image is None:
     print("No Image Found! Enter Proper Image Path!")
     sys.exit()
 gray_image = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-#Image Inversion on Grayscale
+#Image Inversion upon Grayscaled Image
 inverted_images = 255 - gray_image
+# Using Gaussian Blur for Smoothening of Inverted Images
 inverted_images = cv2.GaussianBlur(inverted_images, (21, 21), 0)
 output = cv2.divide(gray_image, 255-inverted_images, scale=256.0)
 cv2.namedWindow("Input_Image", cv2.WINDOW_AUTOSIZE)
