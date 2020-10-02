@@ -1,0 +1,5 @@
+pyperclip==1.8.0
+PyQt5==5.15.1
+pytesseract==0.3.6
+py-notifier==0.1.1
+Pillow==7.1.2
