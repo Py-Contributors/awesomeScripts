@@ -56,7 +56,7 @@ before making a Pull Request
 <!-- Please don't change this, It' making conflict with upstream branch-->
 
 | Script Name      |     Author(GitHub username)      | Short introduction to program                                            |
-| :---:| :---: | :---: |
+| :---| :---: | :--- |
 | [send-discord_message](/send-discord_message/annoucements.py)| CodePerfectplus | Send Github repo notification to Discord with webhooks    |
 | [propenster-scripts](/propenster-scripts/sysinfo.py)|   Propenster    | This Script gets some system info of the user's device         |
 | [scrap_github_repos](/scrap_github_repos/scrap_github_repos.py)   | CodePerfectplus | Scrap GitHub user repos and save it in csv       |
