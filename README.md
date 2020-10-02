@@ -33,11 +33,9 @@ before making a Pull Request
 READ more at [CONTRIBUTING.md](/CONTRIBUTING.md)
 
 ## Scripts and contributorss
-
-**Add your Script|Author_Name|ShortItroduction in Main README.**
-
 <!--Restrictions -->
-<!-- Add your script in last line -->
+<!--Don't make change under this line -->
+<!-- Please don't change this, It' making conflict with upstream branch-->
 
 | Script Name                                                                    |     Author(GitHub username)      | Short introduction to program                                            |
 | :----------------------------------------------------------------------------- | :-------------: | :----------------------------------------------------------------------- |
@@ -70,11 +68,9 @@ READ more at [CONTRIBUTING.md](/CONTRIBUTING.md)
 | [word-cloud](/word_cloud_generator/main.py)                                    |  saswatamcode   | create word-cloud using flask                                            |
 | [Torrent_to_goolge_drive](/Torrent%20to%20Google%20Drive%20Downloader/torrent_to_google_drive_downloader.py) | vaibhav jain| Torrent to Google Drive Downloader with colab|
 | [certificate_generator](/certificate_generator/certificate_generator.py) | alpha037 | certificate automation in python|
-| [internshala_scrapper]() | techTarun | scrap internship from internshala and save into csv |
-| [png_to_jpeg]() | hot9cups | convert png image to Jpeg with Pytho-pillow|
-| [auto_wifi_connecter]() | AmeyaJain-25 | automatically connect to your available WIFI connections|
-
-
+| [internshala_scrapper](/internshala_scraper/scrape_internshala_internships.py) | techTarun | scrap internship from internshala and save into csv |
+| [png_to_jpeg](/image_converter/convert2jpg.py) | hot9cups | convert png image to Jpeg with Pytho-pillow|
+| [auto_wifi_connecter](/Auto_Wifi_Connector/autoWifiConnector.py) | AmeyaJain-25 | automatically connect to your available WIFI connections|
 
 ## Maintainers
 
