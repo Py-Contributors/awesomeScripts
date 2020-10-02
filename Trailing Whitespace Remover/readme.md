@@ -17,7 +17,9 @@ optional arguments:
 ```
 
 **Example Usage**: 
+
 ```python remover.py testing.py script.py```
+
 This will remove the trailing whitespace from both `testing.py` and `script.py`
 
 Enjoy!
