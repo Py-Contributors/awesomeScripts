@@ -7,11 +7,11 @@ import pandas as pd
 
 # A dictionary that will initially hold all scraped values
 scraped_data = {
-    'heading' : [],
-    'company' : [],
-    'stipend' : [],
-    'apply_by' : [],
-    'logo' : []
+    'heading': [],
+    'company': [],
+    'stipend': [],
+    'apply_by': [],
+    'logo': []
 }
 
 # First, find out total computer science internships available
@@ -24,9 +24,9 @@ num_of_pages = int((count_of_internships/40)+1)
 # A loop that will go to each page and will scrape the data
 for i in range(1, num_of_pages+1):
 
-# ------------------- Scraping starts here ------------------------------------------
+    # ------------------- Scraping starts here ------------------------------------------
     response = requests.get("https://internshala.com/internships/computer%20science-internship/page-{0}".format(i))
-    print(response.status_code) # Check out response whether its 200 or not
+    print(response.status_code)  # Check out response whether its 200 or not
 
     #........ if response is not 200, exit the script ..........
     if response.status_code != 200:
@@ -105,4 +105,3 @@ for i in range(1, num_of_pages+1):
 # Now convert the obtained dictionary to a CSV file via pandas module
 df = pd.DataFrame(scraped_data)
 df.to_csv('internships.csv', index=False)
-
