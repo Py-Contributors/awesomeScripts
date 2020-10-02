@@ -20,7 +20,7 @@ data = response.text
 soup = BeautifulSoup(data, 'html.parser')
 count_of_internships = int(soup.find("div", class_="heading_4_6").text.split()[0])
 
-num_of_pages = int((count_of_internships/40)+1)
+num_of_pages = int((count_of_internships / 40) + 1)
 # A loop that will go to each page and will scrape the data
 for i in range(1, num_of_pages+1):
 
@@ -28,7 +28,7 @@ for i in range(1, num_of_pages+1):
     response = requests.get("https://internshala.com/internships/computer%20science-internship/page-{0}".format(i))
     print(response.status_code)  # Check out response whether its 200 or not
 
-    #........ if response is not 200, exit the script ..........
+    # ........ if response is not 200, exit the script ..........
     if response.status_code != 200:
         print("Task cannot be completed at the moment!!!")
         exit()
