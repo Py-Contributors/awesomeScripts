@@ -1,6 +1,7 @@
 ## Stored Wifi Password Getter
 
-This will help to get any stored wifi connection names and their passwords from your device along with open connections.
+This will help to get any stored wifi connection names and their passwords from your device along with open connections. It will only work
+on windows os.
 
 ## Installation
 
