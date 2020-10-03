@@ -1,5 +1,4 @@
-import requests 
-import random
+import requests
 
 logo='''
 ╔═══╗────────────╔╗──╔╗
@@ -39,4 +38,3 @@ print(" ")
 print("Total Recovered -->", test[0]['total_recovered'])
 print(" ")
 print("Total Serious Cases -->", test[0]['total_serious_cases'])
-
