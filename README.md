@@ -244,6 +244,11 @@ before making a Pull Request
 <td align="center">iamlordutkarsh</td>
 <td align="left">Program written in python to get Magnet links</td>
 </tr>
+ <tr>
+<td align="left">Image2PencilSketch</td>
+<td align="center">neel2904</td>
+<td align="left">Change Image to Pencil Sketch</td>
+</tr>
 </tbody>
 </table>
 
