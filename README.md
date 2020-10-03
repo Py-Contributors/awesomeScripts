@@ -35,6 +35,7 @@ before making a Pull Request
 ### Here are the steps to Make contribute 👣
 
 - Create an issue for making any change to code. when issue will be approve you can make a change.
+- Pull latest change from upstream branch before starting the changing code.
 - Add your file in proper folder with README.md in it. Add requirements.txt if needed.
 - Use Flake8 locally for linting Python Code.(We have linting checks so if your code fails it we will not merge the PR.)
   - `pip install flake8`
@@ -50,6 +51,10 @@ before making a Pull Request
 - [x] 📖 READ Contributions Guidelines at [CONTRIBUTING.md](/CONTRIBUTING.md)
 - [x] 🌐 Download Specific Scripts from Here - [Download](https://py-contributors.github.io/awesomeScripts/)
 
+### Report a Bug 🐛
+
+- Help us to improve script. Report a bug [here](https://github.com/Py-Contributors/awesomeScripts/issues/new?assignees=codePerfectPlus&labels=bug&template=bug_report.md&title=)
+ 
 ## 🤝 Scripts and contributorss 🤝
 <!--Restrictions -->
 <!--Don't make change under this line -->
@@ -244,6 +249,17 @@ before making a Pull Request
 <td align="center">iamlordutkarsh</td>
 <td align="left">Program written in python to get Magnet links</td>
 </tr>
+<tr>
+<td align="left">Image2PencilSketch</td>
+<td align="center">neel2904</td>
+<td align="left">Change Image to Pencil Sketch</td>
+</tr>
+<tr>
+<td align="left">Url-Shortner</td>
+<td align="center">shubham5351</td>
+<td align="left">A simple script in python which is used to shorten the url of the given url</td>
+</tr>
+
 </tbody>
 </table>
 
@@ -255,4 +271,4 @@ before making a Pull Request
 
 - [Discord/PyContributors](https://discord.gg/FXyh2S3)
 
-![footer](https://capsule-render.vercel.app/api?type=slice&color=009ACD&height=30&section=footer&fontSize=90%&)
+![footer](https://capsule-render.vercel.app/api?type=egg&color=009ACD&height=30&section=footer&fontSize=90%&)
