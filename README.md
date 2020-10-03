@@ -54,7 +54,7 @@ before making a Pull Request
 ### Report a Bug 🐛
 
 - Help us to improve script. Report a bug [here](https://github.com/Py-Contributors/awesomeScripts/issues/new?assignees=codePerfectPlus&labels=bug&template=bug_report.md&title=)
- 
+
 ## 🤝 Scripts and contributorss 🤝
 <!--Restrictions -->
 <!--Don't make change under this line -->
@@ -258,6 +258,11 @@ before making a Pull Request
 <td align="left">Url-Shortner</td>
 <td align="center">shubham5351</td>
 <td align="left">A simple script in python which is used to shorten the url of the given url</td>
+</tr>
+<tr>
+<td align="left">text to Speech</td>
+<td align="center">bbetulkaya</td>
+<td align="left">Python script for convert text to sound.</td>
 </tr>
 
 </tbody>
