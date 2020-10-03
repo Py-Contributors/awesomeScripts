@@ -259,6 +259,12 @@ before making a Pull Request
 <td align="center">shubham5351</td>
 <td align="left">A simple script in python which is used to shorten the url of the given url</td>
 </tr>
+<tr>
+<td align="left">text to Speech</td>
+<td align="center">bbetulkaya</td>
+<td align="left">Python script for convert text to sound.</td>
+</tr>
+
 </tbody>
 </table>
 
