@@ -264,7 +264,16 @@ before making a Pull Request
 <td align="center">bbetulkaya</td>
 <td align="left">Python script for convert text to sound.</td>
 </tr>
-
+<tr>
+<td align="left">wifi-password-getter</td>
+<td align="center">harshit-saraswat</td>
+<td align="left">This will help to get any stored wifi connection names and their passwords </td>
+</tr>
+<tr>
+<td align="left">telegram-message</td>
+<td align="center">YorozuyaDev</td>
+<td align="left">send telegram message using python</td>
+</tr>
 </tbody>
 </table>
 
