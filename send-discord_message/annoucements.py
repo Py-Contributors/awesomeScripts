@@ -2,6 +2,9 @@
 import requests
 from auth import WEBHOOK_URL
 
-data = {"content": "Hello, World!", "username": "Notification_Bot"}
-r = requests.post(WEBHOOK_URL, json=data)
-print(r)
+
+def send_req(text, name):
+
+    data = {"content": text, "username": name}
+    r = requests.post(WEBHOOK_URL, json=data)
+    print(r)
