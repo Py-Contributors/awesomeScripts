@@ -91,6 +91,8 @@ before making a Pull Request
 | [auto_wifi_connecter](/Auto_Wifi_Connector/autoWifiConnector.py) | AmeyaJain-25 | automatically connect to your available WIFI connections|
 | [img-to-text]()| hot9cups | take a screenshot of the area on your screen, or a screenshot of an image on your screen and fetches the text from the image to the clipboard.|
 | trailing-whitespace_remover | aaravm4 | python script to remove trailing whitespace from file |
+| coronaVirus_stats |iamlordutkarsh| get stats of any country about Corona Virus in Python |
+| torrent_searcher |iamlordutkarsh| Program written in python to get Magnet links |
 
 ## Maintainers 😎
 
