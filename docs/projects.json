@@ -1,4 +1,4 @@
-name,author,description
+Script Name,Author(GitHub username),Short introduction to program
 send-discord_message,CodePerfectplus,Send Github repo notification to Discord with webhooks
 propenster-scripts,Propenster,This Script gets some system info of the user's device
 scrap_github_repos,CodePerfectplus,Scrap GitHub user repos and save it in csv
@@ -36,7 +36,4 @@ trailing-whitespace_remover,aaravm4,python script to remove trailing whitespace 
 coronaVirus_stats,iamlordutkarsh,get stats of any country about Corona Virus in Python
 torrent_searcher,iamlordutkarsh,Program written in python to get Magnet links
 Image2PencilSketch,neel2904,Change Image to Pencil Sketch
-<<<<<<< HEAD
 Url-Shortner,shubham5351,A simple script in python which is used to shorten the url of the given url
-=======
->>>>>>> c2fbc7c95f54f28f06b9a9325b6b7208542ea154
