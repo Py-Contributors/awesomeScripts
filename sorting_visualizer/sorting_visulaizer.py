@@ -1,4 +1,5 @@
-import matplotlib, random, os
+import random
+import os
 from matplotlib import pyplot as plt, animation
 
 try:
@@ -7,9 +8,9 @@ except ModuleNotFoundError:
     import sort
 
 SORTNAME = {
-    "bubblesort": f"Bubble Sort O(n\N{SUPERSCRIPT TWO})",
-    "insertionsort": f"Insertion Sort O(n\N{SUPERSCRIPT TWO})",
-    "selectionsort": f"Selection Sort O(n\N{SUPERSCRIPT TWO})",
+    "bubblesort": "Bubble Sort O(n\N{SUPERSCRIPT TWO})",
+    "insertionsort": "Insertion Sort O(n\N{SUPERSCRIPT TWO})",
+    "selectionsort": "Selection Sort O(n\N{SUPERSCRIPT TWO})",
     "mergesort": "Merge Sort O(n log n)",
     "quicksort": "Quick Sort O(n log n)",
     "heapsort": "Heap Sort O(n log n)",
@@ -50,7 +51,7 @@ def visualize(algo: str, *args, **kwargs):
 
         iteration[0] += 1
 
-        text.set_text("# of operations: {}".format(iteration[0]))
+        text.set_text(f"# of operations: {iteration[0]}")
 
     anim = animation.FuncAnimation(
         fig,
@@ -65,7 +66,7 @@ def visualize(algo: str, *args, **kwargs):
 
     if save:
         # setting up path
-        _filename = "{}.mp4".format(SORTNAME[func])
+        _filename = f"{SORTNAME[func]}.mp4"
 
         path = os.path.join(path, _filename)
         # saves the animation
