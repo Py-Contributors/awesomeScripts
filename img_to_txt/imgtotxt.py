@@ -7,7 +7,7 @@ from PIL import Image
 from PyQt5 import QtCore, QtGui, QtWidgets
 from PyQt5.QtCore import Qt
 
-pytesseract.pytesseract.tesseract_cmd = r"tesseract.exe"
+pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 # You have to change this to the path were you installed tesseract
 
 try:
@@ -25,15 +25,11 @@ class Snipper(QtWidgets.QWidget):
             Qt.FramelessWindowHint | Qt.WindowStaysOnTopHint | Qt.Dialog
         )
         self.setWindowState(self.windowState() | Qt.WindowFullScreen)
-        self.screen = QtWidgets.QApplication.screenAt(QtGui.QCursor.pos(
-        )).grabWindow(0)
+        self.screen = QtWidgets.QApplication.screenAt(QtGui.QCursor.pos()).grabWindow(0)
         palette = QtGui.QPalette()
         palette.setBrush(self.backgroundRole(), QtGui.QBrush(self.screen))
         self.setPalette(palette)
-        QtWidgets.QApplication.setOverrideCursor(
-                                                 QtGui.QCursor(
-                                                               QtCore.
-                                                               Qt.CrossCursor))
+        QtWidgets.QApplication.setOverrideCursor(QtGui.QCursor(QtCore.Qt.CrossCursor))
         self.start, self.end = QtCore.QPoint(), QtCore.QPoint()
 
     def keyPressEvent(self, event):
@@ -84,17 +80,11 @@ def processImage(img):
 
     try:
         result = pytesseract.image_to_string(
-                                             pil_img,
-                                             timeout=5,
-                                             lang=(
-                                                   sys.argv[1]
-                                                   if len(sys.argv) else None
-                                                   ))
+            pil_img, timeout=5, lang=(sys.argv[1] if len(sys.argv) > 1 else None)
+        )
     except RuntimeError as error:
-        print(f"ERROR: An error occurred when trying\
-         to process the image: {error}")
-        notify(f"An error occurred when trying \
-        to process the image: {error}")
+        print(f"ERROR: An error occurred when trying to process the image: {error}")
+        notify(f"An error occurred when trying to process the image: {error}")
         return
 
     if result:
@@ -112,16 +102,11 @@ def notify(msg):
     except (SystemError, NameError):
         trayicon = QtWidgets.QSystemTrayIcon(
             QtGui.QIcon(
-                QtGui.QPixmap.fromImage(QtGui.QImage(
-                                                     1,
-                                                     1,
-                                                     QtGui.QImage.Format_Mono))
+                QtGui.QPixmap.fromImage(QtGui.QImage(1, 1, QtGui.QImage.Format_Mono))
             )
         )
         trayicon.show()
-        trayicon.showMessage("CaptureWords",
-                             msg,
-                             QtWidgets.QSystemTrayIcon.NoIcon)
+        trayicon.showMessage("CaptureWords", msg, QtWidgets.QSystemTrayIcon.NoIcon)
         trayicon.hide()
 
 
@@ -131,13 +116,11 @@ if __name__ == "__main__":
     except EnvironmentError:
         notify(
             "Tesseract is either not installed or cannot be reached.\n"
-            "Have you installed it and added the install directory to your \
-            system path?"
+            "Have you installed it and added the install directory to your system path?"
         )
         print(
             "ERROR: Tesseract is either not installed or cannot be reached.\n"
-            "Have you installed it and added the install directory to your \
-             system path?"
+            "Have you installed it and added the install directory to your system path?"
         )
         sys.exit()
 
