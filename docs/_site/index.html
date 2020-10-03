@@ -1,0 +1,520 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<!-- Global site tag (gtag.js) - Google Analytics -->
+			<script async src="https://www.googletagmanager.com/gtag/js?id=UA-167457248-3"></script>
+			<script>
+  				window.dataLayer = window.dataLayer || [];
+  				function gtag(){dataLayer.push(arguments);}
+  				gtag('js', new Date());
+  				gtag('config', 'UA-167457248-3');
+			</script>
+
+			<title>awesomeScripts</title>
+			<link rel="icon" href="/assets/img/logo/logo.png" type="image/gif" sizes="16x16">
+			<!-- link to main stylesheet -->
+			<link rel="stylesheet" type="text/css" href="/assets/css/main.css">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<script src="https://kit.fontawesome.com/83ea256c90.js" crossorigin="anonymous"></script>
+			<!-- Bootstrap CDN -->
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+			<!--Github ribbon-->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/github-fork-ribbon-css/0.2.3/gh-fork-ribbon.min.css" />
+			<!-- Google Fonts	-->
+			<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400&display=swap" rel="stylesheet">
+			<link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700&display=swap" rel="stylesheet">
+
+			<!-- Masonry -->
+			<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+
+			<!-- Animate.css -->
+			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
+			<link rel="stylesheet" href="https://raw.githubusercontent.com/googlearchive/code-prettify/master/styles/sunburst.css">
+		</head>
+		<body>
+			<!-- <nav class="navbar navbar-expand-lg navbar-dark">	 -->
+ <section id="header" class=" p-2 mb-4">
+    <div class="header container">
+      <div class="nav-bar">
+	<div class="d-flex mx-auto">
+		<div class="brand">
+		 <h3 class="mainHeading"><a class="text-white" href="/"><img src="https://py-contributors.github.io/assets/img/logo/logo.png" style="height: 70px; width: 70px; background-color: white;" class="mr-3">Py-Contributors</a></h3>
+		</div>
+	</div>
+    <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation"> -->
+      <!-- <span class="navbar-toggler-icon"></span> -->
+    <!-- </button> -->
+
+    <!-- <div class="collapse navbar-collapse" id="navbarColor03"> -->
+		<!-- <div class="container"> -->
+    <!-- <div class="ml-auto mr-4"> -->
+<div class="nav-list">
+	 <div class="hamburger mt-4">
+		<div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+	</div>
+      <ul >
+        
+        <li class=" active"><a class="" href="/" data-after="Home">Home</a></li>
+    
+
+    
+        <li class=""><a class="" href="/join-us/index.html" data-after="Join">Join Us</a></li>
+    
+		  <!-- </ul>
+		  </div> -->
+		<!-- <div class="navbar-header brandShow">
+		  <a class="navbar-brand" href="/"><img src="/assets/img/logo/logo.png" style="height: 70px; width: 70px; background-color: white;" class="mr-3">Py Contributors</a>
+			</div> -->
+
+         <!-- <ul class="navbar-nav mr-auto ml-4"> -->
+
+    
+        <li class=""><a class="" href="/updates/index.html" data-after="Updates">Updates</a></li>
+    
+
+    
+        <li class=""><a class="" href="/developers/index.html" data-after="Developers">Developers</a></li>
+    
+    </ul>
+		</div>
+	<!-- </div> -->
+		  </div>
+    </div>
+  </section>
+  <!-- </nav> -->
+
+<script>
+	const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
+const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
+const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
+const header = document.querySelector('.header.container');
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('cross');
+	mobile_menu.classList.toggle('active');
+});
+
+menu_item.forEach((item) => {
+	item.addEventListener('click', () => {
+		hamburger.classList.toggle('cross');
+		mobile_menu.classList.toggle('active');
+	});
+});
+
+
+</script>
+
+			<div class="container marginStyle bdrRadius">
+            <!-- Page content here -->
+						<p align="center">
+  <img class="img-fluid" src="https://capsule-render.vercel.app/api?type=rect&color=009ACD&height=100&section=header&text=awesomeScripts&fontSize=80%&fontColor=ffffff">
+  <h2 align="center">👉 A Collection of Awesome Problem Solving Scripts in Python.👈</h2>
+</p>
+<a class="github-fork-ribbon" href="https://github.com/Py-Contributors/awesomeScripts" data-ribbon="Fork me on GitHub" title="Fork me on GitHub">Fork me on GitHub</a>
+<p align="center">
+<img class="img-fluid" src="https://img.shields.io/badge/language-python-blue?style=for-the-badge">
+<img class="img-fluid" src="https://img.shields.io/github/stars/Py-Contributors/awesomeScripts?style=for-the-badge" >
+<img class="img-fluid" src="https://img.shields.io/github/forks/Py-Contributors/awesomeScripts?style=for-the-badge" >
+<img class="img-fluid" src="https://img.shields.io/github/languages/code-size/py-contributors/awesomescripts?style=for-the-badge" >
+  </p>
+  <p align="center">
+<img class="img-fluid" src="https://img.shields.io/github/issues-raw/Py-Contributors/awesomeScripts?style=for-the-badge" >
+<img class="img-fluid" src="https://img.shields.io/github/issues-closed-raw/py-contributors/awesomescripts?style=for-the-badge" >
+<img class="img-fluid" src="https://img.shields.io/github/issues-pr-raw/Py-contributors/awesomescripts?style=for-the-badge" >
+<img class="img-fluid" src="https://img.shields.io/github/issues-pr-closed-raw/Py-contributors/awesomescripts?style=for-the-badge" >
+</p>
+<p align="center">
+<img class="img-fluid" src="https://img.shields.io/github/hacktoberfest/2020/py-contributors/awesomescripts?style=for-the-badge">
+<img class="img-fluid" src="https://img.shields.io/github/license/Py-Contributors/awesomeScripts?style=for-the-badge">
+</p>
+<p align="center">
+<img class="img-fluid" src="https://img.shields.io/discord/758030555005714512?style=for-the-badge">
+<img class="img-fluid" src="https://img.shields.io/github/last-commit/py-contributors/awesomescripts?style=for-the-badge">
+<img class="img-fluid" src="https://img.shields.io/github/contributors/py-contributors/awesomeScripts?style=for-the-badge">
+</p>
+
+<h2> How to Contribute 🤔</h2>
+
+<img class="img-fluid" align="right" alt="Coding" width="400" src="https://media.giphy.com/media/Y4ak9Ki2GZCbJxAnJD/giphy.gif">
+
+<p> You can contribute by adding new scripts, improving current scripts or Documentation.Here are some Instructions
+before making a Pull Request </p>
+
+<h2> Here are the steps to Make contribute 👣 </h2>
+
+<ul>
+<li> Create an issue for making any change to code. when issue will be approve you can make a change. </li>
+<li> Add your file in proper folder with README.md in it. Add requirements.txt if needed.</li>
+<li> Use Flake8 locally for linting Python Code.(We have linting checks so if your code fails it we will not merge the PR.)</li>
+</ul>
+
+<details><summary><b>Show instructions</b></summary>
+
+<img class="img-fluid" src="https://raw.githubusercontent.com/DrakeEntity/project-Image/master/carbon%20(1).png" alt="flake8 py">
+
+</details>
+
+<h2> Projects links 🔗 </h2>
+
+<h4>📖 READ Contributions Guidelines at <a href="https://github.com/Py-Contributors/awesomeScripts/blob/master/CONTRIBUTING.md">CONTRIBUTING.md</a></h4>
+
+<h2> 🤝 Scripts and contributorss 🤝</h2>
+<!--Restrictions -->
+<!--Don't make change under this line -->
+<!-- Please don't change this, It' making conflict with upstream branch-->
+
+<table class="table table-hover table-striped">
+<thead class="thead-dark">
+<tr>
+<th scope="col" align="left">Script Name</th>
+<th scope="col" align="center">Author(GitHub username)</th>
+<th scope="col" align="left">Short introduction to program</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/send-discord_message/annoucements.py">send-discord_message</a></td>
+<td align="center"><a href="https://github.com/CodePerfectPlus">CodePerfectPlus</a></td>
+<td align="left">Send Github repo notification to Discord with webhooks</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/propenster-scripts/sysinfo.py">propenster-script</a></td>
+<td align="center"><a href="https://github.com/propenster">propenster</a></td>
+<td align="left">This Script gets some system info of the user's device</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/scrap_github_repos/scrap_github_repos.py">scrap_github</a></td>
+<td align="center"><a href="https://github.com/CodePerfectPlus">CodePerfectPlus</a></td>
+<td align="left">Scrap GitHub user repos and save it in csv</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/html2pdf/html2pdf.py">html2pdf</a></td>
+<td align="center"><a href="https://github.com/hpnightowl">hpnightowl</a></td>
+<td align="left">convert website to html2pdf</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/scrap_all_links/scrap.py">link-scraper</a></td>
+<td align="center"><a href="https://github.com/oxigen96">oxigen96</a></td>
+<td align="left">scrap link from website using python</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/">remove_punctuation_number</a></td>
+<td align="center"><a href="https://github.com/"></a></td>
+<td align="left">remove punctuation/number from text file</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/countries_trivia_game/countries_trivia.py">countries_trivia</a></td>
+<td align="center"><a href="https://github.com/propenster">propenster</a></td>
+<td align="left">Simple trivia quiz game that loads questions and answers from a CSV file</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/scrap_all_email/scrap_all_email.py">email_scraper</a></td>
+<td align="center"><a href="https://github.com/CodePerfectPlus">CodePerfectPlus</a></td>
+<td align="left">scrap all emails from input website</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/image_converter/jpeg_to_png.py">jpeg2Png</a></td>
+<td align="center"><a href="https://github.com/CodePerfectPlus">CodePerfectPlus</a></td>
+<td align="left">convert jpeg to png</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/website_cloner/website_cloner.py">website-colner</a></td>
+<td align="center"><a href="https://github.com/CodePerfectPlus">CodePerfectPlus</a></td>
+<td align="left">clone website with python</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/alphabet_analyzer/alphabet.py">alphabet_analyzer</a></td>
+<td align="center"><a href="https://github.com/natsumi">natsumi</a></td>
+<td align="left">Analyze how common each letter is in the English alphabet</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/check_weather/check_weather.py">check_weather</a></td>
+<td align="center"><a href="https://github.com/roopeshvs">roopeshvs</a></td>
+<td align="left">get the weather of your city</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/convert_ebook_to_kindle_format/convert.py">ebook2kindle</a></td>
+<td align="center"><a href="https://github.com/roopeshvs">roopeshvs</a></td>
+<td align="left">convert ebook to kindle convert_ebook_to_kindle_format</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/download_mp3/download_yt.py">mp3-download</a></td>
+<td align="center"><a href="https://github.com/parasgupta44">parasgupta44</a></td>
+<td align="left">download mp3 form youtube</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/imdb-scraper/imdb.py">imdb-scraper</a></td>
+<td align="center"><a href="https://github.com/ben-jnr">ben-jnr</a></td>
+<td align="left">title based and user ratings based search</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/Stack_Overflow_Parser-master/main_.py">stackoverflow-parse</a></td>
+<td align="center"><a href="https://github.com/parijatDhar97">parijatDhar97</a></td>
+<td align="left">parse so for your errormessage</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/sudoku_solver/sudoku_solver.py">sudoku-solver</a></td>
+<td align="center"><a href="https://github.com/basscodeer2808">basscodeer2808</a></td>
+<td align="left">solve soudku puzzle using backtracking</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/word-counter/word-counter.py">word-counter</a></td>
+<td align="center"><a href="https://github.com/p014ri5">p014ri5</a></td>
+<td align="left">count the word</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/duplicate-image-remover/duplicate-image-remover.py">duplicate-image</a></td>
+<td align="center"><a href="https://github.com/p014ri5">p014ri5</a></td>
+<td align="left">remove duplicate image from pc</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/cartoonifier/cartoonifier.py">cartoonify</a></td>
+<td align="center"><a href="https://github.com/brtymn">brtymn</a></td>
+<td align="left">cartoonify input image in opencv-python</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/email_sending_script/email_sending_script.py">send-a-email</a></td>
+<td align="center"><a href="https://github.com/nis130">nis130</a></td>
+<td align="left">email sending automation in python</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/Merge_2_Pdf's/mergepdf.py">merge-pdfs</a></td>
+<td align="center"><a href="https://github.com/uditmore99">uditmore99</a></td>
+<td align="left">The above script will merge two PDF's at once !</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/video_player/video_player.py">play-video</a></td>
+<td align="center"><a href="https://github.com/brtymn">brtymn</a></td>
+<td align="left">play video with open-cv</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/Encrypt_PDF/encryptPDF.py">encryptPDF</a></td>
+<td align="center"><a href="https://github.com/ameyaJain-25">ameyaJain-25</a></td>
+<td align="left">The code will help to encrypt the PDF with an password.</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/pdf_redaction/pdf_redaction.py">pdf-redaction</a></td>
+<td align="center"><a href="https://github.com/debdutgoswami">debdutgoswami</a></td>
+<td align="left">readact a pdf in python</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/word_cloud_generator/main.py">word-cloud</a></td>
+<td align="center"><a href="https://github.com/saswatamcode">saswatamcode</a></td>
+<td align="left">create beautiful cloud of word</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/Torrent%20to%20Google%20Drive%20Downloader/torrent_to_google_drive_downloader.py">torrent_to_google_drive_downloader</a></td>
+<td align="center"><a href="https://github.com/vaibhav-jain">vaibhav-jain</a></td>
+<td align="left">Torrent to Google Drive Downloader with colab</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/certificate_generator/certificate_generator.py">certificate-generator</a></td>
+<td align="center"><a href="https://github.com/alpha037">alpha037</a></td>
+<td align="left">certificate automation in python</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/internshala_scraper/scrape_internshala_internships.py">Internshala-scrapper</a></td>
+<td align="center"><a href="https://github.com/techtarun">techtarun</a></td>
+<td align="left">scrap internship from internshala and save into csv</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/image_converter/convert2jpg.py">png2Jpeg</a></td>
+<td align="center"><a href="https://github.com/hot9cups">hot9cups</a></td>
+<td align="left">convert picture Png to Jpeg</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/Auto_Wifi_Connector/autoWifiConnector.py">auto-wifi-connector</a></td>
+<td align="center"><a href="https://github.com/ameyaJain-25">ameyaJain-25</a></td>
+<td align="left">automatically connect to your available WIFI connections</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/img-to-text">img-to-text</a></td>
+<td align="center"><a href="https://github.com/hot9cups">hot9cups</a></td>
+<td align="left">take a screenshot of the area on your screen</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/">trailing-whitespace_remover</a></td>
+<td align="center"><a href="https://github.com/aaravm4">aaravm4</a></td>
+<td align="left">python script to remove trailing whitespace from file</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/">coronaVirus_stats</a></td>
+<td align="center"><a href="https://github.com/"></a></td>
+<td align="left">iamlordutkarsh</td>
+</tr>
+</tbody>
+
+<tbody>
+<tr>
+<td align="left"><a href="https://github.com/py-contributors/awesomescripts/blob/master/">torrentSearcher</a></td>
+<td align="center"><a href="https://github.com/iamlordutkarsh">iamlordutkarsh</a></td>
+<td align="left">Program written in python to get Magnet links</td>
+</tr>
+</tbody>
+
+</table>
+
+
+<h2> Maintainers 😎 </h2>
+
+<table>
+    <tr>
+      <td align="center"><a href="https://github.com/codeperfectplus"><img src="https://py-contributors.github.io/assets/contributors/deepakraj.png" width="100px;" alt="Deepak Raj"/><br /><sub><b>Deepak Raj</b></sub></a></td>
+    </tr>
+</table>
+
+
+<h2> Social Channel 💻 - Connect with like minded people </h2>
+
+<ul>
+<li><a href="https://discord.gg/FXyh2S3">Join On Discord</a></li>
+</ul>
+
+			</div><!-- /.container -->
+			<!-- Footer -->
+<footer class="page-footer mt-4 text-center mb-3">
+<div class="box mb-2">
+    <div class="box-sm red"></div>
+    <div class="box-sm orange"></div>
+    <div class="box-sm yellow "></div>
+    <div class="box-sm green "></div>
+    <div class="box-sm blue "></div>
+    <div class="box-sm purple"></div>
+</div>
+	
+	<div class="container justify-content-around d-flex">
+	<div class="float-left ml-5">
+	<span>Made With <i class="fas fa-heart fa-2x animate__animated animate__pulse animate__infinite" style="color: crimson;" aria-hidden="true"></i></span>
+    <!-- Copyright -->
+	<div class="pb-3 text-dark">© 2020 Copyright:
+      <a class="text-dark" href="https://github.com/py-contributors">PyContributors</a>	
+	</div>
+</div>
+	
+	<div class="float-right mr-5">
+	<p class="mt-2 mb-0">
+		Styled and Maintained By: <a class="text-dark" href="/developers/index.html">Priyanshu Singh</a>
+	</p>
+	<p>
+		Ideas and Contributions By: <a class="text-dark" href="/developers/index.html">Deepak Raj</a>
+	</p>
+</div>		
+	</div>
+		
+</footer>
+		<!-- Bootstrap script-->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+		<!--  Scroll reveal	-->
+		<script src="https://unpkg.com/scrollreveal"></script>
+		<script>
+	 ScrollReveal().reveal('.blockquote', {
+    interval: 100, mobile: true, viewFactor: 0.3, delay:100
+  });
+	</script>
+  	</body>
+</html>

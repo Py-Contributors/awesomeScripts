@@ -246,6 +246,7 @@ before making a Pull Request
 </tr>
 </tbody>
 </table>
+
 ## Maintainers 😎
 
 - [Deepak Raj](https://github.com/CodePerfectPlus)
