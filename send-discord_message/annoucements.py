@@ -2,7 +2,9 @@
 import requests
 from auth import WEBHOOK_URL
 
+
 def send_req(text, name):
+
     data = {"content": text, "username": name}
     r = requests.post(WEBHOOK_URL, json=data)
     print(r)
