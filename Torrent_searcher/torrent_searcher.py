@@ -27,6 +27,6 @@ for result in torrent_result:
 choice = int(input("Enter Number Which Torrent You Want -> "))
 print(" ")
 print("Magnet Link Of Your File ", magnet[choice - 1])
-pyperclip.copy(magnet[choice-1])
+pyperclip.copy(magnet[choice - 1])
 print(" ")
 print("Your Magnet Link Copied On Clipboard")
