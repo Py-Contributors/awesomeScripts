@@ -1,0 +1,4 @@
+opencv == 4.4.0
+numpy == 1.19.2 
+python == 3.8.1
+flake8 == 3.8.3
