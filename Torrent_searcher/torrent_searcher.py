@@ -24,16 +24,9 @@ for result in torrent_result:
         index = index + 1
         magnet.append(result['magnet'])
 
-choice =  int(input("Enter Number Which Torrent You Want -> "))
+choice = int(input("Enter Number Which Torrent You Want -> "))
 print(" ")
-print("Magnet Link Of Your File ", magnet[choice-1])
+print("Magnet Link Of Your File ", magnet[choice - 1])
 pyperclip.copy(magnet[choice-1])
 print(" ")
-print('''
-█░░█ █▀▀█ █░░█ █▀▀█ 　 █▀▄▀█ █▀▀█ █▀▀▀ █▀▀▄ █▀▀ ▀▀█▀▀ 　 █░░ ░▀░ █▀▀▄ █░█ 　 ░▀░ █▀▀ 
-█▄▄█ █░░█ █░░█ █▄▄▀ 　 █░▀░█ █▄▄█ █░▀█ █░░█ █▀▀ ░░█░░ 　 █░░ ▀█▀ █░░█ █▀▄ 　 ▀█▀ ▀▀█ 
-▄▄▄█ ▀▀▀▀ ░▀▀▀ ▀░▀▀ 　 ▀░░░▀ ▀░░▀ ▀▀▀▀ ▀░░▀ ▀▀▀ ░░▀░░ 　 ▀▀▀ ▀▀▀ ▀░░▀ ▀░▀ 　 ▀▀▀ ▀▀▀ 
-
-█▀▀ █▀▀█ █▀▀█ ░▀░ █▀▀ █▀▀▄ 　 █▀▀█ █▀▀▄ 　 █▀▀ █░░ ░▀░ █▀▀█ █▀▀▄ █▀▀█ █▀▀█ █▀▀█ █▀▀▄ 
-█░░ █░░█ █░░█ ▀█▀ █▀▀ █░░█ 　 █░░█ █░░█ 　 █░░ █░░ ▀█▀ █░░█ █▀▀▄ █░░█ █▄▄█ █▄▄▀ █░░█ 
-▀▀▀ ▀▀▀▀ █▀▀▀ ▀▀▀ ▀▀▀ ▀▀▀░ 　 ▀▀▀▀ ▀░░▀ 　 ▀▀▀ ▀▀▀ ▀▀▀ █▀▀▀ ▀▀▀░ ▀▀▀▀ ▀░░▀ ▀░▀▀ ▀▀▀░''')
+print("Your Magnet Link Copied On Clipboard")
