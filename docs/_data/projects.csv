@@ -1,36 +1,38 @@
-name,link,author,description
-send-discord_message,send-discord_message/annoucements.py,CodePerfectPlus,Send Github repo notification to Discord with webhooks
-propenster-script,propenster-scripts/sysinfo.py,propenster,This Script gets some system info of the user's device
-scrap_github,scrap_github_repos/scrap_github_repos.py,CodePerfectPlus,Scrap GitHub user repos and save it in csv
-html2pdf,html2pdf/html2pdf.py,hpnightowl,convert website to html2pdf
-link-scraper,scrap_all_links/scrap.py,oxigen96,scrap link from website using python
-remove_punctuation_number,,,remove punctuation/number from text file
-countries_trivia,countries_trivia_game/countries_trivia.py,propenster,Simple trivia quiz game that loads questions and answers from a CSV file
-email_scraper,scrap_all_email/scrap_all_email.py,CodePerfectPlus,scrap all emails from input website
-jpeg2Png,image_converter/jpeg_to_png.py,CodePerfectPlus,convert jpeg to png
-website-colner,website_cloner/website_cloner.py,CodePerfectPlus,clone website with python
-alphabet_analyzer,alphabet_analyzer/alphabet.py,natsumi,Analyze how common each letter is in the English alphabet
-check_weather,check_weather/check_weather.py,roopeshvs,get the weather of your city
-ebook2kindle,convert_ebook_to_kindle_format/convert.py,roopeshvs,convert ebook to kindle convert_ebook_to_kindle_format
-mp3-download,download_mp3/download_yt.py,parasgupta44,download mp3 form youtube
-imdb-scraper,imdb-scraper/imdb.py,ben-jnr,title based and user ratings based search
-stackoverflow-parse,Stack_Overflow_Parser-master/main_.py,parijatDhar97,parse so for your errormessage
-sudoku-solver,sudoku_solver/sudoku_solver.py,basscodeer2808,solve soudku puzzle using backtracking
-word-counter,word-counter/word-counter.py,p014ri5,count the word
-duplicate-image,duplicate-image-remover/duplicate-image-remover.py,p014ri5,remove duplicate image from pc
-cartoonify,cartoonifier/cartoonifier.py,brtymn,cartoonify input image in opencv-python
-send-a-email,email_sending_script/email_sending_script.py,nis130,email sending automation in python
-merge-pdfs,Merge_2_Pdf's/mergepdf.py,uditmore99,The above script will merge two PDF's at once !
-play-video,video_player/video_player.py,brtymn,play video with open-cv
-encryptPDF,Encrypt_PDF/encryptPDF.py,ameyaJain-25,The code will help to encrypt the PDF with an password.
-pdf-redaction,pdf_redaction/pdf_redaction.py,debdutgoswami,readact a pdf in python
-word-cloud,word_cloud_generator/main.py,saswatamcode,create beautiful cloud of word
-torrent_to_google_drive_downloader,Torrent%20to%20Google%20Drive%20Downloader/torrent_to_google_drive_downloader.py,vaibhav-jain,Torrent to Google Drive Downloader with colab
-certificate-generator,certificate_generator/certificate_generator.py,alpha037,certificate automation in python
-Internshala-scrapper,internshala_scraper/scrape_internshala_internships.py,techtarun,scrap internship from internshala and save into csv
-png2Jpeg,image_converter/convert2jpg.py,hot9cups,convert picture Png to Jpeg
-auto-wifi-connector,Auto_Wifi_Connector/autoWifiConnector.py,ameyaJain-25,automatically connect to your available WIFI connections
-img-to-text,img-to-text,hot9cups,take a screenshot of the area on your screen, or a screenshot of an image on your screen and fetches the text from the image to the clipboard.
-trailing-whitespace_remover,,aaravm4,python script to remove trailing whitespace from file
-coronaVirus_stats,,,iamlordutkarsh,get stats of any country about Corona Virus in Python
-torrentSearcher,,iamlordutkarsh,Program written in python to get Magnet links
+name,author,description
+send-discord_message,CodePerfectplus,Send Github repo notification to Discord with webhooks
+propenster-scripts,Propenster,This Script gets some system info of the user's device
+scrap_github_repos,CodePerfectplus,Scrap GitHub user repos and save it in csv
+html2pd,hpnightowl,convert website to html with CLI
+sms_sending_script,,send sms with python CLI
+scrap_all_links,oxigen96,Scrap link from website using Python CLI
+remove_punctuation_number,,Remove Punctuation/Number from text file
+countries_trivia_game,Propenster,Simple trivia quiz game that loads questions and answers from a CSV file
+scrap_all_email,CodePerfectplus,Scrap all email from input website
+jpeg_to_png,CodePerfectplus,Convert image format jpeg_to_png CLI tool
+website_cloner,CodePerfectplus,clone website using python
+alphabet_analyzer,Natsumi H.,Analyze how common each letter is in the English alphabet
+check_weather,roopeshvs,Get The Weather Of Your City using Python CLI
+ebook_to_kindle,roopeshvs,convert Ebook to Kindle format
+downlod_mp3,parasgupta44,download mp3 from youtube
+imbd_scanner,ben-jnr,implement title based and user ratings based search
+stackoverflow parse,ParijatDhar97,Parses SO for your error messages
+sudoku_solver,basscoder2808,solve sudoku puzzles using backtracking
+word_counter,p014ri5,count the word
+duplicate_image_remover,p014ri5,remove deuplicate image from pc
+cartoonify,brtymn,cartoonify input image in python
+email_sending_script,nis130,email sending automation in pyton
+merge_2_pdfs,uditmore99,The above script will merge two PDF's at once !
+video_player,brtymn,video plater with opencv
+encrypt_pdf,AmeyaJain-25,The code will help to encrypt the PDF with an password.
+pdf_redaction,debdutgoswami,redact a pdf in Python
+word-cloud,saswatamcode,create word-cloud using flask
+Torrent_to_goolge_drive,vaibhav jain,Torrent to Google Drive Downloader with colab
+certificate_generator,alpha037,certificate automation in python
+internshala_scrapper,techTarun,scrap internship from internshala and save into csv
+png_to_jpeg,hot9cups,convert png image to Jpeg with Pytho-pillow
+auto_wifi_connecter,AmeyaJain-25,automatically connect to your available WIFI connections
+img-to-text,hot9cups,take a screenshot of the area on your screen, or a screenshot of an image on your screen and fetches the text from the image to the clipboard.
+trailing-whitespace_remover,aaravm4,python script to remove trailing whitespace from file
+coronaVirus_stats,iamlordutkarsh,get stats of any country about Corona Virus in Python
+torrent_searcher,iamlordutkarsh,Program written in python to get Magnet links
+Image2PencilSketch,neel2904,Change Image to Pencil Sketch
