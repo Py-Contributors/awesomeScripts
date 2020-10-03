@@ -1,81 +1,84 @@
-# This is a simple script which can be used to get all stored wifi connections and their passwords.
-# To run, open terminal in present directory and simply type - python wifi_password_getter.py
+# This is a simple script which can be used to get all stored wifi connections
+# and their passwords.
+# To run, open terminal in present directory and simply type -
+# python wifi_password_getter.py
 
-import subprocess 
+
+import subprocess
+
 
 def getWifiPasswords():
-    wifiList=[]
+    wifiList = []
 
-    # getting meta data 
+    # getting meta data
     meta_data = subprocess.check_output(['netsh', 'wlan', 'show', 'profiles'])
 
-    # # decoding meta data 
-    data = meta_data.decode('utf-8', errors ="backslashreplace") 
+    # # decoding meta data
+    data = meta_data.decode('utf-8', errors="backslashreplace")
 
-    # # spliting data by line by line 
-    data = data.split('\n') 
-        
-    # creating a list of profiles 
-    profiles = [] 
-    
-    # traverse the data 
-    for i in data: 
-        
-        # find "All User Profile" in each item 
-        if "All User Profile" in i : 
-            
-            # if found 
-            # split the item  
-            i = i.split(":") 
-            
-            # item at index 1 will be the wifi name 
-            i = i[1] 
-            
-            # formatting the name 
-            # first and last chracter is use less 
-            i = i[1:-1] 
-            
-            # appending the wifi name in the list 
-            profiles.append(i) 
-            
-    
-    # printing heading         
-    print("{:<30}| {:<}".format("Wi-Fi Name", "Password")) 
-    print("----------------------------------------------") 
-    
-    # traversing the profiles         
-    for i in profiles: 
-        
-        # try catch block begins 
-        # try block 
-        try: 
-            # getting meta data with password using wifi name 
-            results = subprocess.check_output(['netsh', 'wlan', 'show', 'profile', i, 'key=clear']) 
-            
-            # decoding and splitting data line by line 
-            results = results.decode('utf-8', errors ="backslashreplace") 
-            results = results.split('\n') 
-            
-            # finding password from the result list 
-            results = [b.split(":")[1][1:-1] for b in results if "Key Content" in b] 
-            
-            # if there is passowrd it will print the pass word 
-            try: 
-                print("{:<30}| {:<}".format(i, results[0])) 
-                wifiList.append((i,results[0]))
-            
-            # else it will print blank in fornt of pass word 
-            except IndexError: 
-                print("{:<30}| {:<}".format(i, "")) 
-                wifiList.append((i,""))
-                
-        
-                
-        # called when this process get failed 
-        except subprocess.CalledProcessError: 
-            print("Encoding Error Occured") 
+    # # spliting data by line by line
+    data = data.split('\n')
+
+    # creating a list of profiles
+    profiles = []
+
+    # traverse the data
+    for i in data:
+
+        # find "All User Profile" in each item
+        if "All User Profile" in i:
+
+            # if found
+            # split the item
+            i = i.split(":")
+
+            # item at index 1 will be the wifi name
+            i = i[1]
+
+            # formatting the name
+            # first and last chracter is use less
+            i = i[1:-1]
+
+            # appending the wifi name in the list
+            profiles.append(i)
+
+    # printing heading
+    print("{:<30}| {:<}".format("Wi-Fi Name", "Password"))
+    print("----------------------------------------------")
+
+    # traversing the profiles
+    for i in profiles:
+
+        # try catch block begins
+        # try block
+        try:
+            # getting meta data with password using wifi name
+            results = subprocess.check_output(['netsh', 'wlan', 'show',
+                                              'profile', i, 'key=clear'])
+
+            # decoding and splitting data line by line
+            results = results.decode('utf-8', errors="backslashreplace")
+            results = results.split('\n')
+
+            # finding password from the result list
+            results = [b.split(":")[1][1:-1]
+                       for b in results if "Key Content" in b]
+
+            # if there is passowrd it will print the password
+            try:
+                print("{:<30}| {:<}".format(i, results[0]))
+                wifiList.append((i, results[0]))
+
+            # else it will print blank in fornt of password
+            except IndexError:
+                print("{:<30}| {:<}".format(i, ""))
+                wifiList.append((i, ""))
+
+        # called when this process get failed
+        except subprocess.CalledProcessError:
+            print("Encoding Error Occured")
     return wifiList
 
-wifiList=getWifiPasswords()
-# print(wifiList)
 
+wifiList = getWifiPasswords()
+# print(wifiList)
