@@ -30,8 +30,10 @@ class Snipper(QtWidgets.QWidget):
         palette = QtGui.QPalette()
         palette.setBrush(self.backgroundRole(), QtGui.QBrush(self.screen))
         self.setPalette(palette)
-        QtWidgets.QApplication.setOverrideCursor(QtGui.QCursor(
-                QtCore.Qt.CrossCursor))
+        QtWidgets.QApplication.setOverrideCursor(
+                                                 QtGui.QCursor(
+                                                               QtCore.
+                                                               Qt.CrossCursor))
         self.start, self.end = QtCore.QPoint(), QtCore.QPoint()
 
     def keyPressEvent(self, event):
@@ -81,15 +83,18 @@ def processImage(img):
     buffer.close()
 
     try:
-        result = pytesseract.image_to_string(pil_img,
+        result = pytesseract.image_to_string(
+                                             pil_img,
                                              timeout=5,
-                                             lang=(sys.argv[1] if len(
-                                                sys.argv) > 1 else None))
+                                             lang=(
+                                                   sys.argv[1]
+                                                   if len(sys.argv) else None
+                                                   ))
     except RuntimeError as error:
-        print(f"ERROR: An error occurred when \
-                trying to process the image: {error}")
-        notify(f"An error occurred \
-                when trying to process the image: {error}")
+        print(f"ERROR: An error occurred when trying\
+         to process the image: {error}")
+        notify(f"An error occurred when trying \
+        to process the image: {error}")
         return
 
     if result:
@@ -107,7 +112,8 @@ def notify(msg):
     except (SystemError, NameError):
         trayicon = QtWidgets.QSystemTrayIcon(
             QtGui.QIcon(
-                QtGui.QPixmap.fromImage(QtGui.QImage(1,
+                QtGui.QPixmap.fromImage(QtGui.QImage(
+                                                     1,
                                                      1,
                                                      QtGui.QImage.Format_Mono))
             )
@@ -125,8 +131,8 @@ if __name__ == "__main__":
     except EnvironmentError:
         notify(
             "Tesseract is either not installed or cannot be reached.\n"
-            "Have you installed it and added the install directory \
-             to your system path?"
+            "Have you installed it and added the install directory to your \
+            system path?"
         )
         print(
             "ERROR: Tesseract is either not installed or cannot be reached.\n"
