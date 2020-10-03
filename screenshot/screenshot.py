@@ -16,17 +16,17 @@ def take_shot():
         time.set(timeleft)
         root.after(1000, take_shot)
     else :
-        s = pyautogui.screenshot()     
+        s = pyautogui.screenshot()
 # Save a screenshot on current working directory
         s.save(os.getcwd() + "shot.png")
-        tk.messagebox.showinfo("Screenshot", "Screenshot saved!")
+        messagebox.showinfo("Screenshot", "Screenshot saved!")
         time.set(3)
 
 
-L = tk.Label(root, textvariable = time, fg="blue")
+L = tk.Label(root, textvariable=time, fg="blue")
 L.pack()
 
-b = tk.Button(root, text = "Take Screenshot 3 secs", command=take_shot)
+b = tk.Button(root, text="Take Screenshot 3 secs", command=take_shot)
 b.pack()
 
 root.mainloop()
