@@ -1,6 +1,6 @@
 import requests
 
-logo='''
+logo = '''
 ╔═══╗────────────╔╗──╔╗
 ║╔═╗║────────────║╚╗╔╝║
 ║║─╚╬══╦═╦══╦═╗╔═╩╗║║╔╬═╦╗╔╦══╗
@@ -23,7 +23,6 @@ country = input("Enter Country Name --> ")
 url = f"https://api.sumanjay.cf/covid/?country={country}"
 
 result = requests.get(url).json()
-#print("Raw Data --> ",result) #Raw Input
 
 test = result["countrydata"]
 print(" ")
