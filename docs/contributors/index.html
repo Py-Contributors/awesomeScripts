@@ -1,0 +1,25 @@
+---
+layout : default
+title : contributors
+---
+
+<h2>contributors</h2>
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Username</th>
+      <th scope="col">contributions</th>
+    </tr>
+  </thead>
+  {% for contributor in site.data.contributors %}
+  <tbody>
+    <tr>
+      <th><a href="{{contributor.html_url}}">{{contributor.login}}</a></th>
+      <th>{{contributor.contributions}}</th>
+    </tr>
+  </tbody>
+  {% endfor %}
+</table>
+
+<h3> Thanks for Making Projects so Beautiful</h3>
