@@ -50,6 +50,10 @@ before making a Pull Request
 - [x] 📖 READ Contributions Guidelines at [CONTRIBUTING.md](/CONTRIBUTING.md)
 - [x] 🌐 Download Specific Scripts from Here - [Download](https://py-contributors.github.io/awesomeScripts/)
 
+### Report a Bug 🐛
+
+- Help us to improve script. Report a bug [here](https://github.com/Py-Contributors/awesomeScripts/issues/new?assignees=codePerfectPlus&labels=bug&template=bug_report.md&title=)
+ 
 ## 🤝 Scripts and contributorss 🤝
 <!--Restrictions -->
 <!--Don't make change under this line -->
@@ -260,4 +264,4 @@ before making a Pull Request
 
 - [Discord/PyContributors](https://discord.gg/FXyh2S3)
 
-![footer](https://capsule-render.vercel.app/api?type=slice&color=009ACD&height=30&section=footer&fontSize=90%&)
+![footer](https://capsule-render.vercel.app/api?type=egg&color=009ACD&height=30&section=footer&fontSize=90%&)
