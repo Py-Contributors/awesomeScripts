@@ -7,4 +7,4 @@ def send_req(text, name):
 
     data = {"content": text, "username": name}
     r = requests.post(WEBHOOK_URL, json=data)
-    print(r)
+    print(r.status_code)
