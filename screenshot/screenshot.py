@@ -1,10 +1,11 @@
 import tkinter as tk
+from tkinter import messagebox
 import pyautogui
 import os
 
 
 root = tk.Tk()
-time = tk.IntVar( )
+time = tk.IntVar()
 time.set(3)
 
 
@@ -13,20 +14,19 @@ def take_shot():
     if timeleft > 0:
         timeleft -= 1
         time.set(timeleft)
-        root.after(1000,take_shot)
+        root.after(1000, take_shot)
     else :
-        s = pyautogui.screenshot()
-        
+        s = pyautogui.screenshot()     
 # Save a screenshot on current working directory
         s.save(os.getcwd() + "shot.png")
         tk.messagebox.showinfo("Screenshot", "Screenshot saved!")
         time.set(3)
 
 
-l = tk.Label(root,textvariable = time,fg="blue")
-l.pack()
+L = tk.Label(root, textvariable = time, fg="blue")
+L.pack()
 
-b = tk.Button(root,text = f"Take Screenshot 3 secs", command = take_shot)
+b = tk.Button(root, text = "Take Screenshot 3 secs", command=take_shot)
 b.pack()
 
 root.mainloop()
