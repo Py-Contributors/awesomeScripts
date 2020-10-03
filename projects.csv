@@ -1,4 +1,4 @@
-Script Name,Author(GitHub username),Short introduction to program
+name,author,description
 send-discord_message,CodePerfectplus,Send Github repo notification to Discord with webhooks
 propenster-scripts,Propenster,This Script gets some system info of the user's device
 scrap_github_repos,CodePerfectplus,Scrap GitHub user repos and save it in csv
