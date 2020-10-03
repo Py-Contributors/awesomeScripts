@@ -4,7 +4,7 @@ Yorozuya3 <yorozuya3@protonmail.com>
 Licensed under MIT license
 '''
 
-from telethon import TelegramClient, sync
+from telethon import TelegramClient
 import argparse
 
 # Usage python send_telegram_message.py "username, number or id" "message"
