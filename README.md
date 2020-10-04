@@ -279,6 +279,26 @@ before making a Pull Request
 <td align="center">YaraYasser</td>
 <td align="left">encrypt text and images</td>
 </tr>
+<tr>
+<td align="left"><a href="">accelerometer-connector</td>
+<td align="center">sigdelsanjog</td>
+<td align="left">This script retrieves data from a MPU6050 Accelerometer and GY521 Gyroscope and saves the data to gyroscope and accelerometer table in MySQL database.</td>
+</tr>
+<tr>
+<td align="left"><a href="">snake&Ladder</td>
+<td align="center">sidfrombhaiya</td>
+<td align="left">This is a simple text based snake and ladder game, with minimal libraries required.</td>
+</tr>
+<tr>
+<td align="left"><a href="">unfollower-insta</td>
+<td align="center">sarthak1905</td>
+<td align="left">bb8 is a cute name for a great bot to check for the people that you follow who don't follow you back on Instagram.</td>
+</tr>
+<tr>
+<td align="left"><a href="">AudioBook</td>
+<td align="center">Keyurkariya</td>
+<td align="left">Read any PDF book with just few line of code in Audio</td>
+</tr>
 </tbody>
 </table>
 
