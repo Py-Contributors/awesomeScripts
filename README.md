@@ -304,6 +304,12 @@ before making a Pull Request
 <td align="center">Spoctone</td>
 <td align="left">change wallpaper with python script</td>
 </tr>
+<tr>
+<td align="left"><a href="gradient_generator/gradient.py">gradient-generator</td>
+<td align="center">dntandan</td>
+<td align="left">This script will generate and save random gradient patterns and will save them as .png extensions on completion, using Pillow module.</td>
+</tr>
+
 </tbody>
 </table>
 
