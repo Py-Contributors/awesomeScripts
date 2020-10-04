@@ -230,47 +230,47 @@ before making a Pull Request
 <td align="left">automatically connect to your available WIFI connections</td>
 </tr>
 <tr>
-<td align="left"><a href="">img-to-text</a></td>
+<td align="left"><a href="/img_to_txt/imgtotxt.py">img-to-text</a></td>
 <td align="center">hot9cups</td>
 <td align="left">take a screenshot of the area on your screen, or a screenshot of an image on your screen and fetches the text from the image to the clipboard.</td>
 </tr>
 <tr>
-<td align="left">trailing-whitespace_remover</td>
+<td align="left"><a href="/trailing Whitespace Remover/remover.py">trailing-whitespace_remover</a></td>
 <td align="center">aaravm4</td>
 <td align="left">python script to remove trailing whitespace from file</td>
 </tr>
 <tr>
-<td align="left">coronaVirus_stats</td>
+<td align="left"><a href="/coronavirus_stats/coronavirus.py">coronaVirus_stats</a></td>
 <td align="center">iamlordutkarsh</td>
 <td align="left">get stats of any country about Corona Virus in Python</td>
 </tr>
 <tr>
-<td align="left">torrent_searcher</td>
+<td align="left"><a href="/torrent_searcher/torrent_searcher.py">torrent_searcher</a></td>
 <td align="center">iamlordutkarsh</td>
 <td align="left">Program written in python to get Magnet links</td>
 </tr>
 <tr>
-<td align="left">Image2PencilSketch</td>
+<td align="left"><a href="/img_to_PencilSketch/img2sketch.py">image2PencilSketch</a></td>
 <td align="center">neel2904</td>
 <td align="left">Change Image to Pencil Sketch</td>
 </tr>
 <tr>
-<td align="left">Url-Shortner</td>
+<td align="left"><a href="/url shortner/>">url-Shortner</a></td>
 <td align="center">shubham5351</td>
 <td align="left">A simple script in python which is used to shorten the url of the given url</td>
 </tr>
 <tr>
-<td align="left">text to Speech</td>
+<td align="left"><a href="/text-to-sound/text-to-sound.py">text to Sound</a></td>
 <td align="center">bbetulkaya</td>
 <td align="left">Python script for convert text to sound.</td>
 </tr>
 <tr>
-<td align="left">wifi-password-getter</td>
+<td align="left"><a href="/wifi-password-getter/wifi_password_getter.py">wifi-password-getter</a></td>
 <td align="center">harshit-saraswat</td>
 <td align="left">This will help to get any stored wifi connection names and their passwords </td>
 </tr>
 <tr>
-<td align="left">telegram-message</td>
+<td align="left"><a href="send_telegram_message/send_telegram_message.py">telegram-message</a></td>
 <td align="center">YorozuyaDev</td>
 <td align="left">send telegram message using python</td>
 </tr>
@@ -280,22 +280,22 @@ before making a Pull Request
 <td align="left">encrypt text and images</td>
 </tr>
 <tr>
-<td align="left"><a href="">accelerometer-connector</td>
+<td align="left"><a href="/mpu6050_accelerometer_sensor_connector/mysql_connect.py">accelerometer-connector</td>
 <td align="center">sigdelsanjog</td>
 <td align="left">This script retrieves data from a MPU6050 Accelerometer and GY521 Gyroscope and saves the data to gyroscope and accelerometer table in MySQL database.</td>
 </tr>
 <tr>
-<td align="left"><a href="">snake&Ladder</td>
+<td align="left"><a href="/snake_and_ladder/snake_and_ladder.py">snake&Ladder</td>
 <td align="center">sidfrombhaiya</td>
 <td align="left">This is a simple text based snake and ladder game, with minimal libraries required.</td>
 </tr>
 <tr>
-<td align="left"><a href="">unfollower-insta</td>
+<td align="left"><a href="unfollowers-insta/insta_bot_bb8.py">unfollower-insta</td>
 <td align="center">sarthak1905</td>
 <td align="left">bb8 is a cute name for a great bot to check for the people that you follow who don't follow you back on Instagram.</td>
 </tr>
 <tr>
-<td align="left"><a href="">AudioBook</td>
+<td align="left"><a href="/audiobook/read_my_book.py">audioBook</td>
 <td align="center">Keyurkariya</td>
 <td align="left">Read any PDF book with just few line of code in Audio</td>
 </tr>
