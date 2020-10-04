@@ -1,4 +1,3 @@
-import time
 import board
 import busio
 import adafruit_mpu6050
@@ -20,7 +19,7 @@ if __name__ == "__main__":
         gyro_y = "%.4f" % mpu.gyro[1]
         gyro_z = "%.4f" % mpu.gyro[2]
 
-        #DataCallibration.callibrate(acc_x, acc_y, acc_z)
+        # DataCallibration.callibrate(acc_x, acc_y, acc_z)
         """Store sensor data to respective database"""
         StoreToDatabase.accelerometer_store(acc_x, acc_y, acc_z)
         StoreToDatabase.gyroscope_store(gyro_x, gyro_y, gyro_z)
