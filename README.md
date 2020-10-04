@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=009ACD&height=100&section=header&text=awesomeScripts&fontSize=80%&fontColor=ffffff">
   <h2 align="center">👉 A Collection of Awesome Problem Solving Scripts in Python.👈</h2>
 </p>
@@ -273,6 +273,11 @@ before making a Pull Request
 <td align="left">telegram-message</td>
 <td align="center">YorozuyaDev</td>
 <td align="left">send telegram message using python</td>
+</tr>
+<tr>
+<td align="left"><a href="/encryption/main.py">image_text_encryption</td>
+<td align="center">YaraYasser</td>
+<td align="left">encrypt text and images</td>
 </tr>
 </tbody>
 </table>
