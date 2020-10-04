@@ -25,7 +25,7 @@ SPI_SETDESKWALLPAPER = SPI_DW = 20
 def changeWallpaper():
     # using the random function to ensure that a random image is chosen
     # each time this function gets executed.
-    randindex = random.randint(0, (len(images)-1))
+    randindex = random.randint(0, (len(images) - 1))
     # now setting the randomly selected image as the desktop wallpaper
     # using the ctypes module's windll api
     ctypes.windll.user32.SystemParametersInfoW(SPI_DW, 0, images[randindex], 0)
