@@ -5,7 +5,7 @@
 
 # This is a sample Python script.
 
-from Encryption import ImageEncryption,TextEncryption
+from Encryption import ImageEncryption, TextEncryption
 
 if __name__ == '__main__':
     test_txt = "hello world"
