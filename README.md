@@ -299,6 +299,11 @@ before making a Pull Request
 <td align="center">Keyurkariya</td>
 <td align="left">Read any PDF book with just few line of code in Audio</td>
 </tr>
+<tr>
+<td align="left"><a href="wallpaper-changer/requirements.txt">wallpaper-changer</td>
+<td align="center">Spoctone</td>
+<td align="left">change wallpaper with python script</td>
+</tr>
 </tbody>
 </table>
 
