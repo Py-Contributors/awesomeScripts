@@ -20,9 +20,7 @@ class ImageEncryption:
         """
         with open(par_image, 'rb') as input_file:
             input_data = input_file.read()
-        cfb_cipher = AES.new(
-                             self.__image_key,
-                             AES.MODE_CFB,
+        cfb_cipher = AES.new(self.__image_key, AES.MODE_CFB,
                              self.__init_vector)
         enc_data = cfb_cipher.encrypt(bytearray(input_data))
 
@@ -40,9 +38,7 @@ class ImageEncryption:
         with open(par_enc_image, "rb") as enc_file:
             enc_data = enc_file.read()
 
-        cfb_decipher = AES.new(
-                               self.__image_key,
-                               AES.MODE_CFB,
+        cfb_decipher = AES.new(self.__image_key, AES.MODE_CFB,
                                self.__init_vector)
         plain_data = cfb_decipher.decrypt(enc_data)
 
