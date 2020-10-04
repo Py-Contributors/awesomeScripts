@@ -4,7 +4,7 @@ A script written in Python using the windll API of the ctypes library which uses
 
 To use this script, 
 1. Install the dependencies mentioned in "requirements.txt"
-2. Add what images you would like to keep as the Desktop wallpapers in the "wallpapers" directory (already included are the top 5 popular ones from the "wallpapers" subreddit)
+2. Add what images you would like to keep as the Desktop wallpapers in the "wallpapers" directory.
 3. open the script in a text editor of your choice and change some or all of the variables according to your need (like the time of change)
 
 WARNING:- this script will continue to run as a bakcground process at all times so please keep that in mind
