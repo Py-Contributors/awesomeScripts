@@ -1,4 +1,4 @@
-<p align="center">
+﻿<p align="center">
   <img src="https://capsule-render.vercel.app/api?type=rect&color=009ACD&height=100&section=header&text=awesomeScripts&fontSize=80%&fontColor=ffffff">
   <h2 align="center">👉 A Collection of Awesome Problem Solving Scripts in Python.👈</h2>
 </p>
@@ -233,6 +233,11 @@ before making a Pull Request
 <td align="left"><a href="">img-to-text</a></td>
 <td align="center">hot9cups</td>
 <td align="left">take a screenshot of the area on your screen, or a screenshot of an image on your screen and fetches the text from the image to the clipboard.</td>
+</tr>
+<tr>
+<td align="left"><a href="/encryption/main.py">image_text_encryption</a></td>
+<td align="center">YaraYasser</td>
+<td align="left">takes image & text then encrypt them</td>
 </tr>
 <tr>
 <td align="left">trailing-whitespace_remover</td>
