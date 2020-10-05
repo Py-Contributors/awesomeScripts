@@ -7,7 +7,7 @@ inp = input("Input your password :")
 
 con = True
 
-while con:    
+while con:
     if(len(inp) < 7 or len(inp) > 15):
         break
     elif not re.search("[a-z]", inp):
