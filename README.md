@@ -34,10 +34,10 @@ before making a Pull Request
 
 ### Here are the steps to Make contribute 👣
 
-- Create an issue for making any change to code. when issue will be approve you can make a change.
-- Pull latest change from upstream branch before starting the changing code.
-- Add your file in proper folder with README.md in it. Add requirements.txt if needed.
-- Use Flake8 locally for linting Python Code.(We have linting checks so if your code fails it we will not merge the PR.)
+- [x] Create an issue for making any change to code. when issue will be approve you can make a change.
+- [x] Pull latest change from upstream branch before starting the changing code.
+- [x] Add your file in proper folder(lowercase) with README.md in it. Add requirements.txt if needed.
+- [x] Use Flake8 locally for linting Python Code.(We have linting checks so if your code fails it we will not merge the PR.)
   - `pip install flake8`
 
 <details><summary><b>Show instructions</b></summary>
