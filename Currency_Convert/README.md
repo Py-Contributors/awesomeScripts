@@ -7,4 +7,4 @@ for other usage do generate ur personal access token from the above site and pla
 # Run
 You can run this script simply executing python currencyconverter.py 
 
-![Alt text](output.png?raw=true "Windows Output")
+![Alt text](output1.png?raw=true "Windows Output")
