@@ -20,10 +20,13 @@
 <img src="https://img.shields.io/github/license/Py-Contributors/awesomeScripts?style=for-the-badge">
 </p>
 <p align="center">
-<img src="https://img.shields.io/discord/758030555005714512?style=for-the-badge">
+
+<a href="https://discord.gg/JfbK3bS"><img src="https://img.shields.io/discord/758030555005714512.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge"></a>
 <img src="https://img.shields.io/github/last-commit/py-contributors/awesomescripts?style=for-the-badge">
 <img src="https://img.shields.io/github/contributors/py-contributors/awesomeScripts?style=for-the-badge">
 </p>
+
+
 
 ## How to Contribute 🤔
 
