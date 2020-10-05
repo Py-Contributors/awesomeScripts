@@ -1,5 +1,6 @@
 import urllib.request
 
+
 def check_website_status():
     prompt = "Please enter a website URL: "
     while True:
@@ -22,7 +23,7 @@ def check_website_status():
             page = urllib.request.urlopen(req)
             code = str(page.getcode())
             print('The website ' + url_request +
-                       ' has returned a ' + code + ' code')
+                  ' has returned a ' + code + ' code')
             break
         except Exception as e:
             # if there is an error it will ask if you want to try again
@@ -34,5 +35,6 @@ def check_website_status():
                 continue
             else:
                 break
+
 
 check_website_status()
