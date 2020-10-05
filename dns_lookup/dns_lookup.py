@@ -14,12 +14,10 @@ def dns_lookup(txt, func):
         request = str(input("Please input a " + txt + ": "))
         try:
             if txt == 'ip':
-                print("The hostname for that IP address is: " +
-                      func(request))
+                print("The hostname for that IP address is: " + func(request))
                 return
             else:
-                print("The IP address for that hostname is: " +
-                      func(request))
+                print("The IP address for that hostname is: " + func(request))
                 return
         except Exception as e:
             print(str(e))
