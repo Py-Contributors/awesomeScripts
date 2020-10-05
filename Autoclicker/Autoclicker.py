@@ -1,7 +1,7 @@
 import time
 import threading
 from pynput.mouse import Button, Controller
-from pynput.keyboard import Listener, KeyCode, Key
+from pynput.keyboard import Listener, Key
 
 delay = 0.1
 button = Button.left
