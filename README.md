@@ -323,4 +323,7 @@ before making a Pull Request
 
 - [Discord/PyContributors](https://discord.gg/FXyh2S3)
 
-![footer](https://capsule-render.vercel.app/api?type=egg&color=009ACD&height=30&section=footer&fontSize=90%&)
+<p align="center">
+<a href="https://api.github.com/repos/py-contributors/awesomescripts/contributors"><img src="http://ForTheBadge.com/images/badges/built-by-developers.svg" alt="built by developers"></a>
+<a href="https://github.com/codePerfectPlus"><img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="built with love"></a>
+</p>
