@@ -1,7 +1,8 @@
 # Title - Open map location using CLI
 
 # importing all the required libraries
-import webbrowser, sys
+import webbrowser
+import sys
 
 # It returns the list of the commandline arguments
 sys.argv
