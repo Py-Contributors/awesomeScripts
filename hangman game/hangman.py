@@ -85,8 +85,9 @@ WORD_TO_GUESS = WORD_LIST[words]
 HIDDEN = ['_'] * len(WORD_TO_GUESS)
 LETTERS_GUESSED = []
 
-# start game function to play the game
+
 def start_game():
+    # start game function to play the game
     hang_size = 0
     word_arr = list(WORD_TO_GUESS)
 
@@ -113,6 +114,7 @@ def start_game():
             print("{}.. You have tried the BEST but.. Not in my word..".format(user_guess))
             hang_size += 1
             print(HANGMAN[hang_size])
+
 
 # start_game function called
 start_game()
