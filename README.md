@@ -25,8 +25,6 @@
 <a href="https://api.github.com/repos/py-contributors/awesomescripts/contributors"><img src="https://img.shields.io/github/contributors/py-contributors/awesomeScripts?style=for-the-badge" alt="total contributors"></a>
 </p>
 
-
-
 ## How to Contribute 🤔
 
 <img align="left" alt="Coding" width="400" src="https://media.giphy.com/media/Y4ak9Ki2GZCbJxAnJD/giphy.gif">
@@ -58,6 +56,7 @@ before making a Pull Request
 - Help us to improve script. Report a bug [here](https://github.com/Py-Contributors/awesomeScripts/issues/new?assignees=codePerfectPlus&labels=bug&template=bug_report.md&title=)
 
 ## 🤝 Scripts and contributorss 🤝
+
 <!--Restrictions -->
 <!--Don't make change under this line -->
 <!-- Please don't change this, It' making conflict with upstream branch-->
@@ -360,6 +359,11 @@ before making a Pull Request
 <td align="left"><a href="/hangman game/hangman.py">hangman</td>
 <td align="center">shubham5351</td>
 <td align="left">Hangman is a classic word game in which you must guess words and you have given 7 chance for it.</td>
+</tr>
+<tr>
+<td align="left"><a href="/simple-image-encryptor/script.py">simple-image-encryptor</td>
+<td align="center">mohzulfikar</td>
+<td align="left">Simply encrypt your image using xor operation</td>
 </tr>
 </tbody>
 </table>
