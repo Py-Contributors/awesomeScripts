@@ -368,7 +368,7 @@ before making a Pull Request
 <tr>
 <td align="left"><a href="/gender&ethnicity/"></td>
 <td align="center">codeperfectplus</td>
-<td align="left">A machine learning approcah to predict gender.</td>
+<td align="left">A helpful script to fill missing data by machine learning approach</td>
 </tr>
 </tbody>
 </table>
