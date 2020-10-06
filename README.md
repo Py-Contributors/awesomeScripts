@@ -357,7 +357,7 @@ before making a Pull Request
 <td align="left">This script will check the speed of your current internet connection</td>
 </tr>
 <tr>
-<td align="left"><a href="/hangman game/hangman.py"></td>
+<td align="left"><a href="/hangman game/hangman.py">hangman</td>
 <td align="center">shubham5351</td>
 <td align="left">Hangman is a classic word game in which you must guess words and you have given 7 chance for it.</td>
 </tr>
