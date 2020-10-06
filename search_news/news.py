@@ -11,7 +11,8 @@ def articles_fetcher(search_term):
            "sortBy=popularity&"
            "language=en&"
            "pageSize=5&"
-           "apiKey=%s" % (search_term, API_KEY))
+           "apiKey=%s" % (search_term, API_KEY)
+           )
     headers = {
         'user-agent': 'news_search @ github.com/Py-Contributors/awesomeScripts'
         }
