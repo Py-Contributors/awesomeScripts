@@ -29,7 +29,7 @@
 
 ## How to Contribute 🤔
 
-<img align="right" alt="Coding" width="400" src="https://media.giphy.com/media/Y4ak9Ki2GZCbJxAnJD/giphy.gif">
+<img align="left" alt="Coding" width="400" src="https://media.giphy.com/media/Y4ak9Ki2GZCbJxAnJD/giphy.gif">
 
 You can contribute by adding new scripts, improving current scripts or Documentation.Here are some Instructions
 before making a Pull Request
@@ -302,16 +302,25 @@ before making a Pull Request
 <td align="left">Read any PDF book with just few line of code in Audio</td>
 </tr>
 <tr>
-<td align="left"><a href="wallpaper-changer/requirements.txt">wallpaper-changer</td>
+<td align="left"><a href="/wallpaper-changer/requirements.txt">wallpaper-changer</td>
 <td align="center">Spoctone</td>
 <td align="left">change wallpaper with python script</td>
 </tr>
 <tr>
-<td align="left"><a href="gradient_generator/gradient.py">gradient-generator</td>
+<td align="left"><a href="/gradient_generator/gradient.py">gradient-generator</td>
 <td align="center">dntandan</td>
 <td align="left">This script will generate and save random gradient patterns and will save them as .png extensions on completion, using Pillow module.</td>
 </tr>
-
+<tr>
+<td align="left"><a href="/qr-code-scanner/Script.py">qr-code-convertor</td>
+<td align="center">dhiganthrao</td>
+<td align="left">This is a simple Python script aimed at converting long or short website URLs into QR codes to be scanned.</td>
+</tr>
+<tr>
+<td align="left"><a href="/cli-for-showing-location/climaps.py">gradient-generator</td>
+<td align="center">shubham5351</td>
+<td align="left">Get your specified location in python using CLI.</td>
+</tr>
 </tbody>
 </table>
 
