@@ -5,18 +5,20 @@ API_KEY = "6281e58eada2455993220febc56c30a3"
 
 
 def articles_fetcher(search_term):
-    req_url = (
-           "http://newsapi.org/v2/everything?"
-           "qInTitle=%s&"
-           "sortBy=popularity&"
-           "language=en&"
-           "pageSize=5&"
-           "apiKey=%s" % (search_term, API_KEY)
-           )
+    req_url = "http://newsapi.org/v2/everything?"
+
+    PARAMS = {
+        'qInTitle' : search_term,
+        'sortBy' : "popularity",
+        'language' : "en",
+        'pageSize' : 5,
+        'apiKey' : API_KEY,
+    }
+
     headers = {
         'user-agent': 'news_search @ github.com/Py-Contributors/awesomeScripts'
-        }
-    r = requests.get(req_url, headers=headers)
+    }
+    r = requests.get(req_url, params=PARAMS, headers=headers)
     data = r.json()
     return data.get("articles")
 
@@ -41,7 +43,7 @@ def printer(search_term, articles):
             title,
             description,
             source_url
-            )
+        )
         print(text)
 
 
