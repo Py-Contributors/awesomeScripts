@@ -1,4 +1,4 @@
-name,author,description
+Script Name,Author(GitHub username),Short introduction to program
 send-discord_message,CodePerfectplus,Send Github repo notification to Discord with webhooks
 propenster-scripts,Propenster,This Script gets some system info of the user's device
 scrap_github_repos,CodePerfectplus,Scrap GitHub user repos and save it in csv
@@ -37,4 +37,3 @@ coronaVirus_stats,iamlordutkarsh,get stats of any country about Corona Virus in 
 torrent_searcher,iamlordutkarsh,Program written in python to get Magnet links
 Image2PencilSketch,neel2904,Change Image to Pencil Sketch
 Url-Shortner,shubham5351,A simple script in python which is used to shorten the url of the given url
-text to Speech,bbetulkaya,Python script for convert text to sound.

@@ -1,42 +1,45 @@
-<p align="center">
-  <img src="https://capsule-render.vercel.app/api?type=rect&color=009ACD&height=100&section=header&text=awesomeScripts&fontSize=80%&fontColor=ffffff">
+﻿<p align="center">
+  <a href="https://py-contributors.github.io/awesomeScripts/"><img src="https://capsule-render.vercel.app/api?type=rect&color=009ACD&height=100&section=header&text=awesomeScripts&fontSize=80%&fontColor=ffffff" alt="website title image"></a>
   <h2 align="center">👉 A Collection of Awesome Problem Solving Scripts in Python.👈</h2>
 </p>
 
 <p align="center">
-<img src="https://img.shields.io/badge/language-python-blue?style=for-the-badge">
-<img src="https://img.shields.io/github/stars/Py-Contributors/awesomeScripts?style=for-the-badge" >
-<img src="https://img.shields.io/github/forks/Py-Contributors/awesomeScripts?style=for-the-badge" >
-<img src="https://img.shields.io/github/languages/code-size/py-contributors/awesomescripts?style=for-the-badge" >
+<img src="https://img.shields.io/badge/language-python-blue?style=for-the-badge" alt="repo language">
+<a href="https://github.com/Py-Contributors/awesomeScripts/stargazers"><img src="https://img.shields.io/github/stars/Py-Contributors/awesomeScripts?style=for-the-badge" alt="github stars"></a>
+<a href="https://github.com/Py-Contributors/awesomeScripts/network/members"><img src="https://img.shields.io/github/forks/Py-Contributors/awesomeScripts?style=for-the-badge" alt="github forks"></a>
+<img src="https://img.shields.io/github/languages/code-size/py-contributors/awesomescripts?style=for-the-badge" alt="code size">
   </p>
   <p align="center">
-<img src="https://img.shields.io/github/issues-raw/Py-Contributors/awesomeScripts?style=for-the-badge" >
-<img src="https://img.shields.io/github/issues-closed-raw/py-contributors/awesomescripts?style=for-the-badge" >
-<img src="https://img.shields.io/github/issues-pr-raw/Py-contributors/awesomescripts?style=for-the-badge" >
-<img src="https://img.shields.io/github/issues-pr-closed-raw/Py-contributors/awesomescripts?style=for-the-badge" >
+<a href="https://github.com/Py-Contributors/awesomeScripts/issues"><img src="https://img.shields.io/github/issues-raw/Py-Contributors/awesomeScripts?style=for-the-badge" alt="open issues"></a>
+<a href="https://github.com/Py-Contributors/awesomeScripts/issues"><img src="https://img.shields.io/github/issues-closed-raw/py-contributors/awesomescripts?style=for-the-badge" alt="closed issues"><a/>
+<a href="https://github.com/Py-Contributors/awesomeScripts/pulls"><img src="https://img.shields.io/github/issues-pr-raw/Py-contributors/awesomescripts?style=for-the-badge" alt="open pull request"></a>
+<a href="https://github.com/Py-Contributors/awesomeScripts/pulls"><img src="https://img.shields.io/github/issues-pr-closed-raw/Py-contributors/awesomescripts?style=for-the-badge" alt="closed pull request"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/github/hacktoberfest/2020/py-contributors/awesomescripts?style=for-the-badge">
-<img src="https://img.shields.io/github/license/Py-Contributors/awesomeScripts?style=for-the-badge">
+<img src="https://img.shields.io/github/hacktoberfest/2020/py-contributors/awesomescripts?style=for-the-badge" alt="hacktoberfest">
+<a href="https://raw.githubusercontent.com/Py-Contributors/awesomeScripts/master/LICENSE"><img src="https://img.shields.io/github/license/Py-Contributors/awesomeScripts?style=for-the-badge" alt="MIT license"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/discord/758030555005714512?style=for-the-badge">
-<img src="https://img.shields.io/github/last-commit/py-contributors/awesomescripts?style=for-the-badge">
-<img src="https://img.shields.io/github/contributors/py-contributors/awesomeScripts?style=for-the-badge">
+<a href="https://discord.gg/JfbK3bS"><img src="https://img.shields.io/discord/758030555005714512.svg?label=Discord&logo=Discord&colorB=7289da&style=for-the-badge" alt="discord invite"></a>
+<img src="https://img.shields.io/github/last-commit/py-contributors/awesomescripts?style=for-the-badge" alt="last contributions">
+<a href="https://api.github.com/repos/py-contributors/awesomescripts/contributors"><img src="https://img.shields.io/github/contributors/py-contributors/awesomeScripts?style=for-the-badge" alt="total contributors"></a>
 </p>
+
+
 
 ## How to Contribute 🤔
 
-<img align="right" alt="Coding" width="400" src="https://media.giphy.com/media/Y4ak9Ki2GZCbJxAnJD/giphy.gif">
+<img align="left" alt="Coding" width="400" src="https://media.giphy.com/media/Y4ak9Ki2GZCbJxAnJD/giphy.gif">
 
 You can contribute by adding new scripts, improving current scripts or Documentation.Here are some Instructions
 before making a Pull Request
 
 ### Here are the steps to Make contribute 👣
 
-- Create an issue for making any change to code. when issue will be approve you can make a change.
-- Add your file in proper folder with README.md in it. Add requirements.txt if needed.
-- Use Flake8 locally for linting Python Code.(We have linting checks so if your code fails it we will not merge the PR.)
+- [x] Create an issue for making any change to code. when issue will be approve you can make a change.
+- [x] Pull latest change from upstream branch before starting the changing code.
+- [x] Add your file in proper folder(lowercase) with README.md in it. Add requirements.txt if needed.
+- [x] Use Flake8 locally for linting Python Code.(We have linting checks so if your code fails it we will not merge the PR.)
   - `pip install flake8`
 
 <details><summary><b>Show instructions</b></summary>
@@ -53,7 +56,7 @@ before making a Pull Request
 ### Report a Bug 🐛
 
 - Help us to improve script. Report a bug [here](https://github.com/Py-Contributors/awesomeScripts/issues/new?assignees=codePerfectPlus&labels=bug&template=bug_report.md&title=)
- 
+
 ## 🤝 Scripts and contributorss 🤝
 <!--Restrictions -->
 <!--Don't make change under this line -->
@@ -229,29 +232,94 @@ before making a Pull Request
 <td align="left">automatically connect to your available WIFI connections</td>
 </tr>
 <tr>
-<td align="left"><a href="">img-to-text</a></td>
+<td align="left"><a href="/img_to_txt/imgtotxt.py">img-to-text</a></td>
 <td align="center">hot9cups</td>
 <td align="left">take a screenshot of the area on your screen, or a screenshot of an image on your screen and fetches the text from the image to the clipboard.</td>
 </tr>
 <tr>
-<td align="left">trailing-whitespace_remover</td>
+<td align="left"><a href="/trailing Whitespace Remover/remover.py">trailing-whitespace_remover</a></td>
 <td align="center">aaravm4</td>
 <td align="left">python script to remove trailing whitespace from file</td>
 </tr>
 <tr>
-<td align="left">coronaVirus_stats</td>
+<td align="left"><a href="/coronavirus_stats/coronavirus.py">coronaVirus_stats</a></td>
 <td align="center">iamlordutkarsh</td>
 <td align="left">get stats of any country about Corona Virus in Python</td>
 </tr>
 <tr>
-<td align="left">torrent_searcher</td>
+<td align="left"><a href="/torrent_searcher/torrent_searcher.py">torrent_searcher</a></td>
 <td align="center">iamlordutkarsh</td>
 <td align="left">Program written in python to get Magnet links</td>
 </tr>
- <tr>
-<td align="left">Image2PencilSketch</td>
+<tr>
+<td align="left"><a href="/img_to_PencilSketch/img2sketch.py">image2PencilSketch</a></td>
 <td align="center">neel2904</td>
 <td align="left">Change Image to Pencil Sketch</td>
+</tr>
+<tr>
+<td align="left"><a href="/url shortner/>">url-Shortner</a></td>
+<td align="center">shubham5351</td>
+<td align="left">A simple script in python which is used to shorten the url of the given url</td>
+</tr>
+<tr>
+<td align="left"><a href="/text-to-sound/text-to-sound.py">text to Sound</a></td>
+<td align="center">bbetulkaya</td>
+<td align="left">Python script for convert text to sound.</td>
+</tr>
+<tr>
+<td align="left"><a href="/wifi-password-getter/wifi_password_getter.py">wifi-password-getter</a></td>
+<td align="center">harshit-saraswat</td>
+<td align="left">This will help to get any stored wifi connection names and their passwords </td>
+</tr>
+<tr>
+<td align="left"><a href="send_telegram_message/send_telegram_message.py">telegram-message</a></td>
+<td align="center">YorozuyaDev</td>
+<td align="left">send telegram message using python</td>
+</tr>
+<tr>
+<td align="left"><a href="/encryption/main.py">image_text_encryption</td>
+<td align="center">YaraYasser</td>
+<td align="left">encrypt text and images</td>
+</tr>
+<tr>
+<td align="left"><a href="/mpu6050_accelerometer_sensor_connector/mysql_connect.py">accelerometer-connector</td>
+<td align="center">sigdelsanjog</td>
+<td align="left">This script retrieves data from a MPU6050 Accelerometer and GY521 Gyroscope and saves the data to gyroscope and accelerometer table in MySQL database.</td>
+</tr>
+<tr>
+<td align="left"><a href="/snake_and_ladder/snake_and_ladder.py">snake&Ladder</td>
+<td align="center">sidfrombhaiya</td>
+<td align="left">This is a simple text based snake and ladder game, with minimal libraries required.</td>
+</tr>
+<tr>
+<td align="left"><a href="unfollowers-insta/insta_bot_bb8.py">unfollower-insta</td>
+<td align="center">sarthak1905</td>
+<td align="left">bb8 is a cute name for a great bot to check for the people that you follow who don't follow you back on Instagram.</td>
+</tr>
+<tr>
+<td align="left"><a href="/audiobook/read_my_book.py">audioBook</td>
+<td align="center">Keyurkariya</td>
+<td align="left">Read any PDF book with just few line of code in Audio</td>
+</tr>
+<tr>
+<td align="left"><a href="/wallpaper-changer/requirements.txt">wallpaper-changer</td>
+<td align="center">Spoctone</td>
+<td align="left">change wallpaper with python script</td>
+</tr>
+<tr>
+<td align="left"><a href="/gradient_generator/gradient.py">gradient-generator</td>
+<td align="center">dntandan</td>
+<td align="left">This script will generate and save random gradient patterns and will save them as .png extensions on completion, using Pillow module.</td>
+</tr>
+<tr>
+<td align="left"><a href="/qr-code-scanner/Script.py">qr-code-convertor</td>
+<td align="center">dhiganthrao</td>
+<td align="left">This is a simple Python script aimed at converting long or short website URLs into QR codes to be scanned.</td>
+</tr>
+<tr>
+<td align="left"><a href="/cli-for-showing-location/climaps.py">gradient-generator</td>
+<td align="center">shubham5351</td>
+<td align="left">Get your specified location in python using CLI.</td>
 </tr>
 </tbody>
 </table>
@@ -264,4 +332,7 @@ before making a Pull Request
 
 - [Discord/PyContributors](https://discord.gg/FXyh2S3)
 
-![footer](https://capsule-render.vercel.app/api?type=egg&color=009ACD&height=30&section=footer&fontSize=90%&)
+<p align="center">
+<a href="https://api.github.com/repos/py-contributors/awesomescripts/contributors"><img src="http://ForTheBadge.com/images/badges/built-by-developers.svg" alt="built by developers"></a>
+<a href="https://github.com/codePerfectPlus"><img src="http://ForTheBadge.com/images/badges/built-with-love.svg" alt="built with love"></a>
+</p>
