@@ -317,9 +317,49 @@ before making a Pull Request
 <td align="left">This is a simple Python script aimed at converting long or short website URLs into QR codes to be scanned.</td>
 </tr>
 <tr>
-<td align="left"><a href="/cli-for-showing-location/climaps.py">gradient-generator</td>
+<td align="left"><a href="/cli-for-showing-location/climaps.py">google-map</td>
 <td align="center">shubham5351</td>
 <td align="left">Get your specified location in python using CLI.</td>
+</tr>
+<tr>
+<td align="left"><a href="/autoclicker/autoclicker.py">autoclicker</td>
+<td align="center">pawangeek</td>
+<td align="left">A useful autoclicking script in Python</td>
+</tr>
+<tr>
+<td align="left"><a href="/website_status_checker/website_status_checker.py">website-status</td>
+<td align="center">mikek4233</td>
+<td align="left">This script will check the status of the web address which you will input</td>
+</tr>
+<tr>
+<td align="left"><a href="/wikipedia_search/searchWikipedia.py">wiki-search</td>
+<td align="center">sidfrombhaiya</td>
+<td align="left">This is a Python script with which you can search for any topic from Script.</td>
+</tr>
+<tr>
+<td align="left"><a href="/dns_lookup/dns_lookup.py">dns-loopkup</td>
+<td align="center">mikek4233</td>
+<td align="left">This script will ask you if you want to lookup an IP address based on website or hostname or vice versa</td>
+</tr>
+<tr>
+<td align="left"><a href="/youtube_feed_details_scraper/main.py">youtube-feed-details-scrapper</td>
+<td align="center">bachlis</td>
+<td align="left">A selenium scraper that loads all the videos from YouTube's homepage and crawls through them gathering their details.</td>
+</tr>
+<tr>
+<td align="left"><a href="/search_news/news.py">search-news</td>
+<td align="center">akamhy</td>
+<td align="left">The script will search and output news based on keywords supplied in form of command line arguments.</td>
+</tr>
+<tr>
+<td align="left"><a href="/speed_test/speed_test.py">speedtest</td>
+<td align="center">mikek4233</td>
+<td align="left">This script will check the speed of your current internet connection</td>
+</tr>
+<tr>
+<td align="left"><a href="/hangman game/hangman.py"></td>
+<td align="center">shubham5351</td>
+<td align="left">Hangman is a classic word game in which you must guess words and you have given 7 chance for it.</td>
 </tr>
 </tbody>
 </table>
