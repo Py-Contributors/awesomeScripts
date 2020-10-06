@@ -64,12 +64,12 @@ def getWifiPasswords():
             results = [b.split(":")[1][1:-1]
                        for b in results if "Key Content" in b]
 
-            # if there is passowrd it will print the password
+            # if there is password it will print the password
             try:
                 print("{:<30}| {:<}".format(i, results[0]))
                 wifiList.append((i, results[0]))
 
-            # else it will print blank in fornt of password
+            # else it will print blank in front of password
             except IndexError:
                 print("{:<30}| {:<}".format(i, ""))
                 wifiList.append((i, ""))
