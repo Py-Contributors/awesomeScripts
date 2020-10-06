@@ -331,39 +331,44 @@ before making a Pull Request
 <td align="left">This script will check the status of the web address which you will input</td>
 </tr>
 <tr>
-<td align="left"><a href="/wikipedia_search/searchWikipedia.py">wiki-search</td>
+<td align="left"><a href="/wikipedia_search/">wiki-search</td>
 <td align="center">sidfrombhaiya</td>
 <td align="left">This is a Python script with which you can search for any topic from Script.</td>
 </tr>
 <tr>
-<td align="left"><a href="/dns_lookup/dns_lookup.py">dns-loopkup</td>
+<td align="left"><a href="/dns_lookup/">dns-loopkup</td>
 <td align="center">mikek4233</td>
 <td align="left">This script will ask you if you want to lookup an IP address based on website or hostname or vice versa</td>
 </tr>
 <tr>
-<td align="left"><a href="/youtube_feed_details_scraper/main.py">youtube-feed-details-scrapper</td>
+<td align="left"><a href="/youtube_feed_details_scraper/">youtube-feed-details-scrapper</td>
 <td align="center">bachlis</td>
 <td align="left">A selenium scraper that loads all the videos from YouTube's homepage and crawls through them gathering their details.</td>
 </tr>
 <tr>
-<td align="left"><a href="/search_news/news.py">search-news</td>
+<td align="left"><a href="/search_news/">search-news</td>
 <td align="center">akamhy</td>
 <td align="left">The script will search and output news based on keywords supplied in form of command line arguments.</td>
 </tr>
 <tr>
-<td align="left"><a href="/speed_test/speed_test.py">speedtest</td>
+<td align="left"><a href="/speed_test/">speedtest</td>
 <td align="center">mikek4233</td>
 <td align="left">This script will check the speed of your current internet connection</td>
 </tr>
 <tr>
-<td align="left"><a href="/hangman game/hangman.py">hangman</td>
+<td align="left"><a href="/hangman game/">hangman</td>
 <td align="center">shubham5351</td>
 <td align="left">Hangman is a classic word game in which you must guess words and you have given 7 chance for it.</td>
 </tr>
 <tr>
-<td align="left"><a href="/simple-image-encryptor/script.py">simple-image-encryptor</td>
+<td align="left"><a href="/simple-image-encryptor/">simple-image-encryptor</td>
 <td align="center">mohzulfikar</td>
 <td align="left">Simply encrypt your image using xor operation</td>
+</tr>
+<tr>
+<td align="left"><a href="/gender&ethnicity/"></td>
+<td align="center">codeperfectplus</td>
+<td align="left">A machine learning approcah to predict gender.</td>
 </tr>
 </tbody>
 </table>
