@@ -9,9 +9,9 @@ def find_url(string):
     """ Finds an arbitrary number of URLs in a string and returns them in a list.
     Taken from: https://www.geeksforgeeks.org/python-check-url-string/"""
     regex = (
-        r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s()<"
-        ">]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()<>]+\)"
-        "))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
+        r"(?i)\b((?:https?://|www\d{0,3}[.]|[a-z0-9.\-]+[.][a-z]{2,4}/)(?:[^\s"
+        "()<>]+|\(([^\s()<>]+|(\([^\s()<>]+\)))*\))+(?:\(([^\s()<>]+|(\([^\s()"
+        "<>]+\)))*\)|[^\s`!()\[\]{};:'\".,<>?«»“”‘’]))"
     )
     url = re.findall(regex, string)
 
@@ -23,10 +23,10 @@ parser = argparse.ArgumentParser(description="make clips from youtube videos")
 parser.add_argument("url", help="video url")
 parser.add_argument("start", help="HH:MM:SS")
 parser.add_argument("end", help="HH:MM:SS")
-parser.add_argument(
-    "-s", "--scale", help="scale image vertically (in px)", type=int, default=-2
-)
-parser.add_argument("-a", "--audio-only", action="store_true", dest="audio_only")
+parser.add_argument("-s", "--scale", help="scale image vertically (in px)",
+                    type=int, default=-2)
+parser.add_argument("-a", "--audio-only", action="store_true",
+                    dest="audio_only")
 parser.add_argument("-g", "--gif", action="store_true")
 parser.add_argument("-f", "--fps", type=int, default=12, help="gif fps")
 parser.add_argument("-o", "--output")
