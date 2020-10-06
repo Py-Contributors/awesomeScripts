@@ -1,0 +1,2 @@
+class SizeMisMatchException(Exception):
+    pass
