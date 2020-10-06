@@ -1,5 +1,6 @@
 import speedtest as st
 
+
 def speedtest():
     """Runs a speedtest on your internet connection"""
     try:
@@ -21,7 +22,9 @@ def speedtest():
 
 
 def pretty_speed(speed):
-    """ return speed value prettily accordingly in either bps, Kbps, Mbps, Gbps"""
+    """
+    return speed value prettily accordingly in either bps, Kbps, Mbps, Gbps
+    """
     unit = 'bps'
     kmg = ['', 'K', 'M', 'G']
     i = 0
@@ -29,5 +32,6 @@ def pretty_speed(speed):
         speed /= 1000
         i += 1
     return "{:.2f}".format(speed) + ' ' + kmg[i] + unit
+
 
 speedtest()
