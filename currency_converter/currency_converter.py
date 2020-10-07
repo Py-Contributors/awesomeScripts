@@ -36,8 +36,8 @@ class CurrencyConverter:
             return json_response['rates'][self.toCurrency]
 
         if(
-            response.status_code == 404 and
-            json_response['error_type'] == 'unsupported_code'
+            response.status_code == 404
+            and json_response['error_type'] == 'unsupported_code'
         ):
             raise Exception('From Currency not supported')
 
