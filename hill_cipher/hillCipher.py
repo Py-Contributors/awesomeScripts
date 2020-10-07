@@ -4,14 +4,14 @@ import numpy as np
 def convertToNumbers(string):
     string = string.strip().replace(" ", "")
     if len(string) % 2:
-        string = string+'z'
-    result = [ord(i)-97 for i in string]
-    return np.reshape(result, (len(result)//2, 2))
+        string = string + 'z'
+    result = [ord(i) - 97 for i in string]
+    return np.reshape(result, (len(result) // 2, 2))
 
 
 def getmodularInverse(d):
     for i in range(26):
-        if (i*d) % 26 == 1:
+        if (i * d) % 26 == 1:
             break
     return i
 
@@ -24,7 +24,9 @@ def getInverseKey(key):
     determinant = int(np.linalg.det(key)) % 26
     inverseDeterminant = getmodularInverse(determinant)
     inverse = getInverseMatrix(key)
-    def scalarMulti(x): return (inverseDeterminant*x) % 26
+
+    def scalarMulti(x):
+        return (inverseDeterminant * x) % 26
     scalarMultiVect = np.vectorize(scalarMulti)
     return scalarMultiVect(np.array(inverse))
 
@@ -39,7 +41,7 @@ def encryptDecrypt(text, key, op):
     for col in textMatrix:
         col = np.matmul(keyMatrix, col)
         col = [chr(i % 26 + 97) for i in col]
-        resultString = resultString+col[0]+col[1]
+        resultString = resultString + col[0] + col[1]
     return resultString
 
 
