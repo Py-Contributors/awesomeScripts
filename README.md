@@ -366,9 +366,24 @@ before making a Pull Request
 <td align="left">Simply encrypt your image using xor operation</td>
 </tr>
 <tr>
-<td align="left"><a href="/gender&ethnicity/"></td>
+<td align="left"><a href="/gender&ethnicity/">gender & ethnicity</td>
 <td align="center">codeperfectplus</td>
-<td align="left">A helpful script to fill missing data by machine learning approach</td>
+<td align="left">A helpful script to fill missing data by machine learning approach credits in README.md</td>
+</tr>
+<tr>
+<td align="left"><a href="/programming-quote/">programming-quote</td>
+<td align="center">codeperfectplus</td>
+<td align="left">Programming Quotes API for open source projects. credits in README.md</td>
+</tr>
+<tr>
+<td align="left"><a href="/replace_words/">replace_words</td>
+<td align="center">nandacamargo</td>
+<td align="left">This script reads a file and replace all occurrences of the first word with the second one.</td>
+</tr>
+<tr>
+<td align="left"><a href="/yt_clipper/">yt_clipper</td>
+<td align="center">epassaro</td>
+<td align="left">Make short clips from YouTube videos</td>
 </tr>
 </tbody>
 </table>
