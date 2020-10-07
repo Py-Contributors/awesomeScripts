@@ -33,7 +33,7 @@ with smtplib.SMTP_SSL("smtp.gmail.com", PORT, context=context) as server:
         while not check_email(senders_email):
             senders_email = input("Enter the sender's gmail email \
                 correctly('' to exit): ").lower()
-        password = getpass.getpass(prompt="Enter the serder's \
+        password = getpass.getpass(prompt="Enter the sender's \
             gmail password: ")
         try:
             server.login(senders_email, password)
@@ -48,7 +48,7 @@ with smtplib.SMTP_SSL("smtp.gmail.com", PORT, context=context) as server:
         while not all(map(lambda x: check_email(x),
                       recivers_email.split(","))):
             recivers_email = input("Enter the reciever(s) email correctly. \
-                Seperate be comma(',')('' to exit): ")
+                Seperate by comma(',')('' to exit): ")
         subject = input("Enter e-mail subject: ")
         message = input("Enter e-mail body: ")
         msg = MIMEMultipart()
@@ -56,13 +56,13 @@ with smtplib.SMTP_SSL("smtp.gmail.com", PORT, context=context) as server:
         msg["To"] = recivers_email
         msg["From"] = senders_email
         msg.attach(MIMEText(message, "plain"))
-        Attachement = input("\nDo you want to add attachement?(Y/N): ")
+        Attachement = input("\nDo you want to add attachment?(Y/N): ")
         Attachement = Attachement.strip().lower()
         if Attachement == "y":
-            numberOfAttachment = input("How many attachement to add:")
+            numberOfAttachment = input("How many attachements to add:")
             numberOfAttachment = int(numberOfAttachment)
             for i in range(numberOfAttachment):
-                path = input(f"Enter absolute path to the attachement {i+1}: ")
+                path = input(f"Enter absolute path to the attachment {i+1}: ")
                 filename = ""
                 ctype, encoding = mimetypes.guess_type(path)
                 if ctype is None or encoding is not None:
