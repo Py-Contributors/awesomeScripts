@@ -385,7 +385,6 @@ before making a Pull Request
 <td align="center">epassaro</td>
 <td align="left">Make short clips from YouTube videos</td>
 </tr>
-
 </tbody>
 </table>
 
