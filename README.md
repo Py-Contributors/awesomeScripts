@@ -26,9 +26,7 @@
 </p>
 
 ## How to Contribute 🤔
-
-<img align="left" alt="Coding" width="400" src="https://media.giphy.com/media/Y4ak9Ki2GZCbJxAnJD/giphy.gif">
-
+<hr>
 You can contribute by adding new scripts, improving current scripts or Documentation.Here are some Instructions
 before making a Pull Request
 
@@ -46,12 +44,12 @@ before making a Pull Request
 
 </details>
 
-### Projects links 🔗
+## Projects links 🔗
 
 - [x] 📖 READ Contributions Guidelines at [CONTRIBUTING.md](/CONTRIBUTING.md)
 - [x] 🌐 Download Specific Scripts from Here - [Download](https://py-contributors.github.io/awesomeScripts/)
 
-### Report a Bug 🐛
+## Report a Bug 🐛
 
 - Help us to improve script. Report a bug [here](https://github.com/Py-Contributors/awesomeScripts/issues/new?assignees=codePerfectPlus&labels=bug&template=bug_report.md&title=)
 
@@ -71,22 +69,22 @@ before making a Pull Request
 </thead>
 <tbody>
 <tr>
-<td align="left"><a href="/send-discord_message/annoucements.py">send-discord_message</a></td>
+<td align="left"><a href="/send-discord_message/">send-discord_message</a></td>
 <td align="center">CodePerfectplus</td>
 <td align="left">Send Github repo notification to Discord with webhooks</td>
 </tr>
 <tr>
-<td align="left"><a href="/propenster-scripts/sysinfo.py">propenster-scripts</a></td>
+<td align="left"><a href="/propenster-scripts/">propenster-scripts</a></td>
 <td align="center">Propenster</td>
 <td align="left">This Script gets some system info of the user's device</td>
 </tr>
 <tr>
-<td align="left"><a href="/scrap_github_repos/scrap_github_repos.py">scrap_github_repos</a></td>
+<td align="left"><a href="/scrap_github_repos/">scrap_github_repos</a></td>
 <td align="center">CodePerfectplus</td>
 <td align="left">Scrap GitHub user repos and save it in csv</td>
 </tr>
 <tr>
-<td align="left"><a href="/html2pdf/html2pdf.py">html2pd</a></td>
+<td align="left"><a href="/html2pdf/">html2pd</a></td>
 <td align="center">hpnightowl</td>
 <td align="left">convert website to html with CLI</td>
 </tr>
@@ -385,7 +383,6 @@ before making a Pull Request
 <td align="center">epassaro</td>
 <td align="left">Make short clips from YouTube videos</td>
 </tr>
-
 </tbody>
 </table>
 
