@@ -1,0 +1,2 @@
+This is an example of replacing word1 by word2.
+The first word, word1 is given as an argument.
