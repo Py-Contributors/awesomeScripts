@@ -47,7 +47,7 @@ def encryptDecrypt(text, key, op):
 
 if __name__ == "__main__":
     print("==================== 2x2 Hill Cipher =================\n")
-    print ("Do you want to Encrypt or Decrypt (e/d)? :", end=" ")
+    print("Do you want to Encrypt or Decrypt (e/d)? :", end=" ")
     op = input()
     if op not in ['e', 'd']:
         print("Invalid Option")
