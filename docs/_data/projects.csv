@@ -35,6 +35,30 @@ img-to-text,hot9cups,take a screenshot of the area on your screen, or a screensh
 trailing-whitespace_remover,aaravm4,python script to remove trailing whitespace from file
 coronaVirus_stats,iamlordutkarsh,get stats of any country about Corona Virus in Python
 torrent_searcher,iamlordutkarsh,Program written in python to get Magnet links
-Image2PencilSketch,neel2904,Change Image to Pencil Sketch
-Url-Shortner,shubham5351,A simple script in python which is used to shorten the url of the given url
-text to Speech,bbetulkaya,Python script for convert text to sound.
+image2PencilSketch,neel2904,Change Image to Pencil Sketch
+url-Shortner,shubham5351,A simple script in python which is used to shorten the url of the given url
+text to Sound,bbetulkaya,Python script for convert text to sound.
+wifi-password-getter,harshit-saraswat,This will help to get any stored wifi connection names and their passwords
+telegram-message,YorozuyaDev,send telegram message using python
+image_text_encryption,YaraYasser,encrypt text and images
+accelerometer-connector,sigdelsanjog,This script retrieves data from a MPU6050 Accelerometer and GY521 Gyroscope and saves the data to gyroscope and accelerometer table in MySQL database.
+snake&Ladder,sidfrombhaiya,This is a simple text based snake and ladder game, with minimal libraries required.
+unfollower-insta,sarthak1905,bb8 is a cute name for a great bot to check for the people that you follow who don't follow you back on Instagram.
+audioBook,Keyurkariya,Read any PDF book with just few line of code in Audio
+wallpaper-changer,Spoctone,change wallpaper with python script
+gradient-generator,dntandan,This script will generate and save random gradient patterns and will save them as .png extensions on completion, using Pillow module.
+qr-code-convertor,dhiganthrao,This is a simple Python script aimed at converting long or short website URLs into QR codes to be scanned.
+google-map,shubham5351,Get your specified location in python using CLI.
+autoclicker,pawangeek,A useful autoclicking script in Python
+website-status,mikek4233,This script will check the status of the web address which you will input
+wiki-search,sidfrombhaiya,This is a Python script with which you can search for any topic from Script.
+dns-loopkup,mikek4233,This script will ask you if you want to lookup an IP address based on website or hostname or vice versa
+youtube-feed-details-scrapper,bachlis,A selenium scraper that loads all the videos from YouTube's homepage and crawls through them gathering their details.
+search-news,akamhy,The script will search and output news based on keywords supplied in form of command line arguments.
+speedtest,mikek4233,This script will check the speed of your current internet connection
+hangman,shubham5351,Hangman is a classic word game in which you must guess words and you have given 7 chance for it.
+simple-image-encryptor,mohzulfikar,Simply encrypt your image using xor operation
+gender & ethnicity,codeperfectplus,A helpful script to fill missing data by machine learning approach credits in README.md
+programming-quote,codeperfectplus,Programming Quotes API for open source projects. credits in README.md
+replace_words,nandacamargo,This script reads a file and replace all occurrences of the first word with the second one.
+yt_clipper,epassaro,Make short clips from YouTube videos

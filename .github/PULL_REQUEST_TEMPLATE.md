@@ -20,3 +20,6 @@ what you changed in the codebase.write here
 If issue was not assigned to you Please don't make a PR. It will marked as invalid.
 
 Join Us on Discord:- https://discord.gg/JfbK3bS
+
+## acknowledgement
+- [x] I have tested the script and distributing it under MIT license.
