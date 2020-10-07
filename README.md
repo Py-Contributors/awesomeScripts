@@ -323,8 +323,8 @@ before making a Pull Request
 <td align="center">pawangeek</td>
 <td align="left">A useful autoclicking script in Python</td>
 </tr>
-<td align="left"><a href="/website_status_checker/">website-status</td>
 <tr>
+<td align="left"><a href="/website_status_checker/">website-status</td>
 <td align="center">mikek4233</td>
 <td align="left">This script will check the status of the web address which you will input</td>
 </tr>
