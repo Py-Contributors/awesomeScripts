@@ -8,6 +8,6 @@ MY_EMAIL = ''
 # Enter your password (Check readme.md for steps to get app password)
 MY_APP_PASSWORD = ''
 # Enter time delay (60 for 1 minute)
-CHECK_AGAIN = 60*30  # 60*30 will be 30 minutes
+CHECK_AGAIN = 60 * 30  # 60*30 will be 30 minutes
 # Enter the recipient email
 RECEIVER_EMAIL = ''
