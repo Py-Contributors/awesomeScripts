@@ -1,37 +1,60 @@
+import datetime
 import functools
-import pyperclip
-from fuzzywuzzy import process, fuzz
-import random
 import json
 import pathlib
+import random
 import shlex
 import subprocess
+import time
 
-directory_path = pathlib.Path(__file__).parent
+import dateparser
+import pyperclip
+from fuzzywuzzy import fuzz, process
+
+directory = pathlib.Path(__file__).parent
+json_file = directory/'info.json'
+ding = directory/'ding.mp3'
 
 
 def read(function):
     @functools.wraps(function)
-    def wrapper(*args):
-        with open(directory_path/'info.json') as f:
+    def reader(*args):
+
+        with open(json_file) as f:
             data = json.load(f)
 
         return function(data, *args)
-    return wrapper
+    return reader
 
 
 def write(function):
     @functools.wraps(function)
-    def wrapper(*args):
+    def writer(*args):
 
         data = function(*args)
 
-        with open(directory_path / 'info.json', 'w') as wf:
+        with open(json_file, 'w') as wf:
             json.dump(data, wf, indent=2)
 
-    return wrapper
+    return writer
 
 
+def copy_to_clipboard(function):
+    @functools.wraps(function)
+    def copy(*args):
+
+        result = function(*args)
+        pyperclip.copy(result)
+
+        if len(result) > 40:
+            result = f'{result[:40]}...'
+
+        print(f'Current clipboard: {result}')
+
+    return copy
+
+
+@copy_to_clipboard
 def random_case(message):
     characters = []
 
@@ -70,10 +93,9 @@ def remove(data, key_word):
                 in ('yes', 'y')):
             key = closest_match
         else:
-            return
+            return data
 
     del data[key]
-
     return data
 
 
@@ -92,6 +114,7 @@ def list_data(data):
         print(f'{key:{align}} - {value}')
 
 
+@copy_to_clipboard
 @read
 def clipboard(data, key_phrase):
 
@@ -102,14 +125,32 @@ def clipboard(data, key_phrase):
 
 
 def diceroll(num_faces=6):
-    return random.randint(1, num_faces)
+    print(random.randint(1, int(num_faces)))
 
 
-def timer(time):
-    ...
+def timer(sleep_for):
+    current = datetime.datetime.now()
+    sleep_date = dateparser.parse(sleep_for, languages=['en'])
+
+    if sleep_date is None:
+        raise ValueError('Time not recognised')
+
+    sleep_seconds = round((current - sleep_date).total_seconds())
+
+    if sleep_seconds < 0:
+        raise ValueError("sleep period must be positive")
+
+    while sleep_seconds:
+        print(f'\t{sleep_seconds} seconds(s) remaining', end='\r')
+        time.sleep(1)
+        sleep_seconds -= 1
+    else:
+        print(' ' * 30, end='\r')
+
+    subprocess.Popen(['open', ding])
 
 
-methods = [random_case, add, remove, list_data, clipboard]
+methods = [random_case, add, remove, list_data, clipboard, diceroll, timer]
 methods = {function: function.__name__ for function in methods}
 
 
@@ -129,7 +170,7 @@ while True:
         continue
 
     args = [arg if arg != '-p'
-            else pyperclip.paste()for arg in args]
+            else pyperclip.paste() for arg in args]
 
     try:
         function = process.extractOne(choice, methods,
@@ -139,16 +180,7 @@ while True:
         continue
 
     try:
-        result = function(*args)
-    except TypeError:
+        function(*args)
+    except Exception as e:
         print('Function errored out')
-        continue
-
-    if result is not None:
-        pyperclip.copy(result)
-        copy_contents = pyperclip.paste()
-
-        if len(copy_contents) > 40:  # type: ignore
-            copy_contents = f'{copy_contents[:40]}...'
-
-        print(f'Current clipboard: {copy_contents}')
+        print(e)
