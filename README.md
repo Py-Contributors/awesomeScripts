@@ -386,6 +386,21 @@ before making a Pull Request
 </tbody>
 </table>
 
+## Bug Hunters 🤠
+
+<table>
+<tr>
+  <th align="left">Author Name</th>
+  <th align="left">Fixed script</th>
+  <th align="left">Issue/PR number</th>
+</tr>
+<tr>
+  <td align="left">ferhah</td>
+  <td align="left"><a href="send_telegram_message/">telegram-message</a></td>
+  <td>#246</td>
+</tr>
+</table>
+
 ## Maintainers 😎
 
 - [Deepak Raj](https://github.com/CodePerfectPlus)
