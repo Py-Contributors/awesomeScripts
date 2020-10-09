@@ -7,14 +7,21 @@ import difflib as dif
 
 '''
 
+
 def dic(word):
+    closeMatch = dif.get_close_matches(word, data.keys())[0]
+
+    # if the word is written correctly
     if word in data:
-        return data[word]   # if the word is written correctly
-    elif dif.SequenceMatcher(None, word, dif.get_close_matches(word, data.keys())[0]).ratio() > 0.6:  # if the similarity to another word is greater than 0.6
-        answer = input('Did you mean {}? Y or N\n'.format(dif.get_close_matches(word, data.keys())[0]))  # asks if the other word is the right word
+        return data[word]
+    # if the similarity to another word is greater than 0.6
+    elif dif.SequenceMatcher(None, word, closeMatch).ratio() > 0.6:
+        # asks if the other word is the right word
+        answer = input(f'Did you mean {closeMatch}? Y or N\n')
         answer = answer.upper()
         if answer == 'Y':
-            return data[dif.get_close_matches(word, data.keys())[0]]  # if was the right one, returns the meaning
+            # if was the right one, returns the meaning
+            return data[closeMatch]
         elif answer == 'N':
             return 'Unknown word. Please, try again'
         else:
@@ -34,7 +41,8 @@ if __name__ == '__main__':
         word = args.word
         out = dic(word)
 
-        if isinstance(out, list):  # checks if out is a list of meanings to show line by line
+        if isinstance(out, list):
+            # checks if out is a list of meanings to show line by line
             for x in range(len(out)):
                 print(f"{x + 1} - " + out[x])
             break
