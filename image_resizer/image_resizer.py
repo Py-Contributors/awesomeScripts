@@ -16,25 +16,34 @@ if not args.Width and not args.Height:
     print('Error: Either width or height must be specified')
     sys.exit(1)
 
-try:
-    input_image = Image.open(args.File)
+
+def get_output_dimensions(input_image, args):
+    width, height = input_image.size
 
     if not args.Width:
-        width, height = input_image.size
         ratio = args.Height / height
         output_width = round(width * ratio)
     else:
         output_width = args.Width
 
     if not args.Height:
-        width, height = input_image.size
         ratio = args.Width / width
         output_height = round(height * ratio)
     else:
         output_height = args.Height
 
-    resized_image = input_image.resize((output_width, output_height))
+    return (output_width, output_height)
+
+
+try:
+    input_image = Image.open(args.File)
+
+    width, height = get_output_dimensions(input_image, args)
+
+    resized_image = input_image.resize((width, height))
+
     file_extension = os.path.splitext(args.File)[1]
+
     resized_image.save('output%s' % (file_extension))
 except Exception as err:
     print('Could not resize image: %s' % (err))
