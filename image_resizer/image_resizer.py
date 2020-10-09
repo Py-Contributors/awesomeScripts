@@ -1,4 +1,5 @@
 import sys
+import os.path
 from argparse import ArgumentParser
 
 parser = ArgumentParser()
@@ -11,4 +12,8 @@ args = parser.parse_args()
 
 if not args.Width and not args.Height:
     print('Error: Either width or height must be specified')
+    sys.exit(1)
+
+if args.File and not os.path.isfile(args.File):
+    print('Error: The specified file does not exist')
     sys.exit(1)
