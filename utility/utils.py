@@ -1,11 +1,35 @@
+import functools
 import pyperclip
 from fuzzywuzzy import process, fuzz
 import random
 import json
 import pathlib
 import shlex
+import subprocess
 
 directory_path = pathlib.Path(__file__).parent
+
+
+def read(function):
+    @functools.wraps(function)
+    def wrapper(*args):
+        with open(directory_path/'info.json') as f:
+            data = json.load(f)
+
+        return function(data, *args)
+    return wrapper
+
+
+def write(function):
+    @functools.wraps(function)
+    def wrapper(*args):
+
+        data = function(*args)
+
+        with open(directory_path / 'info.json', 'w') as wf:
+            json.dump(data, wf, indent=2)
+
+    return wrapper
 
 
 def random_case(message):
@@ -18,28 +42,23 @@ def random_case(message):
     return ''.join(characters)
 
 
-def add(key_word, info):
-
-    with open(directory_path/'info.json') as f:
-        data = json.load(f)
+@write
+@read
+def add(data, key_word, info):
 
     if key_word in data:
         message = (f'Are you sure you want to override {key_word} '
                    f'having value: {data[key_word]}?\t')
-
         if input(message) not in ('yes', 'y'):
-            return
-    else:
-        data[key_word] = info
+            return data
 
-    with open(directory_path/'info.json', 'w') as f:
-        json.dump(data, f, indent=2)
+    data[key_word] = info
+    return data
 
 
-def remove(key_word):
-    with open(directory_path/'info.json') as f:
-        data = json.load(f)
-
+@write
+@read
+def remove(data, key_word):
     key = key_word
 
     try:
@@ -55,18 +74,16 @@ def remove(key_word):
 
     del data[key]
 
-    with open(directory_path/'info.json', 'w') as f:
-        json.dump(data, f, indent=2)
+    return data
 
 
-def list_data():
-    with open(directory_path/'info.json') as f:
-        data = json.load(f)
-
+@read
+def list_data(data):
     try:
         align = max(len(key) for key in data)
     except ValueError:
         print('No data added in yet')
+        return
 
     for key, value in data.items():
         if len(value) > 40:
@@ -75,14 +92,21 @@ def list_data():
         print(f'{key:{align}} - {value}')
 
 
-def clipboard(key_phrase):
-    with open(directory_path/'info.json') as f:
-        data = json.load(f)
+@read
+def clipboard(data, key_phrase):
 
     best_search = process.extractOne(key_phrase, list(data),
                                      scorer=fuzz.ratio)[0]
 
     return data[best_search]
+
+
+def diceroll(num_faces=6):
+    return random.randint(1, num_faces)
+
+
+def timer(time):
+    ...
 
 
 methods = [random_case, add, remove, list_data, clipboard]
@@ -123,7 +147,8 @@ while True:
     if result is not None:
         pyperclip.copy(result)
         copy_contents = pyperclip.paste()
-        if len(copy_contents) > 40:
+
+        if len(copy_contents) > 40:  # type: ignore
             copy_contents = f'{copy_contents[:40]}...'
 
         print(f'Current clipboard: {copy_contents}')
