@@ -73,7 +73,7 @@ def add(data, key_word, info):
         message = (f'Are you sure you want to override {key_word} '
                    f'having value: {data[key_word]}?\t')
         if input(message) not in ('yes', 'y'):
-            return data
+            raise Exception('Exited')
 
     data[key_word] = info
     return data
@@ -93,7 +93,7 @@ def remove(data, key_word):
                 in ('yes', 'y')):
             key = closest_match
         else:
-            return data
+            raise Exception('Exited')
 
     del data[key]
     return data

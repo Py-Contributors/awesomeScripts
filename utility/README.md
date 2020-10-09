@@ -11,17 +11,19 @@ Functions included:
 3. Remove - `remove keyword`
 4. List all data - `list_data`
 5. Copy to clipboard - `clipboard keyword`
+6. Diceroll `diceroll [faces]`
+7. Timer `timer duration`
 
 All arguments are passed in similar to command line arguments.  
-If one argument has spaces inside it, use double quotes to make it count as one.
+If any argument has spaces inside it, use double quotes to make it count as one.
 
-The entire function name doesn't need to be supplied if a good enough match is found, most functions also implement
+The entire function name doesn't need to be supplied as long as a good enough match is found. Most functions also implement
  their own fuzzy matching.
 
 All occurences of `-p` are replaced by the current contents of the clipboard.
 
 > The [JSON](info.json) file in the directory houses all the information you store.  
-> If massive amounts of data must be added, you can dump in all the info as valid json
+> If massive amounts of data must be added, you can dump it all in the info as valid json
 > instead of calling the `add` function multiple times.
 
 ### Random Case
@@ -44,4 +46,23 @@ Prints all the keywords along with their information neatly, strings having more
 
 ### Clipboard
 
-Takes in a keyword and copies it to the clipboard.
+Takes in a keyword and copies its content to the clipboard.
+
+### Diceroll
+
+Does exactly what the name suggests, rolls a dice. An optional argument can be passed in to extend the number of
+faces the die has.
+
+### Timer
+
+Counts down until the duration specified, then plays a ding. The duration can be passed in as any human readable
+format.
+
+Examples of durations are:
+
+```plaintext
+1m 30s
+280s
+2 hours and 40 minutes
+One hour
+```
