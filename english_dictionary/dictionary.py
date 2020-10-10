@@ -9,19 +9,23 @@ import difflib as dif
 
 
 def dic(word):
-    closeMatch = dif.get_close_matches(word, data.keys())[0]
-
     # if the word is written correctly
     if word in data:
         return data[word]
+    
+    close_match = dif.get_close_matches(word, data.keys())
+    if not close_match:
+        return 'Unknown word. Please, try again'
+    else:
+        close_match = close_match[0]
     # if the similarity to another word is greater than 0.6
-    elif dif.SequenceMatcher(None, word, closeMatch).ratio() > 0.6:
+    if dif.SequenceMatcher(None, word, close_match).ratio() > 0.6:
         # asks if the other word is the right word
-        answer = input(f'Did you mean {closeMatch}? Y or N\n')
+        answer = input(f'Did you mean {close_match}? Y or N\n')
         answer = answer.upper()
         if answer == 'Y':
             # if was the right one, returns the meaning
-            return data[closeMatch]
+            return data[close_match]
         elif answer == 'N':
             return 'Unknown word. Please, try again'
         else:
@@ -37,15 +41,12 @@ if __name__ == '__main__':
 
     data = json.load(open('data.json'))  # loads the dictionary
 
-    while True:
-        word = args.word
-        out = dic(word)
+    word = args.word
+    out = dic(word)
 
-        if isinstance(out, list):
-            # checks if out is a list of meanings to show line by line
-            for x in range(len(out)):
-                print(f"{x + 1} - " + out[x])
-            break
-        else:
-            print(out)
-            break
+    if isinstance(out, list):
+        # checks if out is a list of meanings to show line by line
+        for x in range(len(out)):
+            print(f"{x + 1} - " + out[x])
+    else:
+        print(out)
