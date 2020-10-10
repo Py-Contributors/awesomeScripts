@@ -12,7 +12,7 @@ def dic(word):
     # if the word is written correctly
     if word in data:
         return data[word]
-    
+
     close_match = dif.get_close_matches(word, data.keys())
     if not close_match:
         return 'Unknown word. Please, try again'
