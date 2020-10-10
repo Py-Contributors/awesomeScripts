@@ -13,11 +13,11 @@ def clock():
 
 def stopwatch():
     starttime = dt.datetime.now()
-    print("\n\tStart Time: "+str(starttime))
+    print("\n\tStart Time: " + str(starttime))
     print("\n\tTime Taken\n")
     try:
         while(1):
-            print("\r\t{}".format(dt.datetime.now()-starttime), end="")
+            print("\r\t{}".format(dt.datetime.now() - starttime), end="")
     except KeyboardInterrupt:
         pass
 
@@ -33,9 +33,9 @@ def timer(op, time):
     try:
         starttime = dt.datetime.now()
         print("\n\tTime Left\n")
-        while dt.datetime.now()-starttime != stopwatch:
-            elapsed_time = dt.datetime.now()-starttime
-            print("\r\t{}".format(stoptime-elapsed_time), end="")
+        while dt.datetime.now() - starttime != stopwatch:
+            elapsed_time = dt.datetime.now() - starttime
+            print("\r\t{}".format(stoptime - elapsed_time), end="")
     except KeyboardInterrupt:
         pass
 
