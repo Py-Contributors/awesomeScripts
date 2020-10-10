@@ -57,13 +57,10 @@ python3 serial_read.py \
 
 ```bash
 Config : Namespace(baudrate=9600, bytesize=8, port='/dev/ttyUSB0', timeout=None)
-This is Original Data (byte format) read from Serial : b'Sending this from ESP8266\r\n'  | This is filtered Data read (string) from Serial : Sending this from ESP8266
-This is Original Data (byte format) read from Serial : b'Sending this from ESP8266\r\n'  | This is filtered Data read (string) from Serial : Sending this from ESP8266
-This is Original Data (byte format) read from Serial : b'Sending this from ESP8266\r\n'  | This is filtered Data read (string) from Serial : Sending this from ESP8266
-This is Original Data (byte format) read from Serial : b'Sending this from ESP8266\r\n'  | This is filtered Data read (string) from Serial : Sending this from ESP8266
-This is Original Data (byte format) read from Serial : b'Sending this from ESP8266\r\n'  | This is filtered Data read (string) from Serial : Sending this from ESP8266
-This is Original Data (byte format) read from Serial : b'Sending this from ESP8266\r\n'  | This is filtered Data read (string) from Serial : Sending this from ESP8266
-This is Original Data (byte format) read from Serial : b'Sending this from ESP8266\r\n'  | This is filtered Data read (string) from Serial : Sending this from ESP8266
+Original Data (byte format): b'Sending this from ESP8266\r\n'  | Filtered Data: Sending this from ESP8266
+Original Data (byte format): b'Sending this from ESP8266\r\n'  | Filtered Data: Sending this from ESP8266
+Original Data (byte format): b'Sending this from ESP8266\r\n'  | Filtered Data: Sending this from ESP8266
+Original Data (byte format): b'Sending this from ESP8266\r\n'  | Filtered Data: Sending this from ESP8266
 ...
 ...
 ...

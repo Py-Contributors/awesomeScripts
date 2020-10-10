@@ -2,9 +2,7 @@
 import argparse
 import signal    # Using this library to catch keyboard interrupts
 import sys       # system library
-import serial
-# Python pyserial library !DOC -> https://pypi.org/project/pyserial/
-from serial.serialutil import EIGHTBITS
+import serial    # Python pyserial library !DOC -> https://pypi.org/project/pyserial/
 
 
 def signal_handler(signal, frame):
@@ -46,9 +44,6 @@ def parse_command_line_args():
         dest='baudrate',
         help='Baud rate for serial Communication')
 
-    # Command subparser
-    command = parser.add_subparsers()
-
     return parser.parse_args()
 
 
@@ -73,7 +68,7 @@ def readInfiniteLoop():
         stringData = originalData.decode('utf-8')
         # Slicing to remove /r and /n at the end (Line Feed and NewLine)
         stringData = stringData[:-2]
-        print("This is Original Data (byte format) read from Serial : {}  | This is filtered Data read (string) from Serial : {}".format(
+        print("Original Data (byte format): {}  | Filtered Data: {}".format(
             originalData, stringData))
 
 
