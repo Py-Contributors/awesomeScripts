@@ -8,8 +8,6 @@ import requests as HTTP
 def main(emotion):    
 
 
-    # IMDb Url for Drama genre of
-    # movie against emotion Sad
     if (emotion == "sad"):
         urlhere = 'http://www.imdb.com/search/title?genres=drama&title_type=feature&sort=moviemeter, asc'
     # IMDb Url for Musical genre of
@@ -60,7 +58,6 @@ if __name__ == '__main__':
     emotion = input("Enter the emotion: ")
     a = main(emotion)
     count = 0
-
     if (emotion == "disgust" or emotion == "anger" or emotion == "surprise"):
         for i in a:
             # Splitting each line of the
