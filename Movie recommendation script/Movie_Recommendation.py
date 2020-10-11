@@ -73,7 +73,7 @@ if __name__ == '__main__':
 	count = 0
 
 	if(emotion == "Disgust" or emotion == "Anger"
-						or emotion=="Surprise"):
+						or emotion == "Surprise"):
 
 		for i in a:
 
