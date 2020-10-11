@@ -31,14 +31,21 @@ class Scraper:
 
     # Stores the title of the product
     def get_title(self):
-        temp_title = self.soup.find('span', id='productTitle').text.strip()
-        temp_list_title = []
-        for x in temp_title:
-            if x == '(':
-                break
-            temp_list_title.append(x)
-        self.product_title = ''.join(temp_list_title)
-        return self.product_title
+        try:
+            temp_title = self.soup.find('span', id='productTitle').text.strip()
+            temp_list_title = []
+            for x in temp_title:
+                if x == '(':
+                    break
+                temp_list_title.append(x)
+            self.product_title = ''.join(temp_list_title)
+            return self.product_title
+        except Exception:
+            print("\n")
+            print("ERROR - We weren't able to find the name of the product")
+            print("\n")
+            print("Exiting the script")
+            exit()
 
     # Stores the price of the product after filtering the string and
     # converting it to an integer
