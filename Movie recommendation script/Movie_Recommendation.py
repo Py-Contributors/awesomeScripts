@@ -3,7 +3,6 @@
 from bs4 import BeautifulSoup as SOUP
 import re
 import requests as HTTP
-
 # Main Function for scraping
 def main(emotion):
   
