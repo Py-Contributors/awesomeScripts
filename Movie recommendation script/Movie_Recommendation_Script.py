@@ -1,16 +1,14 @@
 # Python3 code for movie recommendation based on emotion
-
 from bs4 import BeautifulSoup as SOUP
 import re
 import requests as HTTP
 
-# Main Function for scraping
+
 def main(emotion):    
 
 
     if (emotion == "sad"):
         urlhere = 'http://www.imdb.com/search/title?genres=drama&title_type=feature&sort=moviemeter, asc'
-    # IMDb Url for Musical genre of
     # movie against emotion Disgust
     elif (emotion == "disgust"):
         urlhere = 'http://www.imdb.com/search/title?genres=musical&title_type=feature&sort=moviemeter, asc'
@@ -57,11 +55,11 @@ if __name__ == '__main__':
 
     emotion = input("Enter the emotion: ")
     a = main(emotion)
+    
     count = 0
     if (emotion == "disgust" or emotion == "anger" or emotion == "surprise"):
         for i in a:
-            # Splitting each line of the
-            # IMDb data to scrape movies
+            # Splitting each line of the IMDb data to scrape movies
             tmp = str(i).split('>;')
 
             if (len(tmp) == 3):
