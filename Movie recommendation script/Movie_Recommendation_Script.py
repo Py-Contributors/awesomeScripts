@@ -51,9 +51,8 @@ def main(emotion):
 # Driver Function
 if __name__ == '__main__':
 
-
     emotion = input("Enter the emotion: ")
-    a = main(emotion) 
+    a = main(emotion)
     count = 0
     if (emotion == "disgust" or emotion == "anger" or emotion == "surprise"):
         for i in a:
