@@ -6,6 +6,7 @@ import requests as HTTP
 
 # Main Function for scraping
 def main(emotion):
+    
     # IMDb Url for Drama genre of
     # movie against emotion Sad
     if (emotion == "sad"):
@@ -50,10 +51,9 @@ def main(emotion):
     title = soup.find_all("a", attrs={"href": re.compile(r'\/title\/tt+\d*\/')})
     return title
 
-
 # Driver Function
 if __name__ == '__main__':
-    
+
 
     emotion = input("Enter the emotion: ")
     a = main(emotion)
