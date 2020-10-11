@@ -20,9 +20,7 @@ assignees: ''
 Please add/delete options that are not relevant.
 
 - [x] Adding New Code
-- [x] Improving Code
 - [x] Improving Documentation
-- [x] Bug Fix
 
 ### Programming Language
 
