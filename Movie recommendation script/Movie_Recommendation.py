@@ -56,7 +56,7 @@ if __name__ == '__main__':
 	a = main(emotion)
 	count = 0
 
-	if(emotion == "Disgust" or emotion == "Anger" or emotion == "Surprise"):
+	if(emotion == "disgust" or emotion == "anger" or emotion == "surprise"):
 		for i in a:
 			# Splitting each line of the
 			# IMDb data to scrape movies
