@@ -164,7 +164,7 @@ def get_target_cost(count=1):
         if (count == 1):
             print("Please enter only numbers; "
                   "not currency symbols.")
-            get_target_cost(count+1)
+            get_target_cost(count + 1)
         else:
             print("ERROR: Your target price wasn't valid")
             exit()
