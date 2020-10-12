@@ -5,9 +5,8 @@ from scipy.spatial.distance import cdist
 
 module_url = "https://tfhub.dev/google/universal-sentence-encoder/4"
 
+
 class SimilarityModel():
-
-
     def __init__(self):
         print("Loading model from tf hub...")
         self.model = hub.load(module_url)
@@ -53,7 +52,6 @@ class SimilarityModel():
 
 
 if __name__ == "__main__":
-    
     sim_model = SimilarityModel()
     sentence1 = "Hi there"
     sentence2 = "I want money"
