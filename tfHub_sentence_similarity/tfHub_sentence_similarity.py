@@ -1,16 +1,17 @@
 import re
 import string
-import tensorflow as tf
 import tensorflow_hub as hub
 from scipy.spatial.distance import cdist
 
 module_url = "https://tfhub.dev/google/universal-sentence-encoder/4"
 
 class SimilarityModel():
+
+
     def __init__(self):
         print("Loading model from tf hub...")
         self.model = hub.load(module_url)
-        print ("module %s loaded" % module_url)
+        print("module %s loaded" % module_url)
 
     def process_text(self, text):
         '''Clean text by removing unnecessary characters and altering the format of words.'''
@@ -48,13 +49,13 @@ class SimilarityModel():
         sent_vector1 = self.model([processed_sent1])
         sent_vector2 = self.model([processed_sent2])
         similarities = cdist(sent_vector1, sent_vector2, metric='cosine')
-        # similarities = similarities[0][0]
-        # top_matches_idx = similarities.argsort()[:n_neighbors]
         return similarities
 
+
 if __name__ == "__main__":
+    
     sim_model = SimilarityModel()
     sentence1 = "Hi there"
     sentence2 = "I want money"
     distance = sim_model.similarity(sentence1, sentence2)
-    print("Similarity score is: ", 1-distance[0][0])
+    print("Similarity score is: ", 1 - distance[0][0])
