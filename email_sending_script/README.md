@@ -9,3 +9,9 @@
 - if you have 2-fact auth enabled on your gmail account then generate the app password and use that instead of your password refer [this](https://support.google.com/accounts/answer/185833?hl=en) link of more information.
 
 - if you do not have 2-fact auth enabled then enable the less secure app access in your gmail account. https://myaccount.google.com/lesssecureapps
+
+### changes
+- add check for sender's email address
+- password is now hidden.
+- add check for receiver's multiple email
+- Can send multile email now

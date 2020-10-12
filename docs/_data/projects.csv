@@ -1,0 +1,64 @@
+name,author,description
+send-discord_message,CodePerfectplus,Send Github repo notification to Discord with webhooks
+propenster-scripts,Propenster,This Script gets some system info of the user's device
+scrap_github_repos,CodePerfectplus,Scrap GitHub user repos and save it in csv
+html2pd,hpnightowl,convert website to html with CLI
+sms_sending_script,,send sms with python CLI
+scrap_all_links,oxigen96,Scrap link from website using Python CLI
+remove_punctuation_number,,Remove Punctuation/Number from text file
+countries_trivia_game,Propenster,Simple trivia quiz game that loads questions and answers from a CSV file
+scrap_all_email,CodePerfectplus,Scrap all email from input website
+jpeg_to_png,CodePerfectplus,Convert image format jpeg_to_png CLI tool
+website_cloner,CodePerfectplus,clone website using python
+alphabet_analyzer,Natsumi H.,Analyze how common each letter is in the English alphabet
+check_weather,roopeshvs,Get The Weather Of Your City using Python CLI
+ebook_to_kindle,roopeshvs,convert Ebook to Kindle format
+downlod_mp3,parasgupta44,download mp3 from youtube
+imbd_scanner,ben-jnr,implement title based and user ratings based search
+stackoverflow parse,ParijatDhar97,Parses SO for your error messages
+sudoku_solver,basscoder2808,solve sudoku puzzles using backtracking
+word_counter,p014ri5,count the word
+duplicate_image_remover,p014ri5,remove deuplicate image from pc
+cartoonify,brtymn,cartoonify input image in python
+email_sending_script,nis130,email sending automation in pyton
+merge_2_pdfs,uditmore99,The above script will merge two PDF's at once !
+video_player,brtymn,video plater with opencv
+encrypt_pdf,AmeyaJain-25,The code will help to encrypt the PDF with an password.
+pdf_redaction,debdutgoswami,redact a pdf in Python
+word-cloud,saswatamcode,create word-cloud using flask
+Torrent_to_goolge_drive,vaibhav jain,Torrent to Google Drive Downloader with colab
+certificate_generator,alpha037,certificate automation in python
+internshala_scrapper,techTarun,scrap internship from internshala and save into csv
+png_to_jpeg,hot9cups,convert png image to Jpeg with Pytho-pillow
+auto_wifi_connecter,AmeyaJain-25,automatically connect to your available WIFI connections
+img-to-text,hot9cups,take a screenshot of the area on your screen, or a screenshot of an image on your screen and fetches the text from the image to the clipboard.
+trailing-whitespace_remover,aaravm4,python script to remove trailing whitespace from file
+coronaVirus_stats,iamlordutkarsh,get stats of any country about Corona Virus in Python
+torrent_searcher,iamlordutkarsh,Program written in python to get Magnet links
+image2PencilSketch,neel2904,Change Image to Pencil Sketch
+url-Shortner,shubham5351,A simple script in python which is used to shorten the url of the given url
+text to Sound,bbetulkaya,Python script for convert text to sound.
+wifi-password-getter,harshit-saraswat,This will help to get any stored wifi connection names and their passwords
+telegram-message,YorozuyaDev,send telegram message using python
+image_text_encryption,YaraYasser,encrypt text and images
+accelerometer-connector,sigdelsanjog,This script retrieves data from a MPU6050 Accelerometer and GY521 Gyroscope and saves the data to gyroscope and accelerometer table in MySQL database.
+snake&Ladder,sidfrombhaiya,This is a simple text based snake and ladder game, with minimal libraries required.
+unfollower-insta,sarthak1905,bb8 is a cute name for a great bot to check for the people that you follow who don't follow you back on Instagram.
+audioBook,Keyurkariya,Read any PDF book with just few line of code in Audio
+wallpaper-changer,Spoctone,change wallpaper with python script
+gradient-generator,dntandan,This script will generate and save random gradient patterns and will save them as .png extensions on completion, using Pillow module.
+qr-code-convertor,dhiganthrao,This is a simple Python script aimed at converting long or short website URLs into QR codes to be scanned.
+google-map,shubham5351,Get your specified location in python using CLI.
+autoclicker,pawangeek,A useful autoclicking script in Python
+website-status,mikek4233,This script will check the status of the web address which you will input
+wiki-search,sidfrombhaiya,This is a Python script with which you can search for any topic from Script.
+dns-loopkup,mikek4233,This script will ask you if you want to lookup an IP address based on website or hostname or vice versa
+youtube-feed-details-scrapper,bachlis,A selenium scraper that loads all the videos from YouTube's homepage and crawls through them gathering their details.
+search-news,akamhy,The script will search and output news based on keywords supplied in form of command line arguments.
+speedtest,mikek4233,This script will check the speed of your current internet connection
+hangman,shubham5351,Hangman is a classic word game in which you must guess words and you have given 7 chance for it.
+simple-image-encryptor,mohzulfikar,Simply encrypt your image using xor operation
+gender & ethnicity,codeperfectplus,A helpful script to fill missing data by machine learning approach credits in README.md
+programming-quote,codeperfectplus,Programming Quotes API for open source projects. credits in README.md
+replace_words,nandacamargo,This script reads a file and replace all occurrences of the first word with the second one.
+yt_clipper,epassaro,Make short clips from YouTube videos

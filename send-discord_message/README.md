@@ -8,8 +8,11 @@ A webhook is an API concept that’s growing in popularity. As more and more of 
 ### How to Use
 
 - Enter WEBHOOK_URL in auth.py
-- Enter Content in annoucments.py
 
 ```bash
-python annoucments.py
+python main.py
 ```
+
+## Future improvment
+
+- Checkbox to sendMessage to muptiple channel
