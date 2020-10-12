@@ -19,7 +19,7 @@ def get_free_space_hr(path):
     free = get_free_space(path)
     hr_free = ''
     for unit, idx in zip(['k', 'M', 'G', 'T', 'P'], range(10, 50, 10)):
-        hr_usage = (free % (2**(idx+10))) // (2**idx)
+        hr_usage = (free % (2 ** (idx + 10))) // (2 ** idx)
         if hr_usage == 0:
             break
         hr_free = f"{hr_usage}{unit} {hr_free}"
