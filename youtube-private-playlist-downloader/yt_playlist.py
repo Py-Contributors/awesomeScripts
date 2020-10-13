@@ -1,11 +1,12 @@
 """ To access your private youtube playlist.
 
 NEEDED 'client_secret_file.json' for your google account.
-        follow instructions in https://developers.google.com/youtube/v3/quickstart/python#step_1_set_up_your_project_and_credentials
+        follow instructions in https://developers.google.com/youtube/v3/quickstart/python#step_1_set_up_your_project_and_credentials  # noqa: E501
         to download your client secret file.
 """
 
-import os, sys
+import sys
+import os
 
 import google_auth_oauthlib.flow  # pip install google_auth_oauthlib
 import googleapiclient.discovery  # pip install google-api-python-client
@@ -19,18 +20,22 @@ class YT:
     def __init__(self, p_client_secrets_file: str):
         """
         Args:
-            p_client_secrets_file : string = path of the client_secret_*.json file
+            p_client_secrets_file : string
+                = path of the client_secret_*.json file
         """
         os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
         api_service_name = "youtube"
         api_version = "v3"
         client_secrets_file = p_client_secrets_file
-        scopes = ["https://www.googleapis.com/auth/youtube.readonly"]  # For _get_content
-        scopes += ["https://www.googleapis.com/auth/youtube.force-ssl"]  # For _delete_playlist_items
+        # For _get_content
+        scopes = ["https://www.googleapis.com/auth/youtube.readonly"]
+        # For _delete_playlist_items
+        scopes += ["https://www.googleapis.com/auth/youtube.force-ssl"]
 
         # Get credentials and create an API client
-        flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
+        InstalledAppFlow = google_auth_oauthlib.flow.InstalledAppFlow
+        flow = InstalledAppFlow.from_client_secrets_file(
             client_secrets_file, scopes
         )
         credentials = flow.run_console()
@@ -90,7 +95,8 @@ class YT:
             url = "https://www.youtube.com/watch?v=" + video_id
             File = pafy.new(url)
             video_file = File.getbest()
-            print("\n"+str(i + 1), video_file.filename, ":", str(round(video_file.get_filesize()/2**20,2))+"MB")
+            size = round(video_file.get_filesize()/2**20, 2)
+            print("\n"+str(i + 1), video_file.filename, ":", str(size)+"MB")
             video_file.download()
 
     def download(self, playlistId: str, n: int = 50):
@@ -113,7 +119,7 @@ class YT:
                 response = request.execute()
             except KeyboardInterrupt:
                 break
-            except:
+            except Exception:
                 print(i + 1, sys.exc_info())
             else:
                 print(i + 1, response)
@@ -134,5 +140,8 @@ if __name__ == "__main__":
     n = int(input("How many videos you want to download? >> "))
     ytpl.download(PLid, n)
 
-    if input("\n\nWould you like to delete these videos from playlist? [y/N] > ").lower() == "y":
+    d = input(
+            "\n\nWould you like to delete these videos from playlist? [y/N] > "
+        )
+    if d.lower() == "y":
         ytpl.delete(PLid, n)
