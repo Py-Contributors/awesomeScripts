@@ -20,22 +20,18 @@ class YT:
     def __init__(self, p_client_secrets_file: str):
         """
         Args:
-            p_client_secrets_file : string
-                = path of the client_secret_*.json file
+            p_client_secrets_file : string = path of the client_secret_*.json file
         """
         os.environ["OAUTHLIB_INSECURE_TRANSPORT"] = "1"
 
         api_service_name = "youtube"
         api_version = "v3"
         client_secrets_file = p_client_secrets_file
-        # For _get_content
-        scopes = ["https://www.googleapis.com/auth/youtube.readonly"]
-        # For _delete_playlist_items
-        scopes += ["https://www.googleapis.com/auth/youtube.force-ssl"]
+        scopes = ["https://www.googleapis.com/auth/youtube.readonly"]  # For _get_content
+        scopes += ["https://www.googleapis.com/auth/youtube.force-ssl"]  # For _delete_playlist_items
 
         # Get credentials and create an API client
-        InstalledAppFlow = google_auth_oauthlib.flow.InstalledAppFlow
-        flow = InstalledAppFlow.from_client_secrets_file(
+        flow = google_auth_oauthlib.flow.InstalledAppFlow.from_client_secrets_file(
             client_secrets_file, scopes
         )
         credentials = flow.run_console()
@@ -95,9 +91,14 @@ class YT:
             url = "https://www.youtube.com/watch?v=" + video_id
             File = pafy.new(url)
             video_file = File.getbest()
-            size = round(video_file.get_filesize()/2**20, 2)
-            print("\n"+str(i + 1), video_file.filename, ":", str(size)+"MB")
-            video_file.download()
+            size = round(video_file.get_filesize() / 2 ** 20, 2)
+            print("\n" + str(i + 1), video_file.filename, ":", str(size) + "MB")
+            try:
+                video_file.download()
+            except KeyboardInterrupt:
+                break
+            except Exception:
+                print(i + 1, sys.exc_info())
 
     def download(self, playlistId: str, n: int = 50):
         """To download the videos.
@@ -140,8 +141,5 @@ if __name__ == "__main__":
     n = int(input("How many videos you want to download? >> "))
     ytpl.download(PLid, n)
 
-    d = input(
-            "\n\nWould you like to delete these videos from playlist? [y/N] > "
-        )
-    if d.lower() == "y":
+    if input("\n\nWould you like to delete these videos from playlist? [y/N] > ").lower() == "y":
         ytpl.delete(PLid, n)
