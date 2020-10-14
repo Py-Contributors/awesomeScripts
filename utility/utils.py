@@ -22,9 +22,8 @@ import pyperclip
 from fuzzywuzzy import fuzz, process
 
 directory = pathlib.Path(__file__).parent
-json_file = directory/'info.json'
-ding = directory/'ding.mp3'
-
+json_file = directory / 'info.json'
+ding = directory / 'ding.mp3'
 
 RT = TypeVar('RT')
 
