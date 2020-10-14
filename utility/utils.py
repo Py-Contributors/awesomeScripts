@@ -1,3 +1,11 @@
+"""This script has a bunch of utility functions.
+
+All commands are issued from stdin, however, this behaves a lot like
+a command line script. If any argument needs multiple words, enclose
+them in double-quotes `"`
+
+"""
+
 import datetime
 import functools
 import json
@@ -6,8 +14,10 @@ import random
 import shlex
 import subprocess
 import time
+from typing import Callable, Mapping, TypeVar
 
 import dateparser
+import humanize
 import pyperclip
 from fuzzywuzzy import fuzz, process
 
@@ -16,9 +26,28 @@ json_file = directory/'info.json'
 ding = directory/'ding.mp3'
 
 
-def read(function):
+# UserInfo = TypeVar('UserInfo', MutableMapping[str, str], dict[str, str], )
+
+RT = TypeVar('RT')
+
+
+def read(function: Callable[..., RT]) -> Callable[..., RT]:
+    """Take in a function, open the json file and pass in its data to
+       the function.
+
+    Parameters
+    ----------
+    function : Callable
+        Should have a positional argument at the start to which the
+        data will be passed
+
+    Returns
+    -------
+    Callable
+        The wrapper function which does the execution
+    """
     @functools.wraps(function)
-    def reader(*args):
+    def reader(*args) -> RT:
 
         with open(json_file) as f:
             data = json.load(f)
@@ -27,9 +56,22 @@ def read(function):
     return reader
 
 
-def write(function):
+def write(function: Callable[..., Mapping[str, str]]) -> Callable[..., None]:
+    """Take in a function, store it's result and write it to the JSON
+
+    Parameters
+    ----------
+    function : Callable
+        Should return a valid dictionary which can be written to the
+        JSON file
+
+    Returns
+    -------
+    Callable
+        The wrapper function which does the execution
+    """
     @functools.wraps(function)
-    def writer(*args):
+    def writer(*args) -> None:
 
         data = function(*args)
 
@@ -39,9 +81,23 @@ def write(function):
     return writer
 
 
-def copy_to_clipboard(function):
+def copy_to_clipboard(function: Callable[..., str]) -> Callable[..., None]:
+    """Take in a function, store its result, copy it to the clipboard
+       and display it.
+
+    Parameters
+    ----------
+    function : Callable
+        The function should return the string which is to be copied
+        to the clipboard.
+
+    Returns
+    -------
+    Callable
+        The wrapper function which does the execution.
+    """
     @functools.wraps(function)
-    def copy(*args):
+    def copy(*args) -> None:
 
         result = function(*args)
         pyperclip.copy(result)
@@ -55,19 +111,54 @@ def copy_to_clipboard(function):
 
 
 @copy_to_clipboard
-def random_case(message):
+def random_case(message: str) -> str:
+    """Convert the string to RanDoM CasE.
+
+    Parameters
+    ----------
+    message : str
+        The string to be converted
+
+    Returns
+    -------
+    str
+        The string in RandOm caSe
+    """
     characters = []
 
     for character in message:
-        character = random.choice([character.upper(), character.lower()])
-        characters.append(character)
+        converted_char = random.choice([character.upper(), character.lower()])
+        characters.append(converted_char)
 
     return ''.join(characters)
 
 
 @write
 @read
-def add(data, key_word, info):
+def add(data: dict[str, str], key_word: str, info: str) -> dict[str, str]:
+    """Add provided key and value to the JSON file.
+
+    Parameters
+    ----------
+    data : dict of str, str
+        Internally used by `read` to pass in the current data
+    key_word : any
+        The key to be used
+    info : any
+        The value to be stored in the key
+
+    Returns
+    -------
+    dict of str, str
+        Internally used by the `write` decorator to update the current
+        data.
+
+    Raises
+    ------
+    Exception
+        When the user doesn't want to override the value stored in the
+        `keyword` when it already exists.
+    """
 
     if key_word in data:
         message = (f'Are you sure you want to override {key_word} '
@@ -81,7 +172,30 @@ def add(data, key_word, info):
 
 @write
 @read
-def remove(data, key_word):
+def remove(data: dict[str, str], key_word: str) -> dict[str, str]:
+    """Remove `key_word` from the JSON file.
+
+    Parameters
+    ----------
+    data : dict of str, str
+        Internally passed in by `read` to provide the current data
+        in the file
+    key_word : str
+        The key to be removed
+
+    Returns
+    -------
+    dict of str, str
+        The updated data with the key removed
+
+    Raises
+    ------
+    Exception
+        When the user doesn't want to remove the recommended
+        fuzzy-matched string incase `key_word` doesn't already
+        exist
+    """
+
     key = key_word
 
     try:
@@ -100,7 +214,15 @@ def remove(data, key_word):
 
 
 @read
-def list_data(data):
+def list_data(data: dict[str, str]) -> None:
+    """Print the current data in the JSON file in a pretty format.
+
+    Parameters
+    ----------
+    data : dict of str, str
+        Internally passed in by `read` to provide the current data
+        in the file
+    """
     try:
         align = max(len(key) for key in data)
     except ValueError:
@@ -116,19 +238,59 @@ def list_data(data):
 
 @copy_to_clipboard
 @read
-def clipboard(data, key_phrase):
+def clipboard(data: dict[str, str], key_phrase: str) -> str:
+    """Copy the value stored in the passed in key
 
+    Parameters
+    ----------
+    data : dict of str, str
+        Internally passed in by `read` to provide the current data
+        in the file
+    key_phrase : str
+        The key to copy the value of
+
+    Returns
+    -------
+    str
+        The value in the key
+    """
     best_search = process.extractOne(key_phrase, list(data),
                                      scorer=fuzz.ratio)[0]
 
     return data[best_search]
 
 
-def diceroll(num_faces=6):
+def diceroll(num_faces: str = "6") -> None:
+    """Roll a dice and print the result
+
+    Parameters
+    ----------
+    num_faces : int, optional
+        The faces of the die, by default 6
+    """
     print(random.randint(1, int(num_faces)))
 
 
-def timer(sleep_for):
+def timer(sleep_for: str) -> None:
+    """A snazzy timer
+
+    It prints the time left into the console, and plays a sound when
+    completed.
+
+    Parameters
+    ----------
+    sleep_for : str
+        The duration the timer to run for, in any valid format.
+        The format could be a human readable one or a stricter
+        one.
+
+    Raises
+    ------
+    ValueError
+        If the format provided is invalid or the sleep duration
+        is negative
+    """
+
     current = datetime.datetime.now()
     sleep_date = dateparser.parse(sleep_for, languages=['en'])
 
@@ -141,22 +303,27 @@ def timer(sleep_for):
         raise ValueError("sleep period must be positive")
 
     while sleep_seconds:
-        print(f'\t{sleep_seconds} seconds(s) remaining', end='\r')
+        print(' ' * 100, end='\r\t')
+        print(humanize.naturaltime(sleep_seconds, future=True), end='\r')
+
         time.sleep(1)
         sleep_seconds -= 1
     else:
-        print(' ' * 30, end='\r')
+        print()
 
     subprocess.Popen(['open', ding])
 
 
-methods = [random_case, add, remove, list_data, clipboard, diceroll, timer]
-methods = {function: function.__name__ for function in methods}
+methods = {function: function.__name__ for function in [
+    random_case, add, list_data, clipboard, diceroll, timer
+]}
 
 
 print('Available functionalities:')
 for item, function in enumerate(methods.values(), start=1):
     print(f'{item}. {function}')
+else:
+    print()
 
 while True:
     command = input()
@@ -184,3 +351,5 @@ while True:
     except Exception as e:
         print('Function errored out')
         print(e)
+    finally:
+        print()
