@@ -26,7 +26,7 @@
 </p>
 
 ## How to Contribute 🤔
-<hr>
+
 You can contribute by adding new scripts, improving current scripts or Documentation.Here are some Instructions
 before making a Pull Request
 
@@ -415,9 +415,19 @@ before making a Pull Request
   <td align="left">This script can show you EXIF data for anytype of image supported by pillow package(e.g. jpeg/jpg, png, tiff, etc).</td>
 </tr>
 <tr>
-  <td align="left"><a href="/PDF2text/">PDF2text</td>
+  <td align="left"><a href="/PDF2text/">pdf2text</td>
   <td align="center">quangph-1686a</td>
-  <td align="left">This is a small script to make a extract text from pdf file.  </td>
+  <td align="left">This is a small script to make a extract text from pdf file.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/english_dictionary/">english_dictionary</td>
+  <td align="center">alovictor</td>
+  <td align="left">This simple dictionary returns to you the meaning of the input word.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/image_resizer/">image_resizer</td>
+  <td align="center">brunobastos</td>
+  <td align="left">Resizes an image based on the specified width and height.</td>
 </tr>
 </tbody>
 </table>

@@ -4,41 +4,36 @@ Installation
 ------------
 
 1. Install python-pdfkit:
-
-.. code-block:: bash
-
-	$ pip install pdfkit  (or pip3 for python3)
-
+```bash
+$ pip install pdfkit  (or pip3 for python3)
+```
+or from `requirements.txt`
+```bash
+$ pip install -r requirements.txt  (or pip3 for python3)
+```
 2. Install wkhtmltopdf:
+- Debian/Ubuntu:
+```bash
+$ sudo apt-get install wkhtmltopdf
+```
+- macOS:
+```bash
+$ brew install caskroom/cask/wkhtmltopdf
+```
 
-* Debian/Ubuntu:
-
-.. code-block:: bash
-
-	$ sudo apt-get install wkhtmltopdf
-	
-* macOS:
-
-.. code-block:: bash
-
-	$ brew install caskroom/cask/wkhtmltopdf
-  
-  Usage
+Usage
 -----
 
 For simple tasks:
-
-.. code-block:: python
-
-	python html2pdf.py 'google.com' (for python3)
-
+```python
+python html2pdf.py 'google.com' (for python3)
+```
 You can pass a list with multiple URLs or files:
+```python
+python html2pdf.py 'google.com' 'yandex.ru' 'engadget.com' (for python3)
+```
 
-.. code-block:: python
- 
-	python html2pdf.py 'google.com' 'yandex.ru' 'engadget.com' (for python3)
-
-Also you can pass an opened file:
+Also you can pass an opened file.
 
 Troubleshooting
 ---------------
@@ -49,4 +44,4 @@ Troubleshooting
 
 - ``IOError: 'Command Failed'``
 
-  This error means that PDFKit was unable to process an input. You can try to directly run a command from error message and see what error caused failure (on some wkhtmltopdf versions this can be cause by segmentation faults)
+  This error means that PDFKit was unable to process an input. You can try to directly run a command from error message and see what error caused failure (on some wkhtmltopdf versions this can be caused by segmentation faults)

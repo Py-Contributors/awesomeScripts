@@ -1,0 +1,1 @@
+This script scrapes IMDB site to display top 5 movies based on emotion entered.
