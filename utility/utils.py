@@ -308,7 +308,7 @@ def timer(sleep_for: str) -> None:
     else:
         print()
 
-    subprocess.Popen(['open', ding])
+    subprocess.run(['open', ding])
 
 
 methods = {function: function.__name__ for function in [
