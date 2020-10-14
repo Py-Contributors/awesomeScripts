@@ -26,8 +26,6 @@ json_file = directory/'info.json'
 ding = directory/'ding.mp3'
 
 
-# UserInfo = TypeVar('UserInfo', MutableMapping[str, str], dict[str, str], )
-
 RT = TypeVar('RT')
 
 
@@ -142,9 +140,9 @@ def add(data: dict[str, str], key_word: str, info: str) -> dict[str, str]:
     ----------
     data : dict of str, str
         Internally used by `read` to pass in the current data
-    key_word : any
+    key_word : str
         The key to be used
-    info : any
+    info : str
         The value to be stored in the key
 
     Returns
@@ -265,7 +263,7 @@ def diceroll(num_faces: str = "6") -> None:
 
     Parameters
     ----------
-    num_faces : int, optional
+    num_faces : str, optional
         The faces of the die, by default 6
     """
     print(random.randint(1, int(num_faces)))
@@ -303,7 +301,7 @@ def timer(sleep_for: str) -> None:
         raise ValueError("sleep period must be positive")
 
     while sleep_seconds:
-        print(' ' * 100, end='\r\t')
+        print('\r' + ' ' * 100, end='\r\t')
         print(humanize.naturaltime(sleep_seconds, future=True), end='\r')
 
         time.sleep(1)
@@ -315,7 +313,7 @@ def timer(sleep_for: str) -> None:
 
 
 methods = {function: function.__name__ for function in [
-    random_case, add, list_data, clipboard, diceroll, timer
+    random_case, add, remove, list_data, clipboard, diceroll, timer
 ]}
 
 

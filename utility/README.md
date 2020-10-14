@@ -2,6 +2,8 @@
 
 This script has a bunch of utility functions for storing data, setting up timers, and all that jazz.
 
+> Requirements: python 3.9+, packages listed in [requirements](#utility/requirements.txt)
+
 ## Usage
 
 Functions included:
@@ -21,6 +23,8 @@ The entire function name doesn't need to be supplied as long as a good enough ma
  their own fuzzy matching.
 
 All occurences of `-p` are replaced by the current contents of the clipboard.
+
+`quit` exits the program.
 
 > The [JSON](info.json) file in the directory houses all the information you store.  
 > If massive amounts of data must be added, you can dump it all in the info as valid json
