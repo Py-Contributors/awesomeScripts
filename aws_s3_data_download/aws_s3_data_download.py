@@ -12,11 +12,11 @@ FILE_EXTENSION = []
 
 
 def download_dir(s3client, bucket, resource, dist, root_dir):
+    paginator = s3client.get_paginator('list_objects')
     for result in paginator.paginate(Bucket=bucket, Delimiter='/', Prefix=dist):
         if result.get('CommonPrefixes') is not None:
             for subdir in result.get('CommonPrefixes'):
-                download_dir(s3client, bucket, resource, subdir.get('Prefix'),
-                                cursor, order_of_columns, root_dir, failed_df)
+                download_dir(s3client, bucket, resource, subdir.get('Prefix'), root_dir)
 
         files = result.get('Contents', [])
         for file in files:
