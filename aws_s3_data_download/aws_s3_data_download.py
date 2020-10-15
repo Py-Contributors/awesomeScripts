@@ -1,20 +1,22 @@
 import os
 import boto3
 
-S3_ACCESS_KEY_ID = # YOUR ACCESS KEY
-S3_SECRET_ACCESS_KEY = # YOUR SECRET ACCESS KEY
-S3_BUCKET_NAME = # BUCKET NAME ON S3
-STARTING_DIRECTORY = # DIRECTORY ON S3 FROM WHERE YOU WANT TO RECURSIVELY DOWNLOAD THE DATA 
+S3_ACCESS_KEY_ID =  # YOUR ACCESS KEY
+S3_SECRET_ACCESS_KEY =  # YOUR SECRET ACCESS KEY
+S3_BUCKET_NAME =  # BUCKET NAME ON S3
+STARTING_DIRECTORY =  # DIRECTORY ON S3 FROM WHERE YOU WANT TO RECURSIVELY DOWNLOAD THE DATA
 # If you want to download the files with specific file extension then mention it as a list in the below variable.
 # Otherwise all of the files will be downloaded. Ex- ['.csv', '.png']
 FILE_EXTENSION = []
+
 
 def download_dir(s3client, bucket, resource, dist, root_dir):
     for result in paginator.paginate(Bucket=bucket, Delimiter='/', Prefix=dist):
         if result.get('CommonPrefixes') is not None:
             for subdir in result.get('CommonPrefixes'):
-                download_dir(s3client, bucket, resource, subdir.get('Prefix'), cursor, order_of_columns, root_dir, failed_df)
-                
+                download_dir(s3client, bucket, resource, subdir.get('Prefix'),
+                            cursor, order_of_columns, root_dir, failed_df)
+
         files = result.get('Contents', [])
         for file in files:
             if len(FILE_EXTENSION) == 0 or file.get('Key').endswith(tuple(FILE_EXTENSION)):
