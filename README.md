@@ -429,6 +429,11 @@ before making a Pull Request
   <td align="center">brunobastos</td>
   <td align="left">Resizes an image based on the specified width and height.</td>
 </tr>
+<tr>
+  <td align="left"><a href="/extract_color/">extract_color</td>
+  <td align="center">brunobastos</td>
+  <td align="left">Extract specific color from image</td>
+</tr>
 </tbody>
 </table>
 
