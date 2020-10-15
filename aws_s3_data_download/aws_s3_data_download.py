@@ -1,6 +1,7 @@
 import os
 import boto3
 
+root_dir = os.getcwd()
 S3_ACCESS_KEY_ID = ""  # YOUR ACCESS KEY
 S3_SECRET_ACCESS_KEY = ""  # YOUR SECRET ACCESS KEY
 S3_BUCKET_NAME = ""  # BUCKET NAME ON S3
