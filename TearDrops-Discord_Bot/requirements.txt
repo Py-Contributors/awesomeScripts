@@ -1,0 +1,6 @@
+discord
+sqlite3
+wolframalpha
+wikipedia
+requests
+

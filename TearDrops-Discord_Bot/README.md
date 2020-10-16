@@ -23,13 +23,17 @@ NOTE- It is recommended that you add your own discord token while running the bo
 - Clone this repo using `git clone`
 - cd into the bot folder.
 - Add obtained **token** into the setup.py file line-1. token = "your_**token**"
+- Install discord.py module:
+  ```
+    python -m pip install discord.py
+  ```
 - Install requirements from requirements.txt
-```
-pip install -r requirements.txt
-```
+  ```
+    pip install -r requirements.txt
+  ```
 - Run the bot using: `python main.py`
-- Enjoy! (don't forget to add your own bot into your discord server by generating an invite link from the discord developers application page in OAuth2 section)
-- You may do bug-reporting or ask for help in the AwesomeScripts or on the SupportServer
+- Enjoy! (don't forget to add your own bot into your discord server by generating an invite link from the discord developers application page in [OAuth2 section](https://discord.com/developers/applications/) and choose application and check Oauth2 section)
+- You may do bug-reporting or ask for help in the AwesomeScripts server or on the SupportServer... or just open an issue on this repo.
 
 ## Requirements:
 - python 3
