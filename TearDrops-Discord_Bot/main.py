@@ -101,7 +101,10 @@ The currency credits for the bot are _tears_(hahah obviously). Have fun being sa
 \nNOTE- Even though this is OpenSource and under MIT license,\
 I request you to not start a commercial bot with the same name "Tear Drops"\
 This bot is under MIT License(provided as is, do whatever you want) \
-This has been uploaded to GitHub for educational and referencial purposes', colour=discord.Color.purple(), url=git_link)
+This has been uploaded to GitHub\
+for educational and referencial purposes',
+                colour=discord.Color.purple(),
+                url=git_link)
             embed.set_footer(text='I Hope that you enjoyed the bot....😭')
             embed.set_image(url=bot_icon)
             await channel.send(embed=embed)
@@ -446,10 +449,14 @@ async def botinfo(ctx):
     '''Gives info about the bot'''
     embed = discord.Embed(title='**Tear Drops:tm:**',
                           description='A dynamic bot for _crying_, entertainment, economy and _other_ purposes...\n\
-I am here to reek sorrow and depression. Come let\'s cry together 😢\
-The prefix for the bot is _"qq"_, cuz you know _"less qq, more pew pew..."_ \
-The currency credits for the bot are _tears_(hahah obviously). Have fun being sad...\
-\nNOTE- Even though this is OpenSource and under MIT license, I request you to not start a commercial bot with the same name "Tear Drops:tm:"\
+I am here to reek sorrow and depression.\
+Come let\'s cry together 😢\
+The prefix for the bot is _"qq"_,\
+cuz you know _"less qq, more pew pew..."_ \
+The currency credits for the bot are _tears_\
+(hahah obviously). Have fun being sad...\
+\nNOTE- Even though this is OpenSource and under MIT license,\
+ I request you to not start a commercial bot with the same name "Tear Drops:tm:"\
 This bot is under MIT License(provided as is, do whatever you want) \
 This has been uploaded to GitHub for educational and referencial purposes',
                           colour=discord.Color.purple(), url=git_url)
@@ -555,7 +562,10 @@ async def russian_roulette(ctx):
                               color=discord.Color.light_gray())
     else:
         buls += 1
-        embed = discord.Embed(title='Russian Roulette.🔫', description='You live to fight another day', color=discord.Color.blue())
+        embed = discord.Embed(
+            title='Russian Roulette.🔫',
+            description='You live to fight another day',
+            color=discord.Color.blue())
     await ctx.send(embed=embed)
 
 
