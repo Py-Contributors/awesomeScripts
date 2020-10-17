@@ -22,7 +22,8 @@ import time
 import aiohttp
 
 # mongoDB Client
-DB_CLIENT = MongoClient(f"mongodb+srv://{USER_NAME}:{MONGODB_PASS}@cluster0.ls3h6.mongodb.net/<dbname>?retryWrites=true&w=majority")
+link = "ls3h6.mongodb.net/<dbname>?retryWrites=true&w=majority"
+DB_CLIENT = MongoClient(f"mongodb+srv://{USER_NAME}:{MONGODB_PASS}@cluster0.{link}")
 db = DB_CLIENT.get_database('users_db')
 
 print(db.list_collection_names())
@@ -84,17 +85,20 @@ async def on_guild_join(guild):
     '''
 
     for channel in guild.text_channels:
+        git_link = 'https://github.com/Py-Contributors/awesomeScripts/Tear-Drops_DiscordBot/'
         if channel.permissions_for(guild.me).send_messages:
             if guild.id not in db.list_collection_names():
                 col = db[str(guild.id)]
                 col.insert_one({'server_name': guild.name, 'server_id': guild.id})
-            embed = discord.Embed(title='**Tear Drops:tm:**', description='A dynamic bot for _crying_, entertainment, economy and _other_ purposes...\n\
+            embed = discord.Embed(title='**Tear Drops:tm:**', description='A dynamic bot for _crying_, entertainment,\
+economy and _other_ purposes...\n\
 I am here to reek sorrow and depression. Come let\'s cry together 😢\
 The prefix for the bot is _"qq"_, cuz you know _"less qq, more pew pew..."_ \
 The currency credits for the bot are _tears_(hahah obviously). Have fun being sad...\
-\nNOTE- Even though this is OpenSource and under MIT license, I request you to not start a commercial bot with the same name "Tear Drops:tm:"\
+\nNOTE- Even though this is OpenSource and under MIT license,\
+I request you to not start a commercial bot with the same name "Tear Drops"\
 This bot is under MIT License(provided as is, do whatever you want) \
-This has been uploaded to GitHub for educational and referencial purposes', colour=discord.Color.purple(), url='https://github.com/Py-Contributors/awesomeScripts/Tear-Drops_DiscordBot/')
+This has been uploaded to GitHub for educational and referencial purposes', colour=discord.Color.purple(), url=git_link)
             embed.set_footer(text='I Hope that you enjoyed the bot....😭')
             embed.set_image(url='https://cdn.discordapp.com/attachments/582605227081990233/627388598181953548/unknown.png')
             await channel.send(embed=embed)
@@ -229,7 +233,8 @@ async def level_up(user, channel):
         cred = stats[-1]['credits'] + ls
         new_stats = {"$set": {'credits': cred}}
         server.update_one(stats[-1], new_stats)
-        embed = discord.Embed(title=f'{user} has leveled up to {lvl_end}.', description=f'You have been given {ls} tears for your active-ness.\n\
+        embed = discord.Embed(title=f'{user} has leveled up to {lvl_end}.',
+description=f'You have been given {ls} tears for your active-ness.\n\
 Saving {ls} tears in your vault of tears.', color=discord.Color.teal())
         embed.set_footer(text='😭')
         await channel.send(embed=embed)
@@ -276,7 +281,8 @@ async def cmds(ctx):
     embed.add_field(name='book', value='Wanna read a book. Here are some recommendations....')
     embed.add_field(name='dadjoke', value='Wanna hear some cringey bad jokes?')
     embed.add_field(name='diceroll', value='Rolls a dice. If you get a number higher than the bot then you win...')
-    embed.add_field(name='guessing_game', value='Bot thinks of a number smaller than 15 and you have to guess that number. If you guess it correct, you win')
+    embed.add_field(name='guessing_game', value='Bot thinks of a number smaller than 15 and you have to guess that number.\
+If you guess it correct, you win')
     embed.set_footer(text='I hope that helped......')
     await ctx.send(embed=embed)
 
@@ -287,11 +293,13 @@ async def helps(ctx):
     prints the help page
     NOTE- To be edited.
     """
-    embed = discord.Embed(title='**Help....**', description="The prefix for the bot is 'qq'. Yah cuz you know _less qq, more pew pew_ ...", colour=discord.Color.purple())
+    embed = discord.Embed(title='**Help....**', description="The prefix for the bot is 'qq'.\
+Yah cuz you know _less qq, more pew pew_ ...", colour=discord.Color.purple())
     embed.set_footer(text='For full list of commands with complete functions do _cmds')
     embed.add_field(name='Core', value='ping, help, cmds, botinfo')
     embed.add_field(name='Economy', value='cry, vaultoftears, tear shop', inline=False)
-    embed.add_field(name='Entertainment', value='roast, flirt, compliment, geek, nerdystuff, quote, fortune, 8ball, coffee, wannagrabacoffee, book, dadjoke', inline=False)
+    embed.add_field(name='Entertainment', value='roast, flirt, compliment, geek, nerdystuff, quote, fortune,\
+8ball, coffee, wannagrabacoffee, book, dadjoke', inline=False)
     embed.add_field(name='Utility', value='purge, ban, kick, unban', inline=False)
     embed.add_field(name='Games', value='diceroll, guessing_game', inline=False)
     await ctx.send(embed=embed)
@@ -346,7 +354,8 @@ async def vault(ctx):
     server = db[str(user.guild.id)]
     stats = server.find({'id': user.id})
     trp = list(stats)[-1]['credits']
-    embed = discord.Embed(title='**Vault of Tears**', description=f"Opening {user}'s vault-of-tears....", colour=discord.Color.blurple())
+    embed = discord.Embed(title='**Vault of Tears**', description=f"Opening {user}'s vault-of-tears....",
+colour=discord.Color.blurple())
     embed.set_footer(text='Cry, cry, let the emotions flow through you...😭')
     embed.add_field(name='Tears', value=trp)
     await ctx.send(embed=embed)
@@ -397,6 +406,7 @@ async def shop(ctx):
 
 @client.command(aliases=['botwhat'])
 async def botinfo(ctx):
+    git_url = 'https://github.com/Py-Contributors/awesomeScripts/Tear-Drops_DiscordBot/'
     '''Gives info about the bot'''
     embed = discord.Embed(title='**Tear Drops:tm:**', description='A dynamic bot for _crying_, entertainment, economy and _other_ purposes...\n\
 I am here to reek sorrow and depression. Come let\'s cry together 😢\
@@ -404,8 +414,7 @@ The prefix for the bot is _"qq"_, cuz you know _"less qq, more pew pew..."_ \
 The currency credits for the bot are _tears_(hahah obviously). Have fun being sad...\
 \nNOTE- Even though this is OpenSource and under MIT license, I request you to not start a commercial bot with the same name "Tear Drops:tm:"\
 This bot is under MIT License(provided as is, do whatever you want) \
-This has been uploaded to GitHub for educational and referencial purposes', colour=discord.Color.purple(), url='https://github.com/Py-Contributors/awesomeScripts/Tear-Drops_DiscordBot/')
-    embed.set_footer(text='I Hope that you enjoyed the bot....😭')
+This has been uploaded to GitHub for educational and referencial purposes', colour=discord.Color.purple(), url=git_url)
     embed.set_image(url='https://cdn.discordapp.com/attachments/582605227081990233/627388598181953548/unknown.png')
     await ctx.send(embed=embed)
 
@@ -475,7 +484,8 @@ async def dice(ctx, amount: int):
             cred += 50
             newstats = {"$set": {'credits': cred}}
             server.update_one(stats[-1], newstats)
-            embed = discord.Embed(title='Dice-roll...🎲', description=f'The dice rolled a {numtemp}.\nYou have been awarded 50 tears for this...', color=discord.Color.dark_red())
+            embed = discord.Embed(title='Dice-roll...🎲', description=f'The dice rolled a {numtemp}.\n\
+You have been awarded 50 tears for this...', color=discord.Color.dark_red())
             await ctx.send(embed=embed)
         else:
             embed = discord.Embed(title='Dice-roll...🎲', description=f'The dice rolled a {numtemp}.\n\
@@ -494,7 +504,8 @@ async def russian_roulette(ctx):
     global buls
     if buls >= 6:
         buls = 0
-        embed = discord.Embed(title='Russian Roulette.🔫', description='All you remember is the pain you felt when the bullet pierced your skull.', color=discord.Color.light_gray())
+        embed = discord.Embed(title='Russian Roulette.🔫',
+description='All you remember is the pain you felt when the bullet pierced your skull.', color=discord.Color.light_gray())
     else:
         buls += 1
         embed = discord.Embed(title='Russian Roulette.🔫', description='You live to fight another day', color=discord.Color.blue())
@@ -507,7 +518,8 @@ async def wiki(ctx, *args):
     qu = ' '.join(list(args))
     searchResults = wikipedia.search(qu)
     if not searchResults:
-        embed = discord.Embed(title=f'**{qu}**', description='It appears that there is no instance of this in Wikipedia index...', colour=discord.Color.dark_red())
+        embed = discord.Embed(title=f'**{qu}**', description='It appears that there is no instance of this in Wikipedia index...',
+colour=discord.Color.dark_red())
         embed.set_footer(text='Powered by Wikipedia...')
         await ctx.send(embed=embed)
     else:
@@ -519,7 +531,8 @@ async def wiki(ctx, *args):
             pg = err.options
         wikiTitle = str(page.title.encode('utf-8'))
         wikiSummary = str(page.summary.encode('utf-8'))
-        embed = discord.Embed(title=f'**{wikiTitle[1:]}**', description=str(wikiSummary[1:900]) + '...', color=discord.Color.dark_orange(), url=page.url)
+        embed = discord.Embed(title=f'**{wikiTitle[1:]}**', description=str(wikiSummary[1:900]) + '...',
+color=discord.Color.dark_orange(), url=page.url)
         embed.set_footer(text='Powered by Wikipedia...')
         if pg != 0:
             s = pg[1:10] + ['...']
