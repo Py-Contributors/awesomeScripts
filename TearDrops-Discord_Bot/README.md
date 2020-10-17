@@ -22,7 +22,7 @@ NOTE- It is recommended that you add your own discord token while running the bo
 - NOTE: To replicate this bot, you will need a bot **token**. Go get yours at https://discord.com/developers/ (If you need help with this step, feel free to ask for help in our the py-awesomescripts server). 
 - Clone this repo using `git clone`
 - cd into the bot folder.
-- Add obtained **token** into the setup.py file line-1. token = "your_**token**"
+- Add obtained **token** into the setup.py file line-1. token = "your **token**"
 - Install discord.py module:
   ```
     python -m pip install discord.py
