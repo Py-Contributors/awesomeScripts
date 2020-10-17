@@ -46,15 +46,16 @@ client.remove_command('help')
 
 
 # status-change-cycle(The bot changes presence after a few mins.)
-STATUS = cycle(["qq help | :(",
-     "with your heart"
-     "in tears",
-     "with tears",
-     "with ",
-     "I'm so sad",
-     "with your tears...",
-     "with your feelings",
-     "with sparkles"])
+STATUS = cycle([
+    "qq help | :(",
+    "with your heart"
+    "in tears",
+    "with tears",
+    "with ",
+    "I'm so sad",
+    "with your tears...",
+    "with your feelings",
+    "with sparkles"])
 
 
 @client.event
@@ -317,11 +318,12 @@ Storing it in the vaults of tears.Spend them wisely...💧\nSpend it wisely...',
             embed.set_footer(text='😭')
             await ctx.send(embed=embed)
         else:
-            tr2 = ['You were not sad',
-             'You were surprisingly too happy to cry',
-             'You cried so much already that the tears are not coming out',
-             'You really tried but you could not cry',
-             'The tears are not coming out...']
+            tr2 = [
+                'You were not sad',
+                'You were surprisingly too happy to cry',
+                'You cried so much already that the tears are not coming out',
+                'You really tried but you could not cry',
+                'The tears are not coming out...']
             message = random.choice(tr2)
             embed = discord.Embed(title='**Tear Dispenser**', description=f"You can't cry rn.{message}", color=discord.Color.blue())
             embed.set_footer(text='😭')
