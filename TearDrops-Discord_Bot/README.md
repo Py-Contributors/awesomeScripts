@@ -16,7 +16,7 @@ NOTE- It is recommended that you add your own discord token while running the bo
 
 - [Invite the bot to your server](https://discord.com/api/oauth2/authorize?client_id=627772985872220161&permissions=379968&scope=bot)
 - To test the bot join this [Support Server](https://discord.gg/8HsG4Pj)
-  *NOTE- Bot is not active 24x7 as it is hosted on a server that is busy doing protein analysis for covid-19. To get a sample, join*[TearDropsSupport](https://discord.com/api/oauth2/authorize?client_id=627772985872220161&permissions=379968&scope=bot) and ping **@Tissue**
+   *NOTE- Bot is not active 24x7 as it is hosted on a server that is busy doing protein analysis for covid-19. To get a sample, join* [TearDropsSupport](https://discord.gg/Q4hxrDF) and ping **@Tissue**
 
 ## Hosting the bot on your own machine:
 - NOTE: To replicate this bot, you will need a bot **token**. Go get yours at https://discord.com/developers/ (If you need help with this step, feel free to ask for help in our the py-awesomescripts server). 
