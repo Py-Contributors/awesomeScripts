@@ -1,6 +1,4 @@
 discord
-sqlite3
-wolframalpha
+pymongo
+aiohttp
 wikipedia
-requests
-
