@@ -262,21 +262,22 @@ async def cmds(ctx):
     lists all the commands in the bot
     NOTE- To be edited
     """
-    embed = discord.Embed(title='**COMMANDS**', description="Here's a list of commands along with functions....", color=discord.Color.green())
+    text = "Here's a list of commands along with functions...."
+    embed = discord.Embed(title='**COMMANDS**', description=text, color=discord.Color.green())
     embed.add_field(name='helpme', value='displays the command prefix and a basic list of commands...')
-    embed.add_field(name='ping', value='The default check command for checking if bot is working...', inline=False)
-    embed.add_field(name='cmds', value='Dislays this message containing detailed list of commands with their functions', inline=False)
+    embed.add_field(name='ping', value='The ping command for pinging...', inline=False)
+    embed.add_field(name='cmds', value='Dislays this message', inline=False)
     embed.add_field(name='botinfo', value='Displays info on the bot...')
-    embed.add_field(name='say', value="Makes the bot say sentences that you want it to say. Alias- 'talk'. Usage- '_say <sentence/word>'")
+    embed.add_field(name='say', value="Makes the bot say stuff. Usage- '_say <sentence/word>'")
     embed.add_field(name='roast', value="This is the roast command.Go get 'em. Usage- '_roast <@member>'")
     embed.add_field(name='flirt', value="*wink *wink Wanna hit on someone?. Usage-'_flirt <@member>'")
     embed.add_field(name='compliment', value="Wanna commend and compliment someone?. Usage- '_compliment <@member>'")
     embed.add_field(name='geek', value='Prints geeky statements...Aliases= "pimp,techie"')
     embed.add_field(name='nerdystuff', value='Prints stuff for that one nerd in the chat....')
     embed.add_field(name='quote', value='Get ready for some of the best quotes ever....')
-    embed.add_field(name='fortune', value='Wanna know the future? Wanna find where you end up?. Aliases="future"')
+    embed.add_field(name='fortune', value='Wanna know the future? Aliases="future"')
     embed.add_field(name='8ball', value='Wanna ask questions from the crystal ball?. Aliases="seer". Usage-"_8ball <Question>"')
-    embed.add_field(name='coffee', value='Just try a nice cup of coffee.............')
+    embed.add_field(name='coffee', value='Just try a nice cup of coffee....')
     embed.add_field(name='wannagrabacoffe', value="Wanna ask your e-crush out? Here you go.... Usage-'_wannagrabacoffee <@member>'")
     embed.add_field(name='book', value='Wanna read a book. Here are some recommendations....')
     embed.add_field(name='dadjoke', value='Wanna hear some cringey bad jokes?')
