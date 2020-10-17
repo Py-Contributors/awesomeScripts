@@ -45,9 +45,4 @@ NOTE- It is recommended that you add your own discord token while running the bo
 - requests
 - sys
 
-## Commands:
-- Core: help, botinfo, ping, cmds, support
-- Economy:
-- FUN:
-- Utility: 
-
+## TODO- This isn't complete yet, more functionality will be added in say like a week or so
