@@ -1,11 +1,15 @@
 # Description: PDF2text
-this is a small script to make a extract text from pdf file.  
+This is a small script which extracts Text from a pdf file which is provided by the end user.
 
-### Dependencies:
-1- [pdftotext](https://pypi.org/project/pdftotext/)
+#Dependencies:
+For the dependencies please look in the requirements.txt file .. 
+To install the required packages just run :  pip install -r requirements.txt
 
-## Usage
-Run ```python script.py``` then enter path of pdf file.
+# Usage :
+
+To run the script.py file open cmd or terminal and type : python script.py 
+
+
 
 
 
