@@ -45,8 +45,8 @@ def checkLatency(game, serverDict, region):
     # Thread listening for key stroke
     th.Thread(target=enterCaptureThread, args=(), name='enterCaptureThread',
               daemon=True).start()
-    print("Checking latency for " + game + " in the " + region +
-          " region.You can press the Enter key to stop the script.")
+    print("Checking latency for " + game + " in the " + region
+          + " region.You can press the Enter key to stop the script.")
     for x in range(len(serverDict[region])):
         if enterPressed:
             try:
