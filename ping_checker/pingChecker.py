@@ -50,8 +50,8 @@ def checkLatency(game, serverDict, region):
     for x in range(len(serverDict[region])):
         if enterPressed:
             try:
-                cmd = str(subprocess.check_output("ping -n 10 " +
-                          serverDict[region][x]["Address"], shell=True))
+                cmd = str(subprocess.check_output("ping -n 10 "
+                          + serverDict[region][x]["Address"], shell=True))
                 tm = cmd[cmd.find('Average') + 10:cmd.find('Average') + 13]
                 averagePing = tm.replace('\\', "").replace('m', '')
                 if int(averagePing) < 90:
@@ -61,12 +61,12 @@ def checkLatency(game, serverDict, region):
                 else:
                     colour = Fore.RED
                 print(colour + "The average ping for " + game + " in "
-                      + serverDict[region][x]["Location"] + " is " +
-                      averagePing + "ms" + Fore.RESET)
+                      + serverDict[region][x]["Location"] + " is "
+                      + averagePing + "ms" + Fore.RESET)
             except subprocess.CalledProcessError:
-                print(Fore.RED + "Server for " + game + " in " +
-                      serverDict[region][x]["Location"] +
-                      " is unreachable" + Fore.RESET)
+                print(Fore.RED + "Server for " + game + " in "
+                      + serverDict[region][x]["Location"]
+                      + " is unreachable" + Fore.RESET)
             except Exception as e:
                 print(e)
     if not enterPressed:
@@ -81,8 +81,8 @@ def regionCheck(game, serverDict, regions):
     else:
         for region in regions:
             if region not in serverDict:
-                print(Fore.YELLOW + "Server information for " + game +
-                      " is unavailable in the " + region + " region")
+                print(Fore.YELLOW + "Server information for " + game
+                      + " is unavailable in the " + region + " region")
             else:
                 checkLatency(game, serverDict, region)
 
