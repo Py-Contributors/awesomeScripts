@@ -157,14 +157,14 @@ def main():
 
 # get_target_cost validates price input from user
 # Loops once on invalid input
-def get_target_cost(count=1):
+def get_target_cost(first=True):
     try:
-        int(input("Enter you budget price:"))
+        int(input("Enter your budget price:"))
     except ValueError:
-        if (count == 1):
+        if (first == True):
             print("Please enter only numbers; "
                   "not currency symbols.")
-            get_target_cost(count + 1)
+            get_target_cost(first=False)
         else:
             print("ERROR: Your target price wasn't valid")
             exit()
