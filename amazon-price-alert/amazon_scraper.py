@@ -1,8 +1,6 @@
 # Developed and maintained by https://github.com/sarthak1905
 from bs4 import BeautifulSoup
 from requests_html import HTMLSession
-from django.core.validators import URLValidator
-from django.core.exceptions import ValidationError
 import os
 import time
 import smtplib
@@ -125,8 +123,8 @@ class Scraper:
 
 
 def main():
-    url = get_url()
-    budget = input("Paste the link of the Amazon product:")
+    url = input("Paste the link of the Amazon product:")
+    budget = get_target_cost()
     u_email = input("Enter your email:")
     inp_str = ("How frequuently would you like to check the price?"
                "\n1.Every hour\n2.Every 3 hours\n3.Every 6 hours"
@@ -162,6 +160,7 @@ def get_target_cost(first=True):
 
     try:
         target = int(input("Enter your budget price:"))
+        return target
     except ValueError:
         if (first is True):
             print("Please enter only numbers; "
@@ -170,7 +169,6 @@ def get_target_cost(first=True):
         else:
             print("ERROR: Your target price wasn't valid")
             exit()
-    return target
 
 
 if __name__ == '__main__':
