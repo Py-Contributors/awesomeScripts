@@ -159,8 +159,9 @@ def main():
 # get_target_cost validates price input from user
 # Loops once on invalid input
 def get_target_cost(first=True):
+
     try:
-        int(input("Enter your budget price:"))
+        target = int(input("Enter your budget price:"))
     except ValueError:
         if (first is True):
             print("Please enter only numbers; "
@@ -169,6 +170,7 @@ def get_target_cost(first=True):
         else:
             print("ERROR: Your target price wasn't valid")
             exit()
+    return target
 
 
 # get_url validates URL input from user
