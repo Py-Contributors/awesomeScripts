@@ -126,7 +126,7 @@ class Scraper:
 
 def main():
     url = get_url()
-    budget = get_target_cost()
+    budget = input("Paste the link of the Amazon product:")
     u_email = input("Enter your email:")
     inp_str = ("How frequuently would you like to check the price?"
                "\n1.Every hour\n2.Every 3 hours\n3.Every 6 hours"
@@ -171,24 +171,6 @@ def get_target_cost(first=True):
             print("ERROR: Your target price wasn't valid")
             exit()
     return target
-
-
-# get_url validates URL input from user
-# Loops once on invalid input
-def get_url(first=True):
-    URL = input("Paste the link of the Amazon product:")
-    validate = URLValidator()
-    try:
-        validate(URL)
-    except ValidationError:
-        if (first is True):
-            print("Please enter a valid URL; "
-                  "Remember to include http/https")
-            get_url(first=False)
-        else:
-            print("ERROR: You didn't enter a valid URL")
-            exit()
-    return URL
 
 
 if __name__ == '__main__':
