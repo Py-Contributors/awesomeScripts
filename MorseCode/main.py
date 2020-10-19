@@ -29,15 +29,15 @@ if __name__ == "__main__":
             e_msg = encrypt.encrypt(z, MORSE_CODE_DICT)
             e_string = ""
             for i in e_msg:
-                e_string = e_string+i+"/ "
+                e_string = e_string + i + "/ "
             e_string = e_string[:-2]
-            print('encrypted code:'+e_string)
+            print('encrypted code:' + e_string)
         elif x == '2':
             z = input('Enter the code you want to convert to english:')
             d_msg = decrypt.decrypt(z, MORSE_CODE_DICT)
             d_string = ""
             for i in d_msg:
-                d_string = d_string+i+' '
+                d_string = d_string + i + ' '
             d_string = d_string[:-1]
             print(d_string)
         elif x == '3':

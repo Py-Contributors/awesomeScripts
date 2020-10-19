@@ -15,7 +15,7 @@ def encrypt(msg, MORSE_CODE_DICTIONARY):
                     'CAN NOT BE TRANSLATED TO MORSE CODE!!')
                 return EncryptedMessage
             MorseWord = MorseWord + MORSE_CODE_DICTIONARY[j.upper()]
-            MorseWord = MorseWord+" "
+            MorseWord = MorseWord + " "
         EncryptedMessage.append(MorseWord)
         MorseWord = ""
     return EncryptedMessage
