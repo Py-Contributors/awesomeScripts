@@ -3,13 +3,11 @@ import speech_recognition as SR
 import wikipedia 
 import sys
 
-engine = pyttsx3.init()
+engine = pyttsx3.init('sapi5')
 voices = engine.getProperty('voices')
-
 # for voice in voices:
 #     print(voice.id)
 # select voice among the available options 
-
 engine.setProperty('voice', voices[1].id) 
 
 def speak(audio):
@@ -23,7 +21,7 @@ def obey_command():
         print("Listening...")
         mic.pause_threshold = 1
         audio = mic.listen(source)
-
+    
     try:
         print("Recognizing...")
         query = mic.recognize_google(audio, language='en-in')
@@ -45,5 +43,5 @@ if __name__ == "__main__":
             result = wikipedia.summary(query, sentences=2)
             speak("According to wikipedia")
             speak(result)
-
+    
     sys.exit()
