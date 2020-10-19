@@ -494,6 +494,21 @@ before making a Pull Request
   <td align="center">Vyvy-vi</td>
   <td align="left">A discord bot wrapped around the theme of tears and crying.</td>
 </tr>
+<tr>
+  <td align="left"><a href="/ping_checker/">ping_checker</td>
+  <td align="center">AbdulMAbdi</td>
+  <td align="left">PingChecker is a Python program that checks your latency for various games by pinging the game servers</td>
+</tr>
+<tr>
+  <td align="left"><a href="/img_to_ascii_converter/">img_to_ascii_converter</td>
+  <td align="center">volt9801</td>
+  <td align="left">Pass the path to image as a parameter to the convert() function to get ASCII version of the image which can be printed out to be copy-pasted</td>
+</tr>
+<tr>
+  <td align="left"><a href="/aws_s3_data_download/">aws_s3_data_download</td>
+  <td align="center">sainimohit23</td>
+  <td align="left">Use this script to download files from S3 bucket.</td>
+</tr>
 </tbody>
 </table>
 
@@ -526,7 +541,7 @@ before making a Pull Request
     <tr>
       <td align="left">habereet</td>
       <td align="left"><a href="/amazon-price-alert/">amazon-price-alert</a></td>
-      <td>#251</td>
+      <td>#251 #276 #277</td>
     </tr>
   </tbody>
 </table>
