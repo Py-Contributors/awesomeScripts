@@ -26,7 +26,7 @@
 </p>
 
 ## How to Contribute 🤔
-<hr>
+
 You can contribute by adding new scripts, improving current scripts or Documentation.Here are some Instructions
 before making a Pull Request
 

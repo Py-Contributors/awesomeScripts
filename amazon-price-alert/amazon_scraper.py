@@ -31,14 +31,21 @@ class Scraper:
 
     # Stores the title of the product
     def get_title(self):
-        temp_title = self.soup.find('span', id='productTitle').text.strip()
-        temp_list_title = []
-        for x in temp_title:
-            if x == '(':
-                break
-            temp_list_title.append(x)
-        self.product_title = ''.join(temp_list_title)
-        return self.product_title
+        try:
+            temp_title = self.soup.find('span', id='productTitle').text.strip()
+            temp_list_title = []
+            for x in temp_title:
+                if x == '(':
+                    break
+                temp_list_title.append(x)
+            self.product_title = ''.join(temp_list_title)
+            return self.product_title
+        except Exception:
+            print("\n")
+            print("ERROR - We weren't able to find the name of the product")
+            print("\n")
+            print("Exiting the script")
+            exit()
 
     # Stores the price of the product after filtering the string and
     # converting it to an integer
@@ -118,7 +125,7 @@ class Scraper:
 def main():
     url = input(
         "Paste the link of the Amazon product:")
-    budget = int(input("Enter you budget price:"))
+    budget = get_target_cost()
     u_email = input("Enter your email:")
     inp_str = ("How frequuently would you like to check the price?"
                "\n1.Every hour\n2.Every 3 hours\n3.Every 6 hours"
@@ -146,6 +153,21 @@ def main():
         if c3po.run():
             break
         time.sleep(time_delay)
+
+
+# get_target_cost validates price input from user
+# Loops once on invalid input
+def get_target_cost(count=1):
+    try:
+        int(input("Enter you budget price:"))
+    except ValueError:
+        if (count == 1):
+            print("Please enter only numbers; "
+                  "not currency symbols.")
+            get_target_cost(count + 1)
+        else:
+            print("ERROR: Your target price wasn't valid")
+            exit()
 
 
 if __name__ == '__main__':
