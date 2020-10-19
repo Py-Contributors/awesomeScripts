@@ -123,8 +123,7 @@ class Scraper:
 
 
 def main():
-    url = input(
-        "Paste the link of the Amazon product:")
+    url = input("Paste the link of the Amazon product:")
     budget = get_target_cost()
     u_email = input("Enter your email:")
     inp_str = ("How frequuently would you like to check the price?"
@@ -157,14 +156,16 @@ def main():
 
 # get_target_cost validates price input from user
 # Loops once on invalid input
-def get_target_cost(count=1):
+def get_target_cost(first=True):
+
     try:
-        int(input("Enter you budget price:"))
+        target = int(input("Enter your budget price:"))
+        return target
     except ValueError:
-        if (count == 1):
+        if (first is True):
             print("Please enter only numbers; "
                   "not currency symbols.")
-            get_target_cost(count + 1)
+            get_target_cost(first=False)
         else:
             print("ERROR: Your target price wasn't valid")
             exit()
