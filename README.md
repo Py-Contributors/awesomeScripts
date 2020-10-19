@@ -429,6 +429,71 @@ before making a Pull Request
   <td align="center">brunobastos</td>
   <td align="left">Resizes an image based on the specified width and height.</td>
 </tr>
+<tr>
+  <td align="left"><a href="/youtube-video-downloader/">youtube-video-downloader</td>
+  <td align="center">Jade9ja</td>
+  <td align="left">Download videos from youtube in 1080p (or whatever lower avalaible can be changed inside the script)</td>
+</tr>
+<tr>
+  <td align="left"><a href="/clock/">clock</td>
+  <td align="center">jyothsnashaji</td>
+  <td align="left">Python Clock Script</td>
+</tr>
+<tr>
+  <td align="left"><a href="/serial_read/">serial_read</td>
+  <td align="center">JenishRudani</td>
+  <td align="left">an awesome script to read serial data from any device e.g. Arduino, Raspberry Pi, ESP32 or ESP8266, or even from a virtual serial port</td>
+</tr>
+<tr>
+  <td align="left"><a href="/movie-recommendation-script/">movie-recommendation-script</td>
+  <td align="center">Jainchhavi16</td>
+  <td align="left">This script scrapes IMDB site to display top 5 movies based on emotion entered.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/medium_article_scraper/">medium_article_scraper</td>
+  <td align="center">HolgerDoerner</td>
+  <td align="left">A Medium article scrapper tool written in Python.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/medium_article_scraper/">disk_usage</td>
+  <td align="center">ferhah</td>
+  <td align="left">A Medium article scrapper tool written in Python.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/medium_article_scraper/">medium_article_scraper</td>
+  <td align="center">HolgerDoerner</td>
+  <td align="left">Display and/log the free space of a given path every N seconds.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/tfHub_sentence_similarity/">tfHub_sentence_similarity</td>
+  <td align="center">sainimohit23</td>
+  <td align="left">A script to calculate the similarity between two sentences.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/ballBurstingGameOpenCV/">ballBurstingGameOpenCV</td>
+  <td align="center">tre3x</td>
+  <td align="left">Missing README</td>
+</tr>
+<tr>
+  <td align="left"><a href="/youtube-private-playlist-downloader/">youtube-private-playlist-downloader</td>
+  <td align="center">nkpro2000sr</td>
+  <td align="left">Download and delete videos from your youtube private playlist.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/utility/">utility</td>
+  <td align="center">Qwerty-1331</td>
+  <td align="left">This script has a bunch of utility functions for storing data, setting up timers, and all that jazz.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/utility/">utility</td>
+  <td align="center">Qwerty-1331</td>
+  <td align="left">This script has a bunch of utility functions for storing data, setting up timers, and all that jazz.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/tearDrops-Discord_Bot/">tearDrops-Discord_Bot</td>
+  <td align="center">Vyvy-vi</td>
+  <td align="left">A discord bot wrapped around the theme of tears and crying.</td>
+</tr>
 </tbody>
 </table>
 
@@ -445,13 +510,23 @@ before making a Pull Request
   <tbody>
     <tr>
       <td align="left">MNISAR</td>
-      <td align="left"><a href="email_sending_script/">email_sending_script</a></td>
+      <td align="left"><a href="/email_sending_script/">email_sending_script</a></td>
       <td>#133</td>
     </tr>
     <tr>
       <td align="left">ferhah</td>
-      <td align="left"><a href="send_telegram_message/">send_telegram_message</a></td>
+      <td align="left"><a href="/send_telegram_message/">send_telegram_message</a></td>
       <td>#246</td>
+    </tr>
+    <tr>
+      <td align="left">IharSha</td>
+      <td align="left"><a href="/english_dictionary/">english_dictionary</a></td>
+      <td>#273</td>
+    </tr>
+    <tr>
+      <td align="left">habereet</td>
+      <td align="left"><a href="/amazon-price-alert/">amazon-price-alert</a></td>
+      <td>#251</td>
     </tr>
   </tbody>
 </table>
