@@ -1,0 +1,162 @@
+{
+    "LoL": {
+        "NA": [
+            {
+                "Location": "North America",
+                "Address": "104.160.131.3"
+            }
+        ],
+        "EU": [
+            {
+                "Location": "EU-West",
+                "Address": "104.160.141.3"
+            },
+            {
+                "Location": "EU-NorthEast",
+                "Address": "104.160.142.3"
+            }
+        ],
+        "Oce": [
+            {
+                "Location": "Oceania",
+                "Address": "104.160.156.1"
+            }
+        ],
+        "SA": [
+            {
+                "Location": "LAN",
+                "Address": "104.160.136.3"
+            }
+        ]
+    },
+    "Fortnite": {
+        "NA": [
+            {
+                "Location": "NA-West",
+                "Address": "qosping-aws-us-west-1.ol.epicgames.com"
+            },
+            {
+                "Location": "NA-East",
+                "Address": "qosping-aws-us-east-1.ol.epicgames.com"
+            }
+        ],
+        "EU": [
+            {
+                "Location": "Europe",
+                "Address": "qosping-aws-eu-west-3.ol.epicgames.com"
+            }
+        ],
+        "Oce": [
+            {
+                "Location": "Oceania",
+                "Address": "qosping-aws-ap-southeast-2.ol.epicgames.com"
+            }
+        ],
+        "SA": [
+            {
+                "Location": "Brazil",
+                "Address": "qosping-aws-sa-east-1.ol.epicgames.com"
+            }
+        ],
+        "Asia": [
+            {
+                "Location": "Asia",
+                "Address": "qosping-aws-ap-northeast-1.ol.epicgames.com"
+            }
+        ],
+        "MEA": [
+            {
+                "Location": "Middle East",
+                "Address": "qosping-aws-ap-northeast-1.ol.epicgames.com"
+            }
+        ]
+    },
+    "DOTA": {
+        "NA": [
+            {
+                "Location": "NA-East",
+                "Address": "iad.valve.net"
+            },
+            {
+                "Location": "NA-West",
+                "Address": "eat.valve.net"
+            }
+        ],
+        "EU": [
+            {
+                "Location": "EU-West",
+                "Address": "lux.valve.net"
+            },
+            {
+                "Location": "EU-East",
+                "Address": "vie.valve.net"
+            }
+        ],
+        "Oce": [
+            {
+                "Location": "Oceania",
+                "Address": "syd.valve.net"
+            }
+        ],
+        "SA": [
+            {
+                "Location": "Brazil",
+                "Address": "qosping-aws-sa-east-1.ol.epicgames.com"
+            }
+        ],
+        "Asia": [
+            {
+                "Location": "South East Asia",
+                "Address": "sgp-1.valve.net"
+            },
+            {
+                "Location": "India",
+                "Address": "116.202.224.146"
+            }
+        ],
+        "MEA": [
+            {
+                "Location": "Middle East",
+                "Address": "dxb.valve.net"
+            }
+        ]
+    },
+    "Overwatch": {
+        "NA": [
+            {
+                "Location": "NA-Central",
+                "Address": "24.105.62.129 "
+            },
+            {
+                "Location": "NA-West",
+                "Address": "24.105.30.129"
+            }
+        ],
+        "EU": [
+            {
+                "Location": "EU-West",
+                "Address": "185.60.114.159"
+            },
+            {
+                "Location": "EU-East",
+                "Address": "185.60.112.157"
+            }
+        ],
+        "SA": [
+            {
+                "Location": "Brazil",
+                "Address": "54.207.107.12"
+            }
+        ],
+        "Asia": [
+            {
+                "Location": "Korea",
+                "Address": "211.234.110.1"
+            },
+            {
+                "Location": "Taiwan",
+                "Address": "203.66.81.98"
+            }
+        ]
+    }
+}
