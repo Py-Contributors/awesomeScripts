@@ -38,11 +38,9 @@ before making a Pull Request
 - [x] Use Flake8 locally for linting Python Code.(We have linting checks so if your code fails it we will not merge the PR.)
   - `pip install flake8`
 
-<details><summary><b>Show instructions</b></summary>
+## Show instructions
 
 <img src="https://raw.githubusercontent.com/DrakeEntity/project-Image/master/carbon%20(1).png" alt="flake8 py">
-
-</details>
 
 ## Projects links 🔗
 
