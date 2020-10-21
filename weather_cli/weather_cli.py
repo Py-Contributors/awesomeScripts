@@ -15,9 +15,11 @@ def init_args():
     """Defines command line arguments.
 
     Returns:
-        ArgumentParser: argument parser that contains the specified arguments.
+        ArgumentParser: argument parser that contains the specified
+        arguments.
     """
-    helper = 'Retrieves the current weather data from the api.openweathremap.org server of the given city.'
+    helper = 'Retrieves the current weather data from the api \
+    openweathremap.org server of the given city.'
     parser = argparse.ArgumentParser(description=helper)
 
     parser.add_argument(
@@ -25,21 +27,29 @@ def init_args():
     parser.add_argument('-v', '--verbose', action='store_true',
                         help='displays more weather data')
     parser.add_argument('-u', '--units', action='store',
-                        help='for temperature in Fahrenheit use "imperial", for temperature in Celsius use "metric", temperature in Kelvin is used by default, no need to use units parameter in API call.')
+                        help='for temperature in Fahrenheit use "imperial"\
+                            ,for temperature in Celsius use "metric",\
+                            temperature in Kelvin is used by default,\
+                            no need to use units parameter in API call.')
 
     return parser
 
 
 def get_weather_data(city, units):
-    """Retrieves the weather data of the given city name from 'api.openweathermap.org'.
+    """Retrieves the weather data of the given city name
+    from 'api.openweathermap.org'.
 
     Args:
         city (string): CITY ID, or a list of cities names.
-        units (string): for temperature in Fahrenheit use "imperial", for temperature in Celsius use "metric", temperature in Kelvin is used by default, no need to use units parameter in API call.
+        units (string): for temperature in Fahrenheit use "imperial",
+        for temperature in Celsius use "metric",
+        temperature in Kelvin is used by default,
+        no need to use units parameter in API call.
 
 
     Returns:
-        dict: A dictionary contains all data about the weather of the given city(ies)
+        dict: A dictionary contains all data about
+        the weather of the given city.
     """
     API_KEY = environ['WEATHER_API_KEY']
     URL = "http://api.openweathermap.org/data/2.5/weather?"
@@ -58,7 +68,8 @@ def print_weather_data(data, verbose):
 
     Args:
         data (dict): dictionary that contains the weather data.
-        verbose (boolean): if `True`, more detail will be printed about the weather and the city.
+        verbose (boolean): if `True`, more detail will be printed about
+        the weather and the city.
     """
 
     info = f"""
@@ -74,15 +85,19 @@ def print_weather_data(data, verbose):
 
     info += f"""
     ------------------------------
-    Temperature : {data['main']['temp']} ({data['main']['temp_min']}/{data['main']['temp_max']})
-    Pressure    : {data['main']['pressure']} 
-    Humidity    : {data['main']['humidity']} 
+    Temperature : {data['main']['temp']}"""
+    if verbose:
+        info += f"""
+    Temp min    : {data['main']['temp_min']}
+    Temp max    : {data['main']['temp_max']}"""
+
+    info += f"""
+    Pressure    : {data['main']['pressure']}
+    Humidity    : {data['main']['humidity']}
     Wind speed  : {data['wind']['speed']}
     Wind deg    : {data['wind']['deg']}
     ------------------------------"""
-    if verbose:
-        info += f"""
-        """
+
     return info
 
 
