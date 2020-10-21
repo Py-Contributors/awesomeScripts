@@ -1,6 +1,9 @@
 # Developed and maintained by https://github.com/sarthak1905
 from bs4 import BeautifulSoup
 from requests_html import HTMLSession
+# These will be used to check for URL validity and exceptions if not valid
+from django.core.validators import URLValidator
+from django.core.exceptions import ValidationError
 import os
 import time
 import smtplib
@@ -123,7 +126,7 @@ class Scraper:
 
 
 def main():
-    url = input("Paste the link of the Amazon product:")
+    url = get_url()
     budget = get_target_cost()
     u_email = input("Enter your email:")
     inp_str = ("How frequuently would you like to check the price?"
@@ -169,6 +172,22 @@ def get_target_cost(first=True):
         else:
             print("ERROR: Your target price wasn't valid")
             exit()
+
+
+def get_url(first=True):
+    URL = input("Paste the link of the Amazon product:")
+    validate = URLValidator()
+    try:
+        validate(URL)
+    except ValidationError:
+        if (first is True):
+            print("Please enter a valid URL; "
+                  "Remember to include http/https")
+            get_url(first=False)
+        else:
+            print("ERROR: You didn't enter a valid URL")
+            exit()
+    return URL
 
 
 if __name__ == '__main__':
