@@ -171,3 +171,6 @@ dmypy.json
 
 # exe files
 *.exe
+
+# MacOS folder
+.DS_Store

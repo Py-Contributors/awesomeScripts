@@ -13,8 +13,10 @@ def get_city_weather(city_name):
     # Not Setting Up API Key will respond with a 401 Error Code and Invalid
     # API Key message
     OPEN_WEATHER_API_KEY = os.getenv("OPEN_WEATHER_API_KEY")
-    URL = f"http://api.openweathermap.org/data/2.5/weather \
-            ?q={city_name}&appid={OPEN_WEATHER_API_KEY}"
+    URL = (
+        f'http://api.openweathermap.org/data/2.5/weather?'
+        f'q={city_name}&appid={OPEN_WEATHER_API_KEY}'
+    )
     response = requests.get(URL).json()
     return response
 
