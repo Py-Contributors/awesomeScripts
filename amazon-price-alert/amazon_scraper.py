@@ -1,6 +1,9 @@
 # Developed and maintained by https://github.com/sarthak1905
 from bs4 import BeautifulSoup
 from requests_html import HTMLSession
+# These will be used to check for URL validity and exceptions if not valid
+from django.core.validators import URLValidator
+from django.core.exceptions import ValidationError
 import os
 import time
 import smtplib
@@ -31,14 +34,21 @@ class Scraper:
 
     # Stores the title of the product
     def get_title(self):
-        temp_title = self.soup.find('span', id='productTitle').text.strip()
-        temp_list_title = []
-        for x in temp_title:
-            if x == '(':
-                break
-            temp_list_title.append(x)
-        self.product_title = ''.join(temp_list_title)
-        return self.product_title
+        try:
+            temp_title = self.soup.find('span', id='productTitle').text.strip()
+            temp_list_title = []
+            for x in temp_title:
+                if x == '(':
+                    break
+                temp_list_title.append(x)
+            self.product_title = ''.join(temp_list_title)
+            return self.product_title
+        except Exception:
+            print("\n")
+            print("ERROR - We weren't able to find the name of the product")
+            print("\n")
+            print("Exiting the script")
+            exit()
 
     # Stores the price of the product after filtering the string and
     # converting it to an integer
@@ -116,9 +126,8 @@ class Scraper:
 
 
 def main():
-    url = input(
-        "Paste the link of the Amazon product:")
-    budget = int(input("Enter you budget price:"))
+    url = get_url()
+    budget = get_target_cost()
     u_email = input("Enter your email:")
     inp_str = ("How frequuently would you like to check the price?"
                "\n1.Every hour\n2.Every 3 hours\n3.Every 6 hours"
@@ -146,6 +155,39 @@ def main():
         if c3po.run():
             break
         time.sleep(time_delay)
+
+
+# get_target_cost validates price input from user
+# Loops once on invalid input
+def get_target_cost(first=True):
+
+    try:
+        target = int(input("Enter your budget price:"))
+        return target
+    except ValueError:
+        if (first is True):
+            print("Please enter only numbers; "
+                  "not currency symbols.")
+            get_target_cost(first=False)
+        else:
+            print("ERROR: Your target price wasn't valid")
+            exit()
+
+
+def get_url(first=True):
+    URL = input("Paste the link of the Amazon product:")
+    validate = URLValidator()
+    try:
+        validate(URL)
+    except ValidationError:
+        if (first is True):
+            print("Please enter a valid URL; "
+                  "Remember to include http/https")
+            get_url(first=False)
+        else:
+            print("ERROR: You didn't enter a valid URL")
+            exit()
+    return URL
 
 
 if __name__ == '__main__':
