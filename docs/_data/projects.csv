@@ -39,7 +39,7 @@ image2PencilSketch,neel2904,Change Image to Pencil Sketch
 url-Shortner,shubham5351,A simple script in python which is used to shorten the url of the given url
 text to Sound,bbetulkaya,Python script for convert text to sound.
 wifi-password-getter,harshit-saraswat,This will help to get any stored wifi connection names and their passwords
-telegram-message,YorozuyaDev,send telegram message using python
+send_telegram_message,YorozuyaDev,send telegram message using python
 image_text_encryption,YaraYasser,encrypt text and images
 accelerometer-connector,sigdelsanjog,This script retrieves data from a MPU6050 Accelerometer and GY521 Gyroscope and saves the data to gyroscope and accelerometer table in MySQL database.
 snake&Ladder,sidfrombhaiya,This is a simple text based snake and ladder game, with minimal libraries required.
@@ -62,3 +62,29 @@ gender & ethnicity,codeperfectplus,A helpful script to fill missing data by mach
 programming-quote,codeperfectplus,Programming Quotes API for open source projects. credits in README.md
 replace_words,nandacamargo,This script reads a file and replace all occurrences of the first word with the second one.
 yt_clipper,epassaro,Make short clips from YouTube videos
+flipkart-price-alert,Jade9ja,Checks for the price of a desired product periodically.
+  If the price drops below the desired amount, notifies the user via email.
+random_fact,Qwerty-1331,Gets a fact from numbersAPI about **math**, **trivia**, **date**, **year**
+port_scanner,akamhy,A high speed multi-threaded port scanner. With no dependency other than packages in the Python Standard Library!
+currency_converter,brunobastos,Converts the specified amount from a currency to another.
+duplicate_file_finder,yogeshsingh101200,Python script to find duplicate files in given path.
+exif_viewer,akamhy,This script can show you EXIF data for anytype of image supported by pillow package(e.g. jpeg/jpg, png, tiff, etc).
+pdf2text,quangph-1686a,This is a small script to make a extract text from pdf file.
+english_dictionary,alovictor,This simple dictionary returns to you the meaning of the input word.
+image_resizer,brunobastos,Resizes an image based on the specified width and height.
+youtube-video-downloader,Jade9ja,Download videos from youtube in 1080p (or whatever lower avalaible can be changed inside the script)
+clock,jyothsnashaji,Python Clock Script
+serial_read,JenishRudani,an awesome script to read serial data from any device e.g. Arduino, Raspberry Pi, ESP32 or ESP8266, or even from a virtual serial port
+movie-recommendation-script,Jainchhavi16,This script scrapes IMDB site to display top 5 movies based on emotion entered.
+medium_article_scraper,HolgerDoerner,A Medium article scrapper tool written in Python.
+disk_usage,ferhah,A Medium article scrapper tool written in Python.
+medium_article_scraper,HolgerDoerner,Display and/log the free space of a given path every N seconds.
+tfHub_sentence_similarity,sainimohit23,A script to calculate the similarity between two sentences.
+ballBurstingGameOpenCV,tre3x,Missing README
+youtube-private-playlist-downloader,nkpro2000sr,Download and delete videos from your youtube private playlist.
+utility,Qwerty-1331,This script has a bunch of utility functions for storing data, setting up timers, and all that jazz.
+utility,Qwerty-1331,This script has a bunch of utility functions for storing data, setting up timers, and all that jazz.
+tearDrops-Discord_Bot,Vyvy-vi,A discord bot wrapped around the theme of tears and crying.
+ping_checker,AbdulMAbdi,PingChecker is a Python program that checks your latency for various games by pinging the game servers
+img_to_ascii_converter,volt9801,Pass the path to image as a parameter to the convert() function to get ASCII version of the image which can be printed out to be copy-pasted
+aws_s3_data_download,sainimohit23,Use this script to download files from S3 bucket.
