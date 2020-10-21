@@ -162,8 +162,7 @@ def main():
 def get_target_cost(count=1):
 
     try:
-        target = int(input("Enter your budget price:"))
-        return target
+        int(input("Enter you budget price:"))
     except ValueError:
         if (count == 1):
             print("Please enter only numbers; "
