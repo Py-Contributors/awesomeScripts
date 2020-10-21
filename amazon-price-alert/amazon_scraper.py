@@ -162,9 +162,10 @@ def main():
 def get_target_cost(first=True):
 
     try:
-        int(input("Enter you budget price:"))
+        target = int(input("Enter your budget price:"))
+        return target
     except ValueError:
-        if (first == True):
+        if (first is True):
             print("Please enter only numbers; "
                   "not currency symbols.")
             get_target_cost(first=False)
