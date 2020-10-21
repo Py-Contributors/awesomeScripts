@@ -42,7 +42,7 @@ def get_weather_data(city, units):
         dict: A dictionary contains all data about the weather of the given city(ies)
     """
     API_KEY = environ['WEATHER_API_KEY']
-    URL = f"http://api.openweathermap.org/data/2.5/weather?"
+    URL = "http://api.openweathermap.org/data/2.5/weather?"
     URL += f"q={city}&"
     # use units argument if specified
     if units != "":
