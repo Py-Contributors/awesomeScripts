@@ -69,6 +69,7 @@ before making a Pull Request
     </tr>
   </tbody>
 </table>
+
 ## 🤝 Scripts and contributorss 🤝
 
 <!--Restrictions -->
