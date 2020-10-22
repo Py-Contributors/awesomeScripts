@@ -10,11 +10,11 @@ def get_pdf(book_path):
         book = open(book_path, 'rb')
         pdfReader = PyPDF2.PdfFileReader(book)
         return pdfReader
-    except:
-        print("It doesnot look like a Pdf file. may be the path is wrong")        
+    except Exception:
+        print("It doesnot look like a Pdf file. may be the path is wrong")
 
 
-def text_to_speech(book_path):    
+def text_to_speech(book_path):
     pdfReader = get_pdf(book_path)
     try:
         pages = pdfReader.numPages
@@ -32,8 +32,9 @@ def text_to_speech(book_path):
             engine.say(text)
             engine.runAndWait()
             engine.stop()
-    except:
+    except Exception:
         print("Double check the file type or the file path")
+
 
 if __name__ == "__main__":
     book_path = sys.argv[1]
