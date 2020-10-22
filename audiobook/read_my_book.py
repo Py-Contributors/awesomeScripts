@@ -1,25 +1,16 @@
 #!/usr/bin/python
 
-import sys
 import pyttsx3
 import PyPDF2
 
 
-class PdfReader:
+class AudioBook:
     def __init__(self, book_path):
         self.book_path = book_path
 
-    def get_pdf(self):
-        try:
-            book = open(book_path, 'rb')
-            pdfReader = PyPDF2.PdfFileReader(book)
-            return pdfReader
-        except Exception:
-            print("It doesnot look like a Pdf file. may be the path is wrong")
-
     def text_to_speech(self):
-        pdfReader = self.get_pdf()
-        try:
+        with open(self.book_path, "rb") as book:
+            pdfReader = PyPDF2.PdfFileReader(book)
             pages = pdfReader.numPages
             print("The Book has total: " + str(pages) + " pages!")
 
@@ -35,11 +26,3 @@ class PdfReader:
                 engine.say(text)
                 engine.runAndWait()
                 engine.stop()
-        except Exception:
-            print("Double check the file type or the file path")
-
-
-if __name__ == "__main__":
-    book_path = sys.argv[1]
-    reader = PdfReader(book_path)
-    reader.text_to_speech()

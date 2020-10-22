@@ -22,10 +22,6 @@ pip install audiobook
 
 Audio Book is Python script to read pdf files.Use command link to enter the file location
 
-```sh
-python3 read_my_book.py <book_path>
-```
-
 ### Linux installation requirements
 
 - If you are on a linux system and if the voice output is not working , then :
