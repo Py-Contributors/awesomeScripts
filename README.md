@@ -51,6 +51,24 @@ before making a Pull Request
 
 - Help us to improve script. Report a bug [here](https://github.com/Py-Contributors/awesomeScripts/issues/new?assignees=codePerfectPlus&labels=bug&template=bug_report.md&title=)
 
+## Packages
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Package Name</th>
+      <th align="center">pip command</th>
+      <th align="right">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left">AudioBook</td>
+      <td align="center">pip install audiobook</td>
+      <td align="right">Listen any PDF book with just few line of Python code</td>
+    </tr>
+  </tbody>
+</table>
 ## 🤝 Scripts and contributorss 🤝
 
 <!--Restrictions -->
