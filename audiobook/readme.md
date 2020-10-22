@@ -1,26 +1,25 @@
 # Audio Book
 
-> Read any PDF book with just few line of
+> Listen any PDF book with just few line of
 
 ## Installation
 
-Create new Virtual ENV:
+Install the audibook with pip
 
 ```sh
-pip install pipenv
-pipenv install -r requirements.txt
-pipenv shell
-```
-
-you can also download the audiobook module with help of pip
-
-```bash
 pip install audiobook
 ```
 
 ## Usage example
 
 Audio Book is Python script to read pdf files.Use command link to enter the file location
+
+```python
+
+from audiobook import Audiobook
+ab = Audiobook("file_path")
+ab.text_to_speech()
+```
 
 ### Linux installation requirements
 
