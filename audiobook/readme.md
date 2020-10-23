@@ -10,10 +10,17 @@ Install the audibook with pip
 pip install audiobook
 ```
 
+you can also download the audiobook module with help of pip
+
+```bash
+pip install audiobook
+```
+
 ## Usage example
 
 Audio Book is Python script to read pdf files.Use command link to enter the file location
 
+<<<<<<< HEAD
 ```python
 
 from audiobook import Audiobook
@@ -21,6 +28,8 @@ ab = Audiobook("file_path")
 ab.text_to_speech()
 ```
 
+=======
+>>>>>>> 5f1337938ee0816cc4f09a908744f82686b6eb15
 ### Linux installation requirements
 
 - If you are on a linux system and if the voice output is not working , then :
