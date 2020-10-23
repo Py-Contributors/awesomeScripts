@@ -38,11 +38,9 @@ before making a Pull Request
 - [x] Use Flake8 locally for linting Python Code.(We have linting checks so if your code fails it we will not merge the PR.)
   - `pip install flake8`
 
-<details><summary><b>Show instructions</b></summary>
+## Show instructions
 
 <img src="https://raw.githubusercontent.com/DrakeEntity/project-Image/master/carbon%20(1).png" alt="flake8 py">
-
-</details>
 
 ## Projects links 🔗
 
@@ -52,6 +50,25 @@ before making a Pull Request
 ## Report a Bug 🐛
 
 - Help us to improve script. Report a bug [here](https://github.com/Py-Contributors/awesomeScripts/issues/new?assignees=codePerfectPlus&labels=bug&template=bug_report.md&title=)
+
+## Packages
+
+<table>
+  <thead>
+    <tr>
+      <th align="left">Package Name</th>
+      <th align="center">pip command</th>
+      <th align="right">description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td align="left">AudioBook</td>
+      <td align="center">pip install audiobook</td>
+      <td align="right">Listen any PDF book with just few line of Python code</td>
+    </tr>
+  </tbody>
+</table>
 
 ## 🤝 Scripts and contributorss 🤝
 
@@ -429,6 +446,86 @@ before making a Pull Request
   <td align="center">brunobastos</td>
   <td align="left">Resizes an image based on the specified width and height.</td>
 </tr>
+<tr>
+  <td align="left"><a href="/youtube-video-downloader/">youtube-video-downloader</td>
+  <td align="center">Jade9ja</td>
+  <td align="left">Download videos from youtube in 1080p (or whatever lower avalaible can be changed inside the script)</td>
+</tr>
+<tr>
+  <td align="left"><a href="/clock/">clock</td>
+  <td align="center">jyothsnashaji</td>
+  <td align="left">Python Clock Script</td>
+</tr>
+<tr>
+  <td align="left"><a href="/serial_read/">serial_read</td>
+  <td align="center">JenishRudani</td>
+  <td align="left">an awesome script to read serial data from any device e.g. Arduino, Raspberry Pi, ESP32 or ESP8266, or even from a virtual serial port</td>
+</tr>
+<tr>
+  <td align="left"><a href="/movie-recommendation-script/">movie-recommendation-script</td>
+  <td align="center">Jainchhavi16</td>
+  <td align="left">This script scrapes IMDB site to display top 5 movies based on emotion entered.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/medium_article_scraper/">medium_article_scraper</td>
+  <td align="center">HolgerDoerner</td>
+  <td align="left">A Medium article scrapper tool written in Python.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/medium_article_scraper/">disk_usage</td>
+  <td align="center">ferhah</td>
+  <td align="left">A Medium article scrapper tool written in Python.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/medium_article_scraper/">medium_article_scraper</td>
+  <td align="center">HolgerDoerner</td>
+  <td align="left">Display and/log the free space of a given path every N seconds.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/tfHub_sentence_similarity/">tfHub_sentence_similarity</td>
+  <td align="center">sainimohit23</td>
+  <td align="left">A script to calculate the similarity between two sentences.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/ballBurstingGameOpenCV/">ballBurstingGameOpenCV</td>
+  <td align="center">tre3x</td>
+  <td align="left">Missing README</td>
+</tr>
+<tr>
+  <td align="left"><a href="/youtube-private-playlist-downloader/">youtube-private-playlist-downloader</td>
+  <td align="center">nkpro2000sr</td>
+  <td align="left">Download and delete videos from your youtube private playlist.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/utility/">utility</td>
+  <td align="center">Qwerty-1331</td>
+  <td align="left">This script has a bunch of utility functions for storing data, setting up timers, and all that jazz.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/utility/">utility</td>
+  <td align="center">Qwerty-1331</td>
+  <td align="left">This script has a bunch of utility functions for storing data, setting up timers, and all that jazz.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/tearDrops-Discord_Bot/">tearDrops-Discord_Bot</td>
+  <td align="center">Vyvy-vi</td>
+  <td align="left">A discord bot wrapped around the theme of tears and crying.</td>
+</tr>
+<tr>
+  <td align="left"><a href="/ping_checker/">ping_checker</td>
+  <td align="center">AbdulMAbdi</td>
+  <td align="left">PingChecker is a Python program that checks your latency for various games by pinging the game servers</td>
+</tr>
+<tr>
+  <td align="left"><a href="/img_to_ascii_converter/">img_to_ascii_converter</td>
+  <td align="center">volt9801</td>
+  <td align="left">Pass the path to image as a parameter to the convert() function to get ASCII version of the image which can be printed out to be copy-pasted</td>
+</tr>
+<tr>
+  <td align="left"><a href="/aws_s3_data_download/">aws_s3_data_download</td>
+  <td align="center">sainimohit23</td>
+  <td align="left">Use this script to download files from S3 bucket.</td>
+</tr>
 </tbody>
 </table>
 
@@ -445,13 +542,23 @@ before making a Pull Request
   <tbody>
     <tr>
       <td align="left">MNISAR</td>
-      <td align="left"><a href="email_sending_script/">email_sending_script</a></td>
+      <td align="left"><a href="/email_sending_script/">email_sending_script</a></td>
       <td>#133</td>
     </tr>
     <tr>
       <td align="left">ferhah</td>
-      <td align="left"><a href="send_telegram_message/">send_telegram_message</a></td>
+      <td align="left"><a href="/send_telegram_message/">send_telegram_message</a></td>
       <td>#246</td>
+    </tr>
+    <tr>
+      <td align="left">IharSha</td>
+      <td align="left"><a href="/english_dictionary/">english_dictionary</a></td>
+      <td>#273</td>
+    </tr>
+    <tr>
+      <td align="left">habereet</td>
+      <td align="left"><a href="/amazon-price-alert/">amazon-price-alert</a></td>
+      <td>#251 #276 #277</td>
     </tr>
   </tbody>
 </table>

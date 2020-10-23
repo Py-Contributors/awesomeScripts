@@ -1,4 +1,5 @@
 # Audio Book
+
 > Read any PDF book with just few line of
 
 ## Installation
@@ -6,16 +7,28 @@
 Create new Virtual ENV:
 
 ```sh
-pip install -r requirements.txt
+pip install pipenv
+pipenv install -r requirements.txt
+pipenv shell
+```
+
+you can also download the audiobook module with help of pip
+
+```bash
+pip install audiobook
 ```
 
 ## Usage example
 
-sample.pdf is the PDF you want to script to read.
-You can define the ```start_page``` in this case its set to 0 but to skip
-index pages you can define the start page accordingly.
+Audio Book is Python script to read pdf files.Use command link to enter the file location
 
-Then run the command:
+### Linux installation requirements
+
+- If you are on a linux system and if the voice output is not working , then :
+    Install espeak , ffmpeg and libespeak1 as shown below:
+
 ```sh
-python3 read_my_book.py
+sudo apt update && sudo apt install espeak ffmpeg libespeak1
 ```
+
+documentation:- <https://github.com/nateshmbhat/pyttsx3>
