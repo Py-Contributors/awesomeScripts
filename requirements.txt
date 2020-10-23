@@ -1,0 +1,4 @@
+pyttsx3==2.90
+SpeechRecognition==3.8.1
+wikipedia==1.4.0
+os-sys==2.1.4
