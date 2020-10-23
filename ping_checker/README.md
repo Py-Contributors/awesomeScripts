@@ -27,6 +27,10 @@ Currently supported games
 -f or --fortnite for Fortnite
 -d or --dota for Dota 2 
 -l or -lol for League of Legends
+-he or -heart for HearthStone
+-ho or --hots for Heroes of the Storm
+-w or --wow for World of Warcraft 
+-s or -star for Starcraft 2
 -o or -overwatch for Overwatch
 
 ```bash
