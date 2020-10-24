@@ -158,5 +158,143 @@
                 "Address": "203.66.81.98"
             }
         ]
+    },
+    "HearthStone": {
+        "NA": [
+            {
+                "Location": "The Americas",
+                "Address": "24.105.30.129"
+            }
+        ],
+        "EU": [
+            {
+                "Location": "EU-West",
+                "Address": "185.60.112.157"
+            },
+            {
+                "Location": "EU-East",
+                "Address": "185.60.112.158"
+            }
+        ],
+        "SA": [
+            {
+                "Location": "The Americas",
+                "Address": "24.105.30.129"
+            }
+        ],
+        "Asia": [
+            {
+                "Location": "Korea",
+                "Address": "182.162.132.1"
+            }
+        ]
+    },
+    "HoTS": {
+        "NA": [
+            {
+                "Location": "NA-Central",
+                "Address": "24.105.62.129"
+            },
+            {
+                "Location": "NA-West",
+                "Address": "24.105.30.129"
+            }
+        ],
+        "EU": [
+            {
+                "Location": "EU-West",
+                "Address": "185.60.112.157"
+            },
+            {
+                "Location": "EU-East",
+                "Address": "185.60.112.158"
+            }
+        ],
+        "SA": [
+            {
+                "Location": "Brazil",
+                "Address": "54.207.104.145"
+            }
+        ],
+        "Asia": [
+            {
+                "Location": "Korea",
+                "Address": "182.162.116.1"
+            },
+            {
+                "Location": "Taiwan",
+                "Address": "203.69.111.4"
+            }
+        ]
+    },
+    "StarCraft": {
+        "NA": [
+            {
+                "Location": "NA-Central",
+                "Address": "24.105.62.129"
+            },
+            {
+                "Location": "NA-West",
+                "Address": "24.105.30.129"
+            }
+        ],
+        "EU": [
+            {
+                "Location": "EU-West",
+                "Address": "185.60.112.157"
+            },
+            {
+                "Location": "EU-East",
+                "Address": "185.60.112.158"
+            }
+        ],
+        "Asia": [
+            {
+                "Location": "Korea",
+                "Address": "222.231.22.1"
+            },
+            {
+                "Location": "Southeast Asia",
+                "Address": "202.9.67.254"
+            }
+        ]
+    },
+    "WoW": {
+        "NA": [
+            {
+                "Location": "NA-Central",
+                "Address": "24.105.62.129"
+            },
+            {
+                "Location": "NA-West",
+                "Address": "137.221.105.2"
+            }
+        ],
+        "EU": [
+            {
+                "Location": "EU-West",
+                "Address": "185.60.112.157"
+            },
+            {
+                "Location": "EU-East",
+                "Address": "185.60.112.158"
+            }
+        ],
+        "Oce": [
+            {
+                "Location": "Oceania",
+                "Address": "103.4.115.248"
+            }
+        ],
+        "Asia": [
+            {
+                "Location": "Korea",
+                "Address": "211.115.104.1"
+            },
+            {
+                "Location": "Taiwan",
+                "Address": "210.71.148.11"
+            }
+        ]
     }
 }
