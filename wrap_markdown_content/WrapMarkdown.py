@@ -1,9 +1,9 @@
 import sys
 
+
 class Buffer:
-    def __init__(self, filename: str, ofilename=None):
+    def __init__(self, filename: str):
         self.input_file = open(filename, 'r')
-        self.output_file = open(filename) if ofilename is None else open(ofilename)
         self.all_lines = self.input_file.readlines()
 
     def trim(self, ncolumns: int):
@@ -22,12 +22,15 @@ class Buffer:
                         nCharsInline = 0
                         pass
                     print(word, end=' ')
-                    nCharsInline += len(word)+1
+                    nCharsInline += len(word) + 1
+            pass
 
 
 def Main(args: list):
     if len(args) < 3:
-        print(f'Missing parameters\nUse: python {args[0]} <maxcolumns> <path/to/file>')
+        print('Missing parameters.')
+        print(f'Use: python {args[0]} <maxcolumns> <path/to/file>')
+        exit(0)
     try:
         ncol = int(args[1])
     except TypeError:
