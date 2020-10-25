@@ -34,6 +34,18 @@ parser.add_argument('-d', '--dota', action='store_true',
 # Create command line option to output Overwatch ping info
 parser.add_argument('-o', '--overwatch', action='store_true',
                     help="Latency for Overwatch")
+# Create command line option to output HeartStone ping info
+parser.add_argument('-he', '--heart', action='store_true',
+                    help="Latency for HeartStone")
+# Create command line option to output Heroes of the Storm ping info
+parser.add_argument('-ho', '--hots', action='store_true',
+                    help="Latency for Heroes of the Storm")
+# Create command line option to output Starcraft 2 ping infocd
+parser.add_argument('-s', '--star', action='store_true',
+                    help="Latency for Starcraft 2")
+# Create command line option to output WorldofWarcraft ping info
+parser.add_argument('-w', '--wow', action='store_true',
+                    help="Latency for WorldofWarcraft")
 
 # Open Json file with game server information and stores in dictionary
 with open("gameServers.json") as json_file:
@@ -96,6 +108,14 @@ elif args.dota:
     regionCheck("DOTA 2", games["DOTA"], args.region)
 elif args.overwatch:
     regionCheck("Overwatch", games["Overwatch"], args.region)
+elif args.heart:
+    regionCheck("HearthStone", games["HearthStone"], args.region)
+elif args.hots:
+    regionCheck("HoTS", games["HoTS"], args.region)
+elif args.star:
+    regionCheck("StarCraft", games["StarCraft"], args.region)
+elif args.wow:
+    regionCheck("WoW", games["WoW"], args.region)
 else:
     parser.print_help()
     sys.exit()
