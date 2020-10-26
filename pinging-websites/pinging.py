@@ -52,8 +52,8 @@ def pingaddress(server):
         sock.close()
         return unit_result
     except socket.gaierror:
-        print("Connection problem with '" + serverip + ":" + serverport +
-              "'.\nCheck whether the website/server entered exists or not.")
+        print("Connection problem with '" + serverip + ":" + serverport
+              + "'.\nCheck whether the website/server entered exists or not.")
         exit()
 
 
@@ -64,8 +64,8 @@ def checkinternet():
     dtprint = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     try:
         if sock.connect_ex(("google.com", 80)) != 0:
-            print("Internet connectivity lost at: %s" % dtprint +
-                  "Trying again.\n")
+            print("Internet connectivity lost at: %s" % dtprint
+                  + "Trying again.\n")
 
             # A small delay of 60 seconds to recheck for internet again.
             # Change the frequency here as per your own use.
@@ -73,8 +73,8 @@ def checkinternet():
             time.sleep(60)
             checkinternet()
     except socket.gaierror:
-        print("Internet connectivity lost at: %s\n" % dtprint +
-              "Trying again.\n")
+        print("Internet connectivity lost at: %s\n" % dtprint
+              + "Trying again.\n")
         time.sleep(60)
         checkinternet()
 
@@ -103,8 +103,8 @@ def sendmails(serverinfo):
     password = ""
 
     if len(sender_email) == 0 or len(password) == 0:
-        print("Gmail account email ID and password not entered.\n" +
-              "Stopping Execution.")
+        print("Gmail account email ID and password not entered.\n"
+              + "Stopping Execution.")
         exit()
 
     dtprint = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
@@ -121,19 +121,19 @@ def sendmails(serverinfo):
             server.login(sender_email, password)
             for receiver in mail_list:
                 server.sendmail(sender_email, receiver, message)
-            print("=====================================> " +
-                  "Mail sent to the mailing list for server: " +
-                  serverip + ":" + serverport +
-                  " at time - " + dtprint + "\n")
+            print("=====================================> "
+                  + "Mail sent to the mailing list for server: "
+                  + serverip + ":" + serverport
+                  + " at time - " + dtprint + "\n")
             server.close()
         except smtplib.SMTPAuthenticationError:
-            print("Check Username and password.\n" +
-                  "If both are correct then enable access to less secure " +
-                  "apps from the link below —\n" +
-                  "https://myaccount.google.com/lesssecureapps\n" +
-                  "Read the docs below if you do not want to enable access " +
-                  "to secure apps. —\n" +
-                  "https://developers.google.com/gmail/api/quickstart/python")
+            print("Check Username and password.\n"
+                  + "If both are correct then enable access to less secure "
+                  + "apps from the link below —\n"
+                  + "https://myaccount.google.com/lesssecureapps\n"
+                  + "Read the docs below if you do not want to enable access "
+                  + "to secure apps. —\n"
+                  + "https://developers.google.com/gmail/api/quickstart/python")
             exit()
 
 
@@ -183,9 +183,9 @@ def checkservers():
 
             # Server still down. Mail will be sent.
             else:
-                print("***************************************************\n" +
-                      "%s: %s:%s Website is down\n" % (dtprint, server, port) +
-                      "****************************************************\n")
+                print("***************************************************\n"
+                      + "%s: %s:%s Website is down\n" % (dtprint, server, port)
+                      + "****************************************************\n")
                 failed = True
                 sendmails(ls_servers[i])
 
@@ -218,5 +218,5 @@ if __name__ == "__main__":
             checkinternet()
             checkservers()
     else:
-        print("Note: List of servers and emails are empty.\n" +
-              "Add some values in the lists to run the script.")
+        print("Note: List of servers and emails are empty.\n"
+              + "Add some values in the lists to run the script.")
