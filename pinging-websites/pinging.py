@@ -17,12 +17,12 @@ Three main functions —
 
 Two global variables —
     1. mail_list: A list of strings containing email IDs for the mailing list.
-                    Add emails as a string to the list. Go to line 203.
+                    Add emails as a string to the list. Go to line 204.
     2. ls_servers: A list of a pair of elements in the form of "[server,port]".
                     The server must be a string a the port must be a number.
                     It is not necessary to add a port. Make sure the elements
                     in ls_servers are in the form of list, even if ports
-                    are absent. Add servers ad ports, go to line 207.
+                    are absent. Add servers ad ports, go to line 208.
 
 
 
@@ -51,7 +51,7 @@ def pingaddress(server):
             unit_result = sock.connect_ex((server[0], 80))
         sock.close()
         return unit_result
-    except:
+    except socket.gaierror:
         print("Connection problem with '" + serverip + ":" + serverport +
               "'.\nCheck whether the website/server entered exists or not.")
         exit()
@@ -64,15 +64,17 @@ def checkinternet():
     dtprint = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     try:
         if sock.connect_ex(("google.com", 80)) != 0:
-            print("Internet connectivity lost at: %s" % dtprint)
+            print("Internet connectivity lost at: %s" % dtprint +
+                  "Trying again.\n")
 
             # A small delay of 60 seconds to recheck for internet again.
             # Change the frequency here as per your own use.
             # Inputs only in seconds.
             time.sleep(60)
             checkinternet()
-    except:
-        print("Internet connectivity lost at: %s" % dtprint)
+    except socket.gaierror:
+        print("Internet connectivity lost at: %s\n" % dtprint +
+              "Trying again.\n")
         time.sleep(60)
         checkinternet()
 
@@ -124,7 +126,7 @@ def sendmails(serverinfo):
                   serverip + ":" + serverport +
                   " at time - " + dtprint + "\n")
             server.close()
-        except:
+        except smtplib.SMTPAuthenticationError:
             print("Check Username and password.\n" +
                   "If both are correct then enable access to less secure " +
                   "apps from the link below —\n" +
@@ -205,7 +207,7 @@ mail_list = ['abc@yahoo.com']
 
 # List of pairs of servers and ports. A List of lists. Details in line 20.
 # Adding port is not necessary. It is just a feature for local servers.
-# server musr be in the form of string and port(optional) is an integer.
+# server must be in the form of string and port(optional) is an integer.
 # Adding "https://" is not required.
 # Example: ls_servers = [['google.com'], ['192.163.89.23', 8001]].
 ls_servers = [['google.com']]
