@@ -17,12 +17,12 @@ Three main functions —
 
 Two global variables —
     1. mail_list: A list of strings containing email IDs for the mailing list.
-                    Add emails as a string to the list. Go to line 162.
+                    Add emails as a string to the list. Go to line 203.
     2. ls_servers: A list of a pair of elements in the form of "[server,port]".
                     The server must be a string a the port must be a number.
                     It is not necessary to add a port. Make sure the elements
                     in ls_servers are in the form of list, even if ports
-                    are absent. Add servers ad ports, go to line 166.
+                    are absent. Add servers ad ports, go to line 207.
 
 
 
@@ -33,6 +33,29 @@ import time
 import datetime
 import smtplib
 import ssl
+from multiprocessing import Process
+
+
+# Socket connections and ping website/server.
+# No edit required
+def pingaddress(server):
+    serverip = server[0]
+    if len(server) == 2:
+        serverport = str(server[1])
+    else:
+        serverport = ""
+    try:
+        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+        if len(server) == 2:
+            unit_result = sock.connect_ex((server[0], server[1]))
+        else:
+            unit_result = sock.connect_ex((server[0], 80))
+        sock.close()
+        return unit_result
+    except:
+        print("Connection problem with '" + serverip + ":" + serverport +
+              "'.\nCheck whether the website/server entered exists or not.")
+        exit()
 
 
 # Check internet connectivity. No edits required here.
@@ -40,12 +63,17 @@ import ssl
 def checkinternet():
     sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
     dtprint = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
-    if sock.connect_ex(("google.com", 80)) != 0:
-        print("Internet connectivity lost at: %s" % dtprint)
+    try:
+        if sock.connect_ex(("google.com", 80)) != 0:
+            print("Internet connectivity lost at: %s" % dtprint)
 
-        # A small delay of 60 seconds to recheck for internet again.
-        # Change the frequency here as per your own use.
-        # Inputs only in seconds.
+            # A small delay of 60 seconds to recheck for internet again.
+            # Change the frequency here as per your own use.
+            # Inputs only in seconds.
+            time.sleep(60)
+            checkinternet()
+    except:
+        print("Internet connectivity lost at: %s" % dtprint)
         time.sleep(60)
         checkinternet()
 
@@ -56,7 +84,7 @@ def checkinternet():
 def sendmails(serverinfo):
     serverip = serverinfo[0]
     if len(serverinfo) == 2:
-        serverport = serverinfo[1]
+        serverport = str(serverinfo[1])
     else:
         serverport = ""
     smtp_server = "smtp.gmail.com"
@@ -73,23 +101,39 @@ def sendmails(serverinfo):
     # enter Gmail account password here.
     password = ""
 
+    if len(sender_email) == 0 or len(password) == 0:
+        print("Gmail account email ID and password not entered.\n" +
+              "Stopping Execution.")
+        exit()
+
     dtprint = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
     context = ssl.create_default_context()
 
     # edit message as required. "Subject:" saves the subject of the email.
-    message = "Subject: Website down [" + str(serverport) + "]\n\n" + \
-              "http://" + serverip + ":" + str(serverport) + \
+    message = "Subject: Website down [" + serverport + "]\n\n" + \
+              "http://" + serverip + ":" + serverport + \
               "/ is down. Please check.\n\n" + \
               "The website went down at around " + dtprint + "."
 
     with smtplib.SMTP_SSL(smtp_server, port, context=context) as server:
-        server.login(sender_email, password)
-        for receiver in mail_list:
-            server.sendmail(sender_email, receiver, message)
-        print("=====================================> " +
-              "Mail sent to the mailing list for Port: " +
-              str(serverport) + " at time - " + dtprint + "\n")
-        server.close()
+        try:
+            server.login(sender_email, password)
+            for receiver in mail_list:
+                server.sendmail(sender_email, receiver, message)
+            print("=====================================> " +
+                  "Mail sent to the mailing list for server: " +
+                  serverip + ":" + serverport +
+                  " at time - " + dtprint + "\n")
+            server.close()
+        except:
+            print("Check Username and password.\n" +
+                  "If both are correct then enable access to less secure " +
+                  "apps from the link below —\n" +
+                  "https://myaccount.google.com/lesssecureapps\n" +
+                  "Read the docs below if you do not want to enable access " +
+                  "to secure apps. —\n" +
+                  "https://developers.google.com/gmail/api/quickstart/python")
+            exit()
 
 
 # Ping the server list provided. No edits required here.
@@ -100,13 +144,8 @@ def checkservers():
     dtprint = datetime.datetime.now().strftime("%d-%m-%Y %H:%M:%S")
 
     for i in range(num_servers):
-        sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-        if len(ls_servers[i]) == 2:
-            unit_result = sock.connect_ex((ls_servers[i][0], ls_servers[i][1]))
-        else:
-            unit_result = sock.connect_ex((ls_servers[i][0], 80))
+        unit_result = pingaddress(ls_servers[i])
         ls_result.append(unit_result)
-        sock.close()
 
     failed = False
 
@@ -135,9 +174,7 @@ def checkservers():
 
             # Check the server again and ignore sending mail if
             # the server is back up.
-            sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-            unit_result = sock.connect_ex((ls_servers[i][0], ls_servers[i][1]))
-            sock.close()
+            unit_result = pingaddress(ls_servers[i])
 
             # Server back up again. Mail won't be sent.
             if unit_result == 0:
@@ -154,7 +191,7 @@ def checkservers():
     # A small delay of 300 seconds to wait to check ping the servers again.
     # Change the frequency here as per your own use.
     # Inputs only in seconds.
-    time.sleep(3)
+    time.sleep(300)
 
     # Further delay of 900 seconds if server was down so as to not
     # clutter inbox with mails. Change the delay as per your use.
@@ -165,7 +202,7 @@ def checkservers():
 
 # List of all emails in the form of string. Details in line 18.
 # Example: mail_list = ['abc@xyz.c', 'ab123@bh.ko.jp'].
-mail_list = ['abc@gmail.com']
+mail_list = ['abc@yahoo.com']
 
 # List of pairs of servers and ports. A List of lists. Details in line 20.
 # Adding port is not necessary. It is just a feature for local servers.
@@ -175,6 +212,10 @@ mail_list = ['abc@gmail.com']
 ls_servers = [['google.com']]
 
 if __name__ == "__main__":
-    while True:
-        checkinternet()
-        checkservers()
+    if mail_list and ls_servers:
+        while True:
+            checkinternet()
+            checkservers()
+    else:
+        print("Note: List of servers and emails are empty.\n" +
+              "Add some values in the lists to run the script.")
