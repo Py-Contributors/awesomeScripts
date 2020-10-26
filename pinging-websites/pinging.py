@@ -33,7 +33,6 @@ import time
 import datetime
 import smtplib
 import ssl
-from multiprocessing import Process
 
 
 # Socket connections and ping website/server.
