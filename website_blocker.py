@@ -14,10 +14,7 @@ while True:
         		if website in content:
         			pass
         		else:
-        			file.write(redirect+" "+ website+"\n")
-
-            
-        
+        			file.write(redirect+" "+ website+"\n")        
     else:
     	with open(hosts_temp,'r+') as file:
     		content = file.readlines()  # here content becomes a list
