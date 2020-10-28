@@ -18,7 +18,7 @@ temp = []
 def go(index):
     global count
     global score
-    count = count+1
+    count = count + 1
     temp.append(buttons[index])
     if count == 2:
         if temp[0] == temp[1]:
