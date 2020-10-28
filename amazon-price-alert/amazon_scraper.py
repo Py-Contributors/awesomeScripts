@@ -1,3 +1,4 @@
+
 # Developed and maintained by https://github.com/sarthak1905
 from bs4 import BeautifulSoup
 from requests_html import HTMLSession
@@ -8,6 +9,14 @@ import os
 import time
 import smtplib
 import ssl
+from pyisemail import is_email
+
+
+# CustomEmailValidationError will be used to pass an
+# a message to the user if the email address isn't valid
+class CustomEmailValidationError(ValueError):
+    def __init__(self, arg):
+        self.arg = arg
 
 
 class Scraper:
@@ -128,7 +137,7 @@ class Scraper:
 def main():
     url = get_url()
     budget = get_target_cost()
-    u_email = input("Enter your email:")
+    u_email = get_user_email()
     inp_str = ("How frequuently would you like to check the price?"
                "\n1.Every hour\n2.Every 3 hours\n3.Every 6 hours"
                "\nEnter your choice(default is 6 hours):")
@@ -155,6 +164,34 @@ def main():
         if c3po.run():
             break
         time.sleep(time_delay)
+
+
+# get_user_email validates that that an email address was
+# entered. It checks that the host exists and if the host
+# is a mail server by checking if there is an MX record
+# Loops once on invalid input
+def get_user_email(first=True):
+
+    try:
+        email = str(input("Enter your email:"))
+        validation = is_email(email.strip(), check_dns=True, diagnose=True)
+        diagnosis = validation.diagnosis_type
+        if (f'{diagnosis}' == 'VALID'):
+            return email
+        elif (f'{diagnosis}' == 'NODOMAIN'):
+            message = "The address you entered didn't include a server"
+        elif (f'{diagnosis}' == 'NOLOCALPART'):
+            message = "Your email address didn't include a username"
+        else:
+            message = "Please Try again"
+        raise CustomEmailValidationError(message)
+    except CustomEmailValidationError as error:
+        if (first is True):
+            print(error.arg)
+            get_user_email(first=False)
+        else:
+            print("ERROR: You didn't enter a valid email address")
+            exit()
 
 
 # get_target_cost validates price input from user
