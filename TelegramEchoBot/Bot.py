@@ -15,9 +15,9 @@ try:
             user = str(message['result'][-1]['message']['from']['id'])
             replay_message = message['result'][-1]['message']['text']
             requests.get((
-                'https://api.telegram.org/bot' + bot_API +
-                '/sendMessage?chat_id=' + user +
-                '&text=' + replay_message
+                'https://api.telegram.org/bot' + bot_API
+                + '/sendMessage?chat_id=' + user
+                + '&text=' + replay_message
             ))
             previous_update_id = update_id
 except message.status == 404:
