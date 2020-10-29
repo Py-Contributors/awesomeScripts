@@ -6,6 +6,7 @@ certifi==2020.6.20
 chardet==3.0.4
 cssselect==1.1.0
 Django==3.1.2
+dnspython==2.0.0
 fake-useragent==0.1.11
 flake8==3.8.4
 idna==2.10
@@ -15,6 +16,7 @@ parse==1.18.0
 pycodestyle==2.6.0
 pyee==7.0.4
 pyflakes==2.2.0
+pyIsEmail==1.3.2
 pyppeteer==0.2.2
 pyquery==1.4.1
 pytz==2020.1
