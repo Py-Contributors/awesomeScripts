@@ -1,6 +1,6 @@
 import time
 from datetime import datetime as dt
-hosts_path = r "C:\Windows\System32\drivers\etc"       # it contains host file it is for windows 
+hosts_path = r"C:\Windows\System32\drivers\etc"  # it contains host file it is for windows
 redirect = "127.0.0.1"
 website_list = ["www.facebook.com" , " facebook.com" , "www.instagram.com" , " instagram.com"]
 while True:
