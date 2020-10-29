@@ -5,7 +5,7 @@ redirect = "127.0.0.1"
 website_list = ["www.facebook.com" , " facebook.com" , "www.instagram.com" , " instagram.com"]
 while True:
     if (dt(dt.now().year, dt.now().month, dt.now().day, 5) < dt.now()
-         < dt(dt.now().year, dt.now().month, dt.now().day, 12)):
+       < dt(dt.now().year, dt.now().month, dt.now().day, 12)):
         print("Stay focused keep working")
         with open(hosts_path, 'r+') as file:
             content = file.read()
