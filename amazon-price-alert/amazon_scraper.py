@@ -195,7 +195,7 @@ def get_user_email(first=True):
             exit()
 
 
-# get_frequency validates user input for how
+# get_frequency validates the user input for how
 # often the user wants the URL to be checked
 def get_frequency(first=True):
     pass
