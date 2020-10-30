@@ -196,7 +196,7 @@ def get_user_email(first=True):
 def get_frequency(first=True):
     inp_str = ("How frequently would you like to check the price?"
                "\n1.Every hour\n2.Every 3 hours\n3.Every 6 hours"
-               "\nEnter your choice(default is 6 hours):")
+               "\nEnter your choice:")
     try:
         frequency = int(input(inp_str))
         if (frequency < 0 or frequency > 3):
