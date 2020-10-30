@@ -138,26 +138,13 @@ def main():
     url = get_url()
     budget = get_target_cost()
     u_email = get_user_email()
-<<<<<<< HEAD
     time_choice = get_frequency()
-#    if time_choice == 1:
-#        time_delay = 60 * 60
-#    elif time_choice == 2:
-#        time_delay = 3 * 60 * 60
-#    else:
-#        time_delay = 6 * 60 * 60
-=======
-    inp_str = ("How frequuently would you like to check the price?"
-               "\n1.Every hour\n2.Every 3 hours\n3.Every 6 hours"
-               "\nEnter your choice(default is 6 hours):")
-    time_choice = int(input(inp_str))
     if time_choice == 1:
         time_delay = 60 * 60
     elif time_choice == 2:
         time_delay = 3 * 60 * 60
     else:
         time_delay = 6 * 60 * 60
->>>>>>> upstream/master
     msg = (
         "Great! Now just sit back and relax."
         "Minimize this program and be sure "
@@ -204,7 +191,6 @@ def get_user_email(first=True):
             exit()
 
 
-<<<<<<< HEAD
 # get_frequency validates the user input for how
 # often the user wants the URL to be checked
 def get_frequency(first=True):
@@ -225,8 +211,6 @@ def get_frequency(first=True):
             exit()
 
 
-=======
->>>>>>> upstream/master
 # get_target_cost validates price input from user
 # Loops once on invalid input
 def get_target_cost(first=True):
