@@ -10,12 +10,8 @@ from bs4 import BeautifulSoup
 
 
 title = f"""
-\t __   _______ _____   _____ ___________  ___  ________  _   _ _____ _____ _____ 
-\t \ \ / /_   _/  ___| |_   _|  _  | ___ \ |  \/  |  _  || | | |_   _|  ___/  ___|
-\t  \ V /  | | \ `--.    | | | | | | |_/ / | .  . | | | || | | | | | | |__ \ `--. 
-\t   \ /   | |  `--. \   | | | | | |  __/  | |\/| | | | || | | | | | |  __| `--. \\
-\t   | |   | | /\__/ /   | | \ \_/ / |     | |  | \ \_/ /\ \_/ /_| |_| |___/\__/ /
-\t   \_/   \_/ \____/    \_/  \___/\_|     \_|  |_/\___/  \___/ \___/\____/\____/ 
+\t {'-' * 80}
+\t {'YTS.mx Top Movies':^80}
 \t {'-' * 80}
 \t {'By: chemsedd':^80}
 \t {'-' * 80}
@@ -26,7 +22,9 @@ print(title)
 # YTS website
 url = 'https://yts.mx/'
 headers = {
-    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0) Gecko/20100101 Firefox/79.0'
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:79.0)\
+        Gecko/20100101\
+        Firefox/79.0'
 }
 # Request web page
 page = requests.get(url, headers=headers)
