@@ -5,7 +5,7 @@ import os
 
 def extractImages(images):
     i = 1   # i for indexing page numbers for each and every jpg extract from pdf
-    os.mkdir(f'pathtopdffile/{pdf_file_name}')   
+    os.mkdir(f'pathtopdffile/{pdf_file_name}')
     for image in images:
         image = image.rotate(-90, expand=True)
         image.save(f'Images_for_each_pdf/{pdf_file_name}/{pdf_file_name}-page-00{i}.jpg', 'JPEG')
@@ -23,4 +23,3 @@ if __name__ == "__main__":
         images = convert_from_path(pdf_file_to_convert_jpg, 300)
         extractImages(images)   # call above function
         print("Success!")
-# This is a new line that ends the file.
