@@ -5,13 +5,14 @@ import os
 
 def extractImages(images):
     i = 1   # i for indexing page numbers for each and every jpg extract from pdf
-    os.mkdir(f'pathtopdffile/{pdf_file_name}')
-    # create new directory    
-    for image in images:
+    os.mkdir(f'pathtopdffile/{pdf_file_name}')   
+    for image in images:   # create new directory
         image = image.rotate(-90, expand=True)
         image.save(f'Images_for_each_pdf/{pdf_file_name}/{pdf_file_name}-page-00{i}.jpg', 'JPEG')
         i += 1
 # main function with loop through the given pdf files and the extract jpg from each pdf file
+
+
 if __name__ == "__main__":
     for pdf in range(151, 180):
         if pdf == 175:   # 175 pdf is not available in given data set cuz we skip that in our loop
