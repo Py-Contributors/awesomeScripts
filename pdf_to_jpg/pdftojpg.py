@@ -1,9 +1,5 @@
-import numpy as np
-import cv2 
 from pdf2image import convert_from_path
-from PIL import Image
 import os
-
 # function to extact images from images object
 def extractImages(images):
     i = 1 # i for indexing page numbers for each and every jpg extract from pdf
@@ -13,9 +9,7 @@ def extractImages(images):
     for image in images:
         image = image.rotate(-90, expand=True) # rotate jpg image
         image.save( f'Images_for_each_pdf/{pdf_file_name}/{pdf_file_name}-page-00{i}.jpg','JPEG')# save image inside new directory
-        i +=1
-    
-
+        i +=1  
 # main function with loop through the given pdf files and the extract jpg from each pdf file
 if __name__ == "__main__":
     for pdf in range(151,180):
