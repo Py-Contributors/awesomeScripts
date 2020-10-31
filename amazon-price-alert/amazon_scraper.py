@@ -228,20 +228,23 @@ def get_target_cost(first=True):
             exit()
 
 
+# get_url will get the Amazon URL from the user to
+# scrape for a cost
 def get_url(first=True):
-    URL = input("Paste the link of the Amazon product:")
-    validate = URLValidator()
-    try:
-        validate(URL)
-    except ValidationError:
-        if (first is True):
-            print("Please enter a valid URL; "
-                  "Remember to include http/https")
-            get_url(first=False)
-        else:
-            print("ERROR: You didn't enter a valid URL")
-            exit()
-    return URL
+    while True:
+        try:
+            URL = input("Paste the link of the Amazon product:")
+            validate = URLValidator()
+            validate(URL)
+            return URL
+        except ValidationError:
+            if (first is True):
+                print("Please enter a valid URL; "
+                      "Remember to include http/https")
+                first = False
+            else:
+                print("ERROR: You didn't enter a valid URL")
+                exit()
 
 
 if __name__ == '__main__':
