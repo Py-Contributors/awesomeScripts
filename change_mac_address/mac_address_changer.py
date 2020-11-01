@@ -19,7 +19,7 @@ def check_mac_address(interface):
     '''
     returns try if mac address is valid else raise and print an error
     '''
-    command = 'ifconfig '+str(interface)+'| grep ether'
+    command = 'ifconfig '+ str(interface)+ '| grep ether'
     interface_check = Popen(command, shell=True, stdout=PIPE, stderr=STDOUT)
     # decoding bytes object to a string
     output = interface_check.communicate()[0].decode("utf-8")
