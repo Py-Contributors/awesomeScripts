@@ -27,15 +27,15 @@
 
 ## How to Contribute 🤔
 
-You can contribute by adding new scripts, improving current scripts or Documentation.Here are some Instructions
-before making a Pull Request
+You can contribute by adding new scripts, improving current scripts or documentation. Here are some instructions
+before making a Pull Request:
 
-### Here are the steps to Make contribute 👣
+### Steps to take to contribute 👣
 
-- [x] Create an issue for making any change to code. when issue will be approve you can make a change.
-- [x] Pull latest change from upstream branch before starting the changing code.
-- [x] Add your file in proper folder(lowercase) with README.md in it. Add requirements.txt if needed.
-- [x] Use Flake8 locally for linting Python Code.(We have linting checks so if your code fails it we will not merge the PR.)
+- [x] Create an issue for making any changes to code. When the issue is approved you can make changes.
+- [x] Pull latest change from upstream branch before starting the changing of code.
+- [x] Add your file in a properly named directory (lowercase) with a README.md in it. Add requirements.txt if needed.
+- [x] Use Flake8 locally for linting Python Code. (We have linting checks so if your code fails it we will not merge the PR.)
   - `pip install flake8`
 
 ## Show instructions
@@ -49,7 +49,7 @@ before making a Pull Request
 
 ## Report a Bug 🐛
 
-- Help us to improve script. Report a bug [here](https://github.com/Py-Contributors/awesomeScripts/issues/new?assignees=codePerfectPlus&labels=bug&template=bug_report.md&title=)
+- Help us improve scripts. Report bugs [here](https://github.com/Py-Contributors/awesomeScripts/issues/new?assignees=codePerfectPlus&labels=bug&template=bug_report.md&title=)
 
 ## Packages
 
