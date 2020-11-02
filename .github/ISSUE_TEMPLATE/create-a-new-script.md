@@ -16,6 +16,7 @@ assignees: ''
 - Create a new folder for your script and file/folder name should be appropriate.
 - Create a README.md in your folder for program Instructions
 - add requirements.txt if needed
+- add pytest/unittest if possible
 
 Please add/delete options that are not relevant.
 
