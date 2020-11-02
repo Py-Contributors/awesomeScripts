@@ -1,0 +1,6 @@
+bs4
+requests
+flask
+flask_sqlalchemy
+requests
+
