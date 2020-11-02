@@ -37,6 +37,7 @@ before making a Pull Request:
 - [x] Add your file in a properly named directory (lowercase) with a README.md in it. Add requirements.txt if needed.
 - [x] Use Flake8 locally for linting Python Code. (We have linting checks so if your code fails it we will not merge the PR.)
   - `pip install flake8`
+- [x] add pytest/unittest if possible
 
 ## Show instructions
 
