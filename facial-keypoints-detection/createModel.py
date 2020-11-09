@@ -19,14 +19,12 @@ from matplotlib import pyplot as plt
 
 from keras.layers.advanced_activations import LeakyReLU
 from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import (
-                                    Convolution2D,
-                                    BatchNormalization,
-                                    Flatten)
-from tensorflow.keras.layers import (
-                                    Dense,
-                                    Dropout,
-                                    MaxPool2D)
+from tensorflow.keras.layers import (Convolution2D,
+                                     BatchNormalization,
+                                     Flatten)
+from tensorflow.keras.layers import (Dense,                                    
+                                     Dropout,
+                                     MaxPool2D)
 
 train = pd.read_csv("train/training.csv")
 test = pd.read_csv("test/test.csv")
@@ -64,8 +62,7 @@ y_train.head()
 model = Sequential()
 
 # layer set 1
-model.add(Convolution2D(
-                        32,
+model.add(Convolution2D(32,
                         (3, 3),
                         padding='same',
                         use_bias=False,
@@ -73,7 +70,6 @@ model.add(Convolution2D(
                         ))
 model.add(LeakyReLU(alpha=0.1))
 model.add(BatchNormalization())
-
 model.add(Convolution2D(32, (3, 3), padding='same', use_bias=False))
 model.add(LeakyReLU(alpha=0.1))
 model.add(BatchNormalization())
@@ -166,5 +162,4 @@ plt.imshow(X_test[0].reshape(96, 96),  cmap='gray')
 plt.show()
 
 pred = model.predict(X_test)
-
 pred[0]
