@@ -52,8 +52,7 @@ def detectFacialPoints(input_image):
 
         for i in range(len(x_coords)):
             # Plot the keypoints at the x and y coordinates
-            cv2.circle(
-                       resized_image,
+            cv2.circle(resized_image,
                        (x_coords[i], y_coords[i]),
                        2,
                        (255, 255, 0),

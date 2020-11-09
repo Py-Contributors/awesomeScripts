@@ -22,7 +22,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import (Convolution2D,
                                      BatchNormalization,
                                      Flatten)
-from tensorflow.keras.layers import (Dense,                                    
+from tensorflow.keras.layers import (Dense,
                                      Dropout,
                                      MaxPool2D)
 
@@ -158,7 +158,7 @@ for i in range(0, 1783):
 timage_list = np.array(timag, dtype='float')
 X_test = timage_list.reshape(-1, 96, 96, 1)
 
-plt.imshow(X_test[0].reshape(96, 96),  cmap='gray')
+plt.imshow(X_test[0].reshape(96, 96), cmap='gray')
 plt.show()
 
 pred = model.predict(X_test)
