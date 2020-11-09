@@ -16,3 +16,6 @@ Script has 2 files
 
 - **createModel.py**: It for creating and saving keras model for facial keypoints.
 - **facialkeypointsdetection.py** it's for detecting and extracting face for prediction.
+
+
+## Note: first create model using createModel.py. Google Colab Script link is added in file.
