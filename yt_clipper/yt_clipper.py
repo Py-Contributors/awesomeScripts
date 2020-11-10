@@ -45,6 +45,10 @@ out, err = get_id.communicate()
 get_id.wait()
 video_id = out.strip()  # Remove newlines
 
+# Sometimes the above command returns an empty string. If so, assign a default name
+if not video_id:
+    video_id = 'out'
+
 # Get video and audio URLs
 get_url = subprocess.Popen(
     ["youtube-dl", "-g", args.url],
