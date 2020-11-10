@@ -1,4 +1,4 @@
-#! /usr/bin/env python
+#! /usr/bin/env python3
 
 import re
 import argparse
@@ -59,17 +59,17 @@ video_url, audio_url = find_url(out)
 
 
 # Define ffmpeg commands
-ffmpeg_cmd = f"ffmpeg -i {video_url} -ss {args.start} -i {audio_url} -ss {args.start}\
-                -to {args.end} -map 0:v -map 1:a -c:v libx264 -c:a aac -vf\
-                    scale={args.scale}:-2:flags=lanczos -y {video_id}.mp4"
+ffmpeg_cmd = f"ffmpeg -ss {args.start} -to {args.end} -i {video_url} -ss {args.start}\
+                -to {args.end} -i {audio_url} -map 0:v -map 1:a -c:v libx264 -c:a aac\
+                    -vf scale={args.scale}:-2:flags=lanczos -y {video_id}.mp4"
 
 if args.audio_only:
-    ffmpeg_cmd = f"ffmpeg -i {audio_url} -ss {args.start} -to {args.end} -c:a aac -y\
+    ffmpeg_cmd = f"ffmpeg -ss {args.start} -to {args.end} -i {audio_url} -c:a aac -y\
                     {video_id}.aac"
 
 if args.gif:
     ffmpeg_cmd = (
-        f"ffmpeg -i {video_url} -ss {args.start} -to {args.end}"
+        f"ffmpeg -ss {args.start} -to {args.end} -i {video_url}"
         f" -filter_complex [0:v]fps={args.fps},scale={args.scale}:-2"
         ":flags=lanczos,split[a][b];[a]palettegen[p];[b][p]paletteuse"
         f" -y {video_id}.gif"
