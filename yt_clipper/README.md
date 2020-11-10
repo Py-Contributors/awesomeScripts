@@ -27,8 +27,7 @@ $ brew install ffmpeg
 ## Usage
 
 ```
-usage: yt_clipper.py [-h] [-s SCALE] [-a] [-g] [-f FPS] [-o OUTPUT] [-q]
-                     url start end
+usage: yt_clipper.py [-h] [-s SCALE] [-a] [-g] [-f FPS] [-o OUTPUT] [-q] url start end
 
 make clips from youtube videos
 
