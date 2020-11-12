@@ -41,13 +41,11 @@ get_id = subprocess.Popen(
     universal_newlines=True,
 )
 
-out, err = get_id.communicate()
-get_id.wait()
-video_id = out.strip()  # Remove newlines
-
-# Sometimes the above command returns an empty string. If so, assign a default name
-if not video_id:
-    video_id = 'out'
+video_id = None
+while not video_id:  # Sometimes `get_id` returns nothing
+    out, err = get_id.communicate()
+    get_id.wait()
+    video_id = out.strip()  # Remove newlines
 
 # Get video and audio URLs
 get_url = subprocess.Popen(
@@ -60,7 +58,6 @@ get_url = subprocess.Popen(
 out, err = get_url.communicate()
 get_url.wait()
 video_url, audio_url = find_url(out)
-
 
 # Define ffmpeg commands
 ffmpeg_cmd = f"ffmpeg -ss {args.start} -to {args.end} -i {video_url} -ss {args.start}\
