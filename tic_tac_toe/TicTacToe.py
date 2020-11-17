@@ -1,3 +1,5 @@
+import os
+
 x, y, turn = 0, 0, 0
 BLANK = ' '
 board = [[BLANK, BLANK, BLANK],
@@ -36,42 +38,56 @@ def write(player, O_X):
     global turn, board
     turn += 1
     while True:
-        print(f"PLAYER {player}'s turn(x y)");
-        x, y = input("input x y : ").split()
+        print(f"PLAYER {player}'s turn(x y)")
+        try:
+            x, y = input("input x y : ").split()
+        except IOError:
+            print("retry")
+            continue
         x = int(x)
         y = int(y)
         if x > 2 or y > 2:
-            print("retry");
+            print("retry")
             continue
         if board[x][y] == BLANK:
             board[x][y] = O_X
             break
         else:
-            print("Wrong Position !!\n");
+            print("Wrong Position !!\n")
             continue
+
+
+def print_board():
+    os.system('clear')
+    os.system('cls')
+    print("x|y [0]|[1]|[2]")
+    for a in range(3):
+        b = 0
+        print("    ---|---|---")
+        print(f'[{a}] {board[a][b]}  | {board[a][b + 1]} | {board[a][b + 2]} ')
+    print("    ---|---|---")
 
 
 def game():
     while (True):
-        print("x|y [0]|[1]|[2]")
-        for a in range(3):
-            b = 0
-            print("    ---|---|---")
-            print(f'[{a}] {board[a][b]}  | {board[a][b + 1]} | {board[a][b + 2]} ');
-        print("    ---|---|---")
+        print_board()
 
         print(f'turn {turn}')
         if turn % 2 == 1:
             write(2, 'X')
             if win(2, 'X') == 0:
+                print_board()
                 return
         else:
             write(1, 'O')
             if win(1, 'O') == 0:
+                print_board()
                 return
 
-        if turn ==9:
+        if turn == 9:
             print("Draw")
+            print_board()
             return
+
 
 game()
