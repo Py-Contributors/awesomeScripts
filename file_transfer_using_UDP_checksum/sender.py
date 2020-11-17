@@ -37,8 +37,8 @@ def calc_checksum(data):
         # and hexadecimal using the hex function,
         # Since the two data are str type,
         # they are connected and saved. (4 bytes)
-        sliced_data = (hex(ord(data_array[i][0]))) \
-                      + (hex(ord(data_array[i][1])))[2:]
+        sliced_data = (hex(ord(data_array[i][0])))
+        sliced_data = sliced_data + (hex(ord(data_array[i][1])))[2:]
         # print('(a) result :', sliced_data)
         # After converting the data passed through (a)
         # to the existing checksum into int type, it is added.
