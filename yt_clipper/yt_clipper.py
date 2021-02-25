@@ -14,6 +14,19 @@
 import re
 import argparse
 import subprocess
+from datetime import datetime
+
+
+def valid_time_type(arg):
+    """Custom argparse type for time values."""
+    try:
+        if "." not in arg:
+            return datetime.strptime(arg, "%H:%M:%S").strftime("%H:%M:%S")
+        else:
+            return datetime.strptime(arg, "%H:%M:%S.%f").strftime("%H:%M:%S.%f")
+    except ValueError:
+        msg = f"{arg} not valid, expected format: 'HH:MM:SS.ms'"
+        raise argparse.ArgumentTypeError(msg)
 
 
 def find_url(string):
@@ -36,13 +49,14 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser(
         description="easily make audio/video/gif clips from YouTube URLs with ffmpeg"
     )
-    parser.add_argument("url", help="video url")
-    parser.add_argument("start", help="HH:MM:SS.ms")
-    parser.add_argument("end", help="HH:MM:SS.ms")
+    parser.add_argument("url", help="video url", type=str)
+    parser.add_argument("start", help="HH:MM:SS.ms", type=valid_time_type)
+    parser.add_argument("end", help="HH:MM:SS.ms", type=valid_time_type)
     parser.add_argument(
         "-d",
         "--device",
-        help="device for VA-API hardware acceleration (experimental), for example: '/dev/dri/render128D'",
+        help="device for VA-API hardware acceleration (experimental), for example: \
+                '/dev/dri/render128D'",
         type=str,
         default="",
     )
@@ -55,7 +69,7 @@ if __name__ == "__main__":
         metavar="VALUE",
     )
     parser.add_argument(
-        "-c",
+        "-x",
         "--compression",
         help="encoder preset (cpu only)",
         choices=["fast", "medium", "slow"],
@@ -69,10 +83,25 @@ if __name__ == "__main__":
         default=-2,
         metavar="SIZE",
     )
+    parser.add_argument(
+        "-c",
+        "--audio-codec",
+        choices=["aac", "mp3"],
+        default="aac",
+    )
+    parser.add_argument(
+        "-b",
+        "--bitrate",
+        help="audio constant bitrate (CBR)",
+        choices=["96k", "128k", "192k", "256k", "320k"],
+        default="128k",
+    )
     parser.add_argument("-a", "--audio-only", action="store_true", dest="audio_only")
     parser.add_argument("-g", "--gif", action="store_true")
     parser.add_argument("-f", "--fps", help="gif fps", type=int, default=12)
-    parser.add_argument("-o", "--output", metavar="FILENAME")
+    parser.add_argument(
+        "-o", "--output", help="custom file name and container", metavar="FILENAME"
+    )
     parser.add_argument("-q", "--quiet", action="store_true")
     args = parser.parse_args()
 
@@ -102,37 +131,41 @@ if __name__ == "__main__":
     get_url.wait()
     video_url, audio_url = find_url(out)
 
+    # Set default parameters (video)
+    if args.device:
+        video_codec = "h264_vaapi"
+        vaapi = f"-hwaccel vaapi -hwaccel_output_format vaapi -hwaccel_device \
+                    {args.device}"
+        scale = f"scale_vaapi={args.scale}:-2"
+        quality = f"-qp {args.quality}"
+
+    else:
+        video_codec = "libx264"
+        vaapi = ""
+        scale = f"scale={args.scale}:-2:flags=lanczos"
+        quality = f"-preset {args.compression} -crf {args.quality}"
+
     # Define ffmpeg commands
     if args.audio_only:
-        ffmpeg_cmd = f"ffmpeg -ss {args.start} -to {args.end} -i {audio_url} -c:a aac -y\
-                        {video_id}.aac"
+        ffmpeg_cmd = f"ffmpeg -ss {args.start} -to {args.end} -i {audio_url} \
+                        -c:a {args.audio_codec} -b:a {args.bitrate} \
+                            -y {video_id}.{args.audio_codec}"
 
     elif args.gif:
         ffmpeg_cmd = (
             f"ffmpeg -ss {args.start} -to {args.end} -i {video_url}"
-            f" -filter_complex [0:v]fps={args.fps},scale={args.scale}:-2:flags=lanczos,"
+            f" -filter_complex [0:v]fps={args.fps},{scale},"
             "split[a][b];[a]palettegen[p];[b][p]paletteuse"
             f" -y {video_id}.gif"
         )
 
     else:
-        # VA-API hardware acceleration (GPU)
-        if args.device:
-            codec = "h264_vaapi"
-            vaapi = f"-hwaccel vaapi -hwaccel_output_format vaapi -hwaccel_device {args.device}"
-            scale = f"scale_vaapi={args.scale}:-2"
-            quality = f"-qp {args.quality}"
-
-        # Default parameters (CPU)
-        else:
-            codec = "libx264"
-            vaapi = ""
-            scale = f"scale={args.scale}:-2:flags=lanczos"
-            quality = f"-preset {args.compression} -crf {args.quality}"
-
-        ffmpeg_cmd = f"ffmpeg {vaapi} -ss {args.start} -to {args.end} -i {video_url} -ss {args.start}\
-                        -to {args.end} -i {audio_url} -map 0:v -map 1:a -c:v {codec} {quality} -c:a aac\
-                            -vf {scale} -y {video_id}.mp4"
+        ffmpeg_cmd = f"ffmpeg {vaapi} \
+                        -ss {args.start} -to {args.end} -i {video_url} \
+                            -ss {args.start} -to {args.end} -i {audio_url} \
+                                -c:v {video_codec} {quality} -vf {scale} \
+                                    -c:a {args.audio_codec} -b:a {args.bitrate} \
+                                        -map 0:v -map 1:a -y {video_id}.mp4"
 
     # Split command in a list to use later with subprocess.Popen
     ffmpeg_args = ffmpeg_cmd.split()
