@@ -1,5 +1,7 @@
 # yt_clipper
 
+**This script is currently maintained at: https://github.com/epassaro/yt_clipper**
+
 Easily make audio/video/gif clips from YouTube URLs with ffmpeg.
 
 ## Installation
@@ -31,23 +33,30 @@ $ brew install ffmpeg
 ## Usage
 
 ```
-usage: yt_clipper [-h] [-d DEVICE] [-s SCALE] [-a] [-g] [-f FPS] [-o OUTPUT] [-q] url start end
+usage: yt_clipper [-h] [-d DEVICE] [-u VALUE] [-x {fast,medium,slow}] [-s SIZE] [-c {aac,mp3}] [-b {96k,128k,192k,256k,320k}] [-a] [-g] [-f FPS] [-o FILENAME] [-q]
+                  url start end
 
 easily make audio/video/gif clips from YouTube URLs with ffmpeg
 
 positional arguments:
-  url                           video url
-  start                         HH:MM:SS.ms
-  end                           HH:MM:SS.ms
+  url                             video url
+  start                           HH:MM:SS.ms
+  end                             HH:MM:SS.ms
 
 optional arguments:
-  -h, --help                    show this help message and exit
-  -d DEVICE, --device DEVICE    device for VAAPI hardware acceleration (experimental), for example: '/dev/dri/render128D'
-  -s SCALE, --scale SCALE       scale image vertically (in px)
+  -h, --help                      show this help message and exit
+  -d DEVICE, --device DEVICE      VA-API hardware acceleration device (experimental), for example: '/dev/dri/render128D'
+  -u VALUE, --quality VALUE       from 0 to 51, default is 23 (lower is better)
+  -x {fast,medium,slow}, --compression {fast,medium,slow}
+                                  encoder preset (cpu only)
+  -s SIZE, --scale SIZE           scale image vertically (in px)
+  -c {aac,mp3}, --audio-codec {aac,mp3}
+  -b {96k,128k,192k,256k,320k}, --bitrate {96k,128k,192k,256k,320k}
+                                  audio constant bitrate (CBR)
   -a, --audio-only
   -g, --gif
-  -f FPS, --fps FPS             gif fps
-  -o OUTPUT, --output OUTPUT
+  -f FPS, --fps FPS               gif fps
+  -o FILENAME, --output FILENAME  custom file name and container
   -q, --quiet
 
 ```
