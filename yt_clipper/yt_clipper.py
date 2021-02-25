@@ -1,14 +1,14 @@
 #! /usr/bin/env python3
 #
-# ---------------------------------------------------------------
-# Easily make audio/video/gif clips from YouTube URLs with ffmpeg
+# ---------------------------------------------------
+# Easily make audio/video/gif clips from YouTube URLs
 #
 # (C) 2020-2021 Ezequiel Pássaro
 # Released under MIT License
 #
 # github: github.com/epassaro
 # email: epassaro15@gmail.com
-# ---------------------------------------------------------------
+# ---------------------------------------------------
 #
 
 import re
@@ -47,7 +47,7 @@ def find_url(string):
 if __name__ == "__main__":
     # Parse arguments
     parser = argparse.ArgumentParser(
-        description="easily make audio/video/gif clips from YouTube URLs with ffmpeg"
+        description="easily make audio/video/gif clips from YouTube URLs"
     )
     parser.add_argument("url", help="video url", type=str)
     parser.add_argument("start", help="HH:MM:SS.ms", type=valid_time_type)

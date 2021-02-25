@@ -2,7 +2,7 @@
 
 **This script is currently maintained at: https://github.com/epassaro/yt_clipper**
 
-Easily make audio/video/gif clips from YouTube URLs with ffmpeg.
+Easily make audio/video/gif clips from YouTube URLs.
 
 ## Installation
 
@@ -36,7 +36,7 @@ $ brew install ffmpeg
 usage: yt_clipper [-h] [-d DEVICE] [-u VALUE] [-x {fast,medium,slow}] [-s SIZE] [-c {aac,mp3}] [-b {96k,128k,192k,256k,320k}] [-a] [-g] [-f FPS] [-o FILENAME] [-q]
                   url start end
 
-easily make audio/video/gif clips from YouTube URLs with ffmpeg
+easily make audio/video/gif clips from YouTube URLs
 
 positional arguments:
   url                             video url
