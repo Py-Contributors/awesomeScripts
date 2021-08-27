@@ -70,10 +70,7 @@ before making a Pull Request:
     </tr>
   </tbody>
 </table>
-<<<<<<< HEAD
-=======
 
->>>>>>> 5f1337938ee0816cc4f09a908744f82686b6eb15
 ## 🤝 Scripts and contributorss 🤝
 
 <!--Restrictions -->
@@ -81,7 +78,8 @@ before making a Pull Request:
 <!-- Please don't change this, It' making conflict with upstream branch-->
 
 <table>
-<thead>
+<t
+   >
 <tr>
   <th align="left">Script Name</th>
   <th align="center">Author(GitHub username)</th>
