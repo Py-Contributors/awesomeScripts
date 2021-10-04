@@ -4,13 +4,15 @@ Remove punctuation and/or numbers from a text.
 
 ## Usage
 
-`python remove_punctuation_number.py --mode [mode] --filepath [filepath]`
+```py
+> python remove_punctuation_number.py --mode [mode] --filepath [filepath]
+```
 
 Mode can be one of the following: 
 
-**n** - for removing numbers
-**p** - for removing punctuation
-**np** - for removing numbers and punctuation
+- **n** - for removing numbers
+- **p** - for removing punctuation
+- **np** - for removing numbers and punctuation
 
 The processed text will be saved in the same directory as the input file, with the suffix "_n"/"_p"/"_np" (depending on the mode selected).
 
