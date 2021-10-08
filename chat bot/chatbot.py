@@ -45,16 +45,6 @@ def wishMe():
     return wish
 
 
-def Whatsapp():
-    speech('opening whatsApp')
-    os.startfile('C:\\Users\\avyay\\AppData\\Local\\WhatsApp\\WhatsApp.exe')
-
-
-def chrome():
-    speech('opening chrome')
-    os.startfile('C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe')
-
-
 def speech(audio):
     engine.setProperty('rate', 200)
     voices = engine.getProperty('voices')       # getting details of current voice
@@ -220,12 +210,6 @@ while True:
 
     elif 'play music' in speechinput:
         playmusic()
-
-    elif 'open whatsapp' in speechinput:
-        Whatsapp()
-
-    elif 'open chrome' in speechinput:
-        chrome()
 
     elif 'search' in speechinput:  # wikipedia
         search()
