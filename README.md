@@ -504,11 +504,6 @@ before making a Pull Request:
   <td align="left">This script has a bunch of utility functions for storing data, setting up timers, and all that jazz.</td>
 </tr>
 <tr>
-  <td align="left"><a href="/utility/">utility</td>
-  <td align="center">Qwerty-1331</td>
-  <td align="left">This script has a bunch of utility functions for storing data, setting up timers, and all that jazz.</td>
-</tr>
-<tr>
   <td align="left"><a href="/tearDrops-Discord_Bot/">tearDrops-Discord_Bot</td>
   <td align="center">Vyvy-vi</td>
   <td align="left">A discord bot wrapped around the theme of tears and crying.</td>
