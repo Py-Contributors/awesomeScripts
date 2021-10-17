@@ -71,7 +71,7 @@ before making a Pull Request:
   </tbody>
 </table>
 
-## 🤝 Scripts and contributorss 🤝
+## 🤝 Scripts and contributors 🤝
 
 <!--Restrictions -->
 <!--Don't make change under this line -->
@@ -118,8 +118,8 @@ before making a Pull Request:
   <td align="left">Scrap link from website using Python CLI</td>
 </tr>
 <tr>
-  <td align="left">remove_punctuation_number</td>
-  <td align="center"></td>
+  <td align="left"><a href="/remove_punctuation_number/">remove_punctuation_number</a></td>
+  <td align="center">sonniki</td>
   <td align="left">Remove Punctuation/Number from text file</td>
 </tr>
 <tr>
