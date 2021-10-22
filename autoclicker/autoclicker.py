@@ -19,7 +19,7 @@ class Clickmouse(threading.Thread):
 
     def __init__(self, delay, button):
         super(Clickmouse, self).__init__()
-        self.delay = args.delay
+        self.delay = delay
         self.button = button
         self.running = False
         self.program_running = True
@@ -44,7 +44,7 @@ class Clickmouse(threading.Thread):
 
 
 mouse = Controller()
-click_thread = Clickmouse(delay, button)
+click_thread = Clickmouse(args.delay, button)
 click_thread.start()
 
 
