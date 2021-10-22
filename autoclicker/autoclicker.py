@@ -1,9 +1,14 @@
+import argparse
 import time
 import threading
 from pynput.mouse import Button, Controller
 from pynput.keyboard import Listener, Key
 
-delay = 0.1
+parser = argparse.ArgumentParser(description='Automatically click the mouse.')
+parser.add_argument('-d', '--delay', type=int, nargs=1, default=0.1,
+                    help='The delay between clicks.')
+args = parser.parse_args()
+
 button = Button.left
 
 start_stop = Key.f8
@@ -14,7 +19,7 @@ class Clickmouse(threading.Thread):
 
     def __init__(self, delay, button):
         super(Clickmouse, self).__init__()
-        self.delay = delay
+        self.delay = args.delay
         self.button = button
         self.running = False
         self.program_running = True
