@@ -25,6 +25,8 @@
 <a href="https://api.github.com/repos/py-contributors/awesomescripts/contributors"><img src="https://img.shields.io/github/contributors/py-contributors/awesomeScripts?style=for-the-badge" alt="total contributors"></a>
 </p>
 
+## `DISCLAIMER : The Scripts are not tested therefore use it on your own risk. our team will be not resposible for any damage.`
+
 ## How to Contribute 🤔
 
 You can contribute by adding new scripts, improving current scripts or documentation. Here are some instructions
@@ -567,8 +569,6 @@ before making a Pull Request:
 ## Social Channel 💻 - Connect with like minded people
 
 - [Discord/PyContributors](https://discord.gg/FXyh2S3)
-
-## DISCLAIMER : The Scripts are not tested therefore use it on your own risk !
 
 <p align="center">
 <a href="https://api.github.com/repos/py-contributors/awesomescripts/contributors"><img src="http://ForTheBadge.com/images/badges/built-by-developers.svg" alt="built by developers"></a>
