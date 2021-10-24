@@ -27,11 +27,15 @@ class podnapsi():
         self.titledict = {}
         self.finalsoupdict = {}
 
-    def get_sublist(self,  *args,  **kwargs):
+    def get_sublist(self, *args, **kwargs):
 
-        website = "https://podnapisi.net/subtitles/search/?movie_type= \
-                &episodes=" + self.episode + "&year=&keywords=" \
-                + self.subname + "&seasons=" + self.season
+        # website = "https://podnapisi.net/subtitles/search/?movie_type= \
+        #        &episodes=" + self.episode + "&year=&keywords="\
+        #         + self.subname + "&seasons=" + self.season
+        website = f"https://podnapisi.net/subtitles/search/?\
+                movie_type=&episodes={self.episode}\
+                &year=&keywords={self.subname}\
+                &seasons={self.season}"
         try:
             podpage = requests.get(website)
             podsoup = BeautifulSoup(podpage.text, "lxml")
