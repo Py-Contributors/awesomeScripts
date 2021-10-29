@@ -41,8 +41,9 @@ class podnapsi():
             podsoup = BeautifulSoup(podpage.text, "lxml")
             finalsoup = podsoup.find_all('span', {'class': 'release'})
             # Finds the corresponding links
-            finalsoup1 = podsoup.find_all(
-                                          'a', {"alt": "Download subtitles."})
+            finalsoup1 = podsoup.find_all(\
+                'a', {"alt": "Download subtitles."}
+                )
             self.titledict = {}
             self.finalsoupdict = {}
             for number, title in enumerate(finalsoup, start=1):
