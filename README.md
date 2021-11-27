@@ -525,6 +525,12 @@ before making a Pull Request:
   <td align="center">sainimohit23</td>
   <td align="left">Use this script to download files from S3 bucket.</td>
 </tr>
+<tr>
+  <td align="left"><a href="/speed_game/">speed_game</td>
+  <td align="center">CNU_CSE</td>
+  <td align="left">Speed Game is a game to guess the name of the country with the national flag image.
+  </td>
+</tr>
 </tbody>
 </table>
 
