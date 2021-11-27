@@ -237,7 +237,6 @@ class CountryPage(tk.Frame):
 
         print(answer)
 
-
     def passBtn_click(self, tk, canv, check_img):
         global pass_count, pass_window
         global country_img, answer
@@ -277,6 +276,7 @@ class CountryPage(tk.Frame):
     def delete_img(self, canv, dele_img_name):
         canv.delete(dele_img_name)
 
+
 class FinishPage(tk.Frame):
     def __init__(self, master):
         tk.Frame.__init__(self, master)
@@ -293,6 +293,7 @@ class FinishPage(tk.Frame):
                          font=labelFont)
         canv.create_text((600 // 2), (500 // 2) + 50, fill="white",
                          text="Good Job!", font=labelFont)
+
 
 if __name__ == "__main__":
     pygame.init()
