@@ -572,6 +572,11 @@ before making a Pull Request:
 
 - [Deepak Raj](https://github.com/CodePerfectPlus)
 
+
+## Stargazers over time
+
+[![Stargazers over time](https://starchart.cc/codePerfectPlus/awesomeScripts.svg)](https://starchart.cc/codePerfectPlus/awesomeScripts)
+
 ## Social Channel 💻 - Connect with like minded people
 
 - [Discord/PyContributors](https://discord.gg/FXyh2S3)
