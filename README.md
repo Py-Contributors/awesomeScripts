@@ -48,7 +48,6 @@ before making a Pull Request:
 ## Projects links 🔗
 
 - [x] 📖 READ Contributions Guidelines at [CONTRIBUTING.md](/CONTRIBUTING.md)
-- [x] 🌐 Download Specific Scripts from Here - [Download](https://py-contributors.github.io/awesomeScripts/)
 
 ## Report a Bug 🐛
 
