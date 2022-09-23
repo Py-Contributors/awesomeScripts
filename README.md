@@ -25,6 +25,7 @@
 <a href="https://api.github.com/repos/py-contributors/awesomescripts/contributors"><img src="https://img.shields.io/github/contributors/py-contributors/awesomeScripts?style=for-the-badge" alt="total contributors"></a>
 </p>
 
+![](docs/assets/logo/Hfest-Logo-2-Color-Manga%402x.png)
 ## `DISCLAIMER : The Scripts are not tested therefore use it on your own risk. our team will be not resposible for any damage.`
 
 ## How to Contribute 🤔
