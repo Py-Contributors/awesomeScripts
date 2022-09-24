@@ -2,7 +2,12 @@ import random
 import string
 
 
-def generate_random_password(length:int,option_list:list=["number","alpha","specialchar"]) -> str:
+def generate_random_password(
+    length: int,
+    option_list: list = [
+        "number",
+        "alpha",
+        "specialchar"]) -> str:
     r"""Use this function to generate random password.
 
     :param {length} length of password
@@ -16,8 +21,8 @@ def generate_random_password(length:int,option_list:list=["number","alpha","spec
     """
     letters_dict = {
         "number": string.digits,
-        "alpha":string.ascii_letters,
-        "specialchar":"[@_!#$%^&*()<>?/|}{~:]"
+        "alpha": string.ascii_letters,
+        "specialchar": "[@_!#$%^&*()<>?/|}{~:]"
     }
 
     letters = ""
@@ -33,8 +38,9 @@ def generate_random_password(length:int,option_list:list=["number","alpha","spec
 
     return result_str
 
-print(generate_random_password(10,["number","alpha","specialchar"]))
+
+print(generate_random_password(10, ["number", "alpha", "specialchar"]))
 """
 Example How to Use :-
-generate_random_password(10,["number"]) 
+generate_random_password(10,["number"])
 """
