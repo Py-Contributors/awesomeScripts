@@ -1,6 +1,6 @@
 # Script to auto upload picture on instagram account 
 
-- Script will automatically upload picture on instagram account from pixaby and upload on instagram account in interval of every 1 hour.
+- Script will automatically upload pictures on the Instagram account from pixaby and upload them on the Instagram account in intervals of every 1 hour.
 
 ## About Pixaby  
 Pixabay.com is a free stock photography and royalty-free stock media website. It is used for sharing photos, illustrations, vector graphics, film footage, and music, exclusively under the custom Pixabay license, which generally allows the free use of the material with some restrictions
