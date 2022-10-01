@@ -1,11 +1,23 @@
-import pandas as pd
+import csv
+from openpyxl import Workbook
 
 
-# Reading the csv file from the path
-df_read = pd.read_csv('File.csv')
+def convertCsvToXlsx(self):
+    wb = Workbook()
+    sheet = wb.active
 
-# saving xlsx file to the path
-df_write = pd.ExcelWriter('File.xlsx')
-df_read.to_excel(df_write, index=False)
+    CSV_SEPARATOR = ","
 
-df_write.save()
+    with open("file.csv") as f:
+        reader = csv.reader(f)
+        for r, row in enumerate(reader):
+            for c, col in enumerate(row):
+                for idx, val in enumerate(col.split(CSV_SEPARATOR)):
+                    cell = sheet.cell(row=r + 1, column=idx + 1)
+                    cell.value = val
+
+    wb.save("convertedFile.xlsx")
+
+
+if __name__ == '__main__':
+    convertCsvToXlsx()
