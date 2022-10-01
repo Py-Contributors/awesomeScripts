@@ -5,3 +5,7 @@
 <li>The same task can be done using for loop and lambda function. The following script shows two different uses of list comprehension. </li>
 <li>A string value is converted into a list of characters using list comprehension. Next, a tuple is converted into a list in the same way.</li>
 </ul>
+
+<h3> 
+![image](https://user-images.githubusercontent.com/60952618/193415774-527e50c9-ccb4-4a34-86ca-a521f2065a5f.png)
+</h3>
