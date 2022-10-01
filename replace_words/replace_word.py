@@ -11,7 +11,7 @@ if (len(sys.argv) < 4):
 file_name, word1, word2 = sys.argv[1], sys.argv[2], sys.argv[3]
 
 # Open the file and replace word1 with word2
-with open(file_name, "r+") as fin:
+with open(file_name, "r") as fin:
     replaced_content = ""
     for line in fin:
         replaced_content += re.sub(word1, word2, line)

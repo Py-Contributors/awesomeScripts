@@ -33,6 +33,13 @@
 You can contribute by adding new scripts, improving current scripts or documentation. Here are some instructions
 before making a Pull Request:
 
+### Note 
+
+- Folders Name with Capital Letter are Category Name(`collections of scripts`). Please create a folder with your script name and add your script in it. If you want to add a new category then create a folder with category name and add your script in it.
+
+-  Folders name with small letter are script name. Please create a folder with your script name and add your script in it.
+
+
 ### Steps to take to contribute 👣
 
 - [x] Create an issue for making any changes to code. When the issue is approved you can make changes.
