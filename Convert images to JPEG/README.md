@@ -1,6 +1,6 @@
-## scrap all emails from webpages
+## Convert images to JPEG
 
-Scrap all email from website input via CLI
+The most conventional systems rarely accept image formats such as PNG. As such, you’ll be required to convert them into JPEG files. Luckily, there’s a Python script that allows you to automate this process.
 
 ### Modules
 
