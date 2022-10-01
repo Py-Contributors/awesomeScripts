@@ -6,7 +6,6 @@
 
 what you changed in the codebase. write here
 
-1. Added Generate Synthetic Data Generator scrips.
 
 ### Issue no.(must) - #
 
