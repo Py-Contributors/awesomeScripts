@@ -7,5 +7,5 @@
 </ul>
 
 <h3> 
-![image](https://user-images.githubusercontent.com/60952618/193415774-527e50c9-ccb4-4a34-86ca-a521f2065a5f.png)
+<img src="https://linuxhint.com/wp-content/uploads/2020/09/word-image-27.jpeg" alt="Image">
 </h3>
