@@ -6,6 +6,6 @@
 <li>A string value is converted into a list of characters using list comprehension. Next, a tuple is converted into a list in the same way.</li>
 </ul>
 
-<h3> 
+<h3> Output </h3> 
 <img src="https://linuxhint.com/wp-content/uploads/2020/09/word-image-27.jpeg" alt="Image">
-</h3>
+
