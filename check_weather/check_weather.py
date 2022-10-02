@@ -1,8 +1,12 @@
 import os
-import sys
 import requests
 import pprint
 from dotenv import load_dotenv
+import argparse
+
+arg = argparse.ArgumentParser()
+arg.add_argument("-c", "--city", required=True, help="City name")
+args = vars(arg.parse_args())
 
 
 def get_city_weather(city_name):
@@ -22,10 +26,7 @@ def get_city_weather(city_name):
 
 
 if __name__ == "__main__":
-    try:
-        city_name = sys.argv[1]
-    except Exception:
-        print("Please Enter The City Name as a Command-Line Argument!")
-        exit(0)
+    
+    city_name = args["city"]
     response = get_city_weather(city_name)
     pprint.pprint(response)

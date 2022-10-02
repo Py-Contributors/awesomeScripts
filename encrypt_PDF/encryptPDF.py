@@ -1,25 +1,43 @@
+import os
+import argparse
 from PyPDF2 import PdfFileWriter, PdfFileReader
 
-
-print("The file should be in same FOLDER as this script")
-pdfNameInput = input("Enter EXACT name of the PDF in this FOLDER: ")
-pdfName = pdfNameInput + ".pdf"
-# reading the pdf
-pdf = PdfFileReader(pdfName)
-# object for writing the file
-write_obj = PdfFileWriter()
+arg = argparse.ArgumentParser()
+arg.add_argument("-f", "--file", required=True, help="Path to PDF file")
+arg.add_argument("-p", "--password", required=True, help="Password to encrypt PDF file")
+args = vars(arg.parse_args())
 
 
-# Getting the number of pages and writing each page in the writer object
-for i in range(pdf.getNumPages()):
-    page = pdf.getPage(i)
-    write_obj.addPage(page)
+def encryptPDF(pdf_path, password):
+    """ 
+    function to encrpyt a PDF file using PyPDF2
+    
+    Args:
+        pdfName (str): path to PDF file
+        password (str): password to encrypt PDF file
+    
+    Returns:
+        None
+    """
+    pdf = PdfFileReader(pdf_path)
+    # object for writing the file
+    write_obj = PdfFileWriter()
 
-# Encrypting by a password
-password = input("Enter Password for the Encryption to PDF: ")
-write_obj.encrypt(user_pwd=password, owner_pwd=None, use_128bit=True)
 
-new_PDF_Name_Input = input("Enter new PDF name: ")
-new_PDF_Name = new_PDF_Name_Input + '.pdf'
-encrypted_PDF = open(new_PDF_Name, 'wb')
-write_obj.write(encrypted_PDF)
+    # Getting the number of pages and writing each page in the writer object
+    for i in range(pdf.getNumPages()):
+        page = pdf.getPage(i)
+        write_obj.addPage(page)
+
+    # Encrypting by a password
+    write_obj.encrypt(user_pwd=password, owner_pwd=None, use_128bit=True)
+
+    new_PDF_Name = os.path.basename(pdf_path).split(".")[0] + "_encrypted.pdf"
+    encrypted_PDF = open(new_PDF_Name, 'wb')
+    write_obj.write(encrypted_PDF)
+
+if __name__ == "__main__":
+    pdf_path =  args["file"]
+    password = args["password"]
+    encryptPDF(pdf_path, password)
+    

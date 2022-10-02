@@ -1,8 +1,11 @@
 """ Script to find duplicate files in a given path """
 import os
 import hashlib
+import argparse
 
-from sys import argv
+arg = argparse.ArgumentParser()
+arg.add_argument("-p", "--path", required=True, help="Path to search for duplicates")
+args = vars(arg.parse_args())
 
 # will store file realted info
 # structure: keys => file size
@@ -156,11 +159,7 @@ def print_stats():
 
 def main():
     # Validate command line args
-    if not len(argv) > 1:
-        print("Usage: python dupsfinder.py <path>")
-        return
-    start_path = argv[1]
-
+    start_path = args["path"]
     # traverse file tree and group files on the basis of there size
     load(start_path)
 
