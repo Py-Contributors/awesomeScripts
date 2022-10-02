@@ -1,3 +1,5 @@
+`Please fill all the details and checkbox, so we can merge PR faster.`
+
 # Pull Request Template
 
 **script name** -
