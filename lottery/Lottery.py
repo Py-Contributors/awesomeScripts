@@ -5,7 +5,7 @@ def game_player():
     guessed_numbers = []
     print('this is a game, guess 3 numbers between 1-49')
     while guess_times < 3:
-        num = input('enter a number :')
+        num = int(input('enter a number :'))
         guessed_numbers.append(num)
         guess_times += 1
 
