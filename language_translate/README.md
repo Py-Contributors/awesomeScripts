@@ -18,4 +18,5 @@ options:
   -h, --help            show this help message and exit
   --from_lang FROM_LANG
                         Language to translate from.
-  --to_lang TO_LANG     Language to translate to. (defaults to English)```
+  --to_lang TO_LANG     Language to translate to. (defaults to English)
+```
