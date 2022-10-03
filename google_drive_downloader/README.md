@@ -1,0 +1,2 @@
+<h1>This is a simple API to download files from google drive using the sharable link</h1>
+<p>Inside the fileId put the ID of the file from the link. <br> For example <i>'https://drive.google.com/file/d/1d-IdQXfpLQls89Xst56aw96vaG-4cFUY/view?usp=sharing'</i> for this link file_id is <i>'1d-IdQXfpLQls89Xst56aw96vaG-4cFUY'</i></p>
