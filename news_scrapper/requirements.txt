@@ -1,4 +1,3 @@
 # Make sure you install these:
-
-# pip install bs4
-# pip install requests
+bs4
+requests
