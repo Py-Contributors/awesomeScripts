@@ -1,3 +1,0 @@
-# Make sure you install these:
-
-pip install turtle
