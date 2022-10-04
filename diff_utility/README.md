@@ -10,6 +10,12 @@ Any version of Python 3 is good enough to run this program. Additionally the ``r
 pip install rich
 ```
 
+Or
+
+```
+pip install -r requirements.txt
+```
+
 ## Run the program
 
 Run the program from the terminal as follows:
