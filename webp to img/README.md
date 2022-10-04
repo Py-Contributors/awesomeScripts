@@ -13,7 +13,7 @@ It can convert a folder in a couple of minutes.
 ### how to run
 
 ```bash
-python Web2Png.py <put the dile path here>
+python Web2Png.py <put the folder path here>
 ```
 
 ```bash
