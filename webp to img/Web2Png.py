@@ -1,7 +1,7 @@
 from PIL import Image
 import os
 
-path = PATH HERE
+path = input('File path:- ')
 a = os.listdir(path)
 for i in a:
     im = Image.open(path + '/' + i ).convert("RGB")
