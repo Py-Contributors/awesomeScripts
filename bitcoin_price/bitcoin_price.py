@@ -4,19 +4,25 @@ import sys
 import requests
 import json
 
-
-
 def main():
-    if len(sys.argv) < 2 :
-        sys.exit('Missing command-line argument')
-    else:
-        if sys.argv[1].isalpha() :
-            sys.exit('Command-line argument is not a string')
-    response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
-    o = response.json()
-    bcoin = o['bpi'][sys.argv[2].upper()]['rate'].split(',')
-    new_price = bcoin_converter(bcoin,float(sys.argv[1]))
-    print(f'${int(new_price[0])},{new_price[1]:.4f}')
+
+    msg = """
+        Missing command-line argument
+        Please Usage following :
+        python bitcoin_price.py {0-99} {USD, EUR, or GPB}
+
+        example :
+        python bitcoin_price.py 1 usd
+        """
+    
+    try:
+        response = requests.get("https://api.coindesk.com/v1/bpi/currentprice.json")
+        o = response.json()
+        bcoin = o['bpi'][sys.argv[2].upper()]['rate'].split(',')
+        new_price = bcoin_converter(bcoin,float(sys.argv[1]))
+        print(f'${int(new_price[0])},{new_price[1]:.4f}')
+    except:
+        sys.exit(msg)
 
 
 def bcoin_converter(bcoin,n):
