@@ -27,10 +27,15 @@ ITEM_FONT_SIZE = 15
 FONT_FAMILY = "Corbel"
 TEXT_X = WINDOW_WIDTH / 2
 TEXT_Y = (WINDOW_HEIGHT / 2) - 10
+
 FOCUS_MIN = 25
 LONG_BREAK_MIN = 20
 SHORT_BREAK_MIN = 5
 
+# comment out this section after testing
+# FOCUS_MIN = 0.15         # 0.15 (09 seconds)
+# LONG_BREAK_MIN = 0.10    # 0.10 (06 seconds)
+# SHORT_BREAK_MIN = 0.05   # 0.05 (03 seconds)
 
 class Pomodoro:
     def __init__(self):
@@ -55,7 +60,7 @@ class Pomodoro:
         self.window.maxsize(WINDOW_WIDTH, WINDOW_HEIGHT)
 
         self.focus_rounds_text = ""
-        self.focus_rounds = -1
+        self.sessions = -1
         self.restart_button = None
         self.start_button = None
         self.long_break_timer = None
@@ -82,36 +87,35 @@ class Pomodoro:
         short_break_sec = math.floor(SHORT_BREAK_MIN * 60)
         long_break_sec = math.floor(LONG_BREAK_MIN * 60)
 
-        self.focus_rounds += 1
+        self.sessions += 1
 
         # long break if 2nd session
-        if self.focus_rounds == 3:
-            self.long_break_timer.config(text=f"0{LONG_BREAK_MIN}:00")
-            self.countdown(long_break_sec, self.long_break_timer, self.focus_timer, self.short_break_timer)
-            self.mode_text = "- break -"
-
-        # short break if 1st and 3rd
-        elif self.focus_rounds % 2 == 1:
-            self.short_break_timer.config(text=f"0{SHORT_BREAK_MIN}:00")
-            self.countdown(short_break_sec, self.short_break_timer, self.focus_timer, self.long_break_timer)
-            self.mode_text = "- break -"
-
-        elif self.focus_rounds > 5:
+        if self.sessions > 6:
             self.restart_timer()
-            pass
-
         else:
-            self.focus_timer.config(text=f"0{FOCUS_MIN}:00")
-            self.countdown(focus_sec, self.focus_timer, self.short_break_timer, self.long_break_timer)
-            self.mode_text = "- focus -"
-            self.focus_rounds_text += "*"
-            self.progress_indicator.config(text=self.focus_rounds_text)
+            if self.sessions == 3:
+                self.long_break_timer.config(text=f"0{LONG_BREAK_MIN}:00")
+                self.countdown(long_break_sec, self.long_break_timer, self.focus_timer, self.short_break_timer)
+                self.mode_text = "- break -"
 
-        self.mode_display.config(text=self.mode_text)
-        self.restart_button.place(relx=0.5, rely=0.8, anchor="center")
+            # short break if 1st and 3rd
+            elif self.sessions % 2 == 1:
+                self.short_break_timer.config(text=f"0{SHORT_BREAK_MIN}:00")
+                self.countdown(short_break_sec, self.short_break_timer, self.focus_timer, self.long_break_timer)
+                self.mode_text = "- break -"
 
-        if self.start_button is not None:
-            self.start_button.place_forget()
+            else:
+                self.focus_timer.config(text=f"0{FOCUS_MIN}:00")
+                self.countdown(focus_sec, self.focus_timer, self.short_break_timer, self.long_break_timer)
+                self.mode_text = "- focus -"
+                self.focus_rounds_text += "*"
+                self.progress_indicator.config(text=self.focus_rounds_text)
+
+            self.mode_display.config(text=self.mode_text)
+            self.restart_button.place(relx=0.5, rely=0.8, anchor="center")
+
+            if self.start_button is not None:
+                self.start_button.place_forget()
 
         pass
 
@@ -142,7 +146,7 @@ class Pomodoro:
 
         t.config(text=f"{curr_min}:{curr_sec}")
 
-        if c > 0:
+        if c > -1:
             t.after(1000, self.countdown, c - 1, t, f1, f2)
 
         else:
@@ -192,7 +196,7 @@ class Pomodoro:
         self.mode_display.place(relx=0.5, rely=0.45, anchor="center")
 
         # set focus rounds display
-        self.focus_rounds = -1
+        self.sessions = -1
         self.focus_rounds_text = ""
         self.progress_indicator = Label(self.window, text=self.focus_rounds_text,
                                         font=(FONT_FAMILY, TIMER_FONT_SIZE, "bold"),
