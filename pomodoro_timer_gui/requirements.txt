@@ -1,0 +1,12 @@
+
+Python 3.10
+
+GUI Packages:
+    - tkinter
+    - tkmacosx
+
+To install tkinter follow these instructions:
+https://www.geeksforgeeks.org/how-to-install-tkinter-on-macos/
+
+To install tkmacosx, run this in terminal:
+    pip3 install tkmacosx
