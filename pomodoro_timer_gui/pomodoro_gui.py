@@ -1,12 +1,13 @@
 # Use tkninter as GUI
+
 # Focus timer default: 25 minutes
 # After 25 minutes is up, either output a sound / expand screen.
-# Optional feature
+
+# Optional feature to be implemented
 #   : user can choose to do 15/25/30 mins for focus timer
 
 from tkinter import *
 from tkmacosx import Button
-import time
 import math
 
 # ==================== GLOBAL CONSTANTS ========================= #
@@ -26,9 +27,9 @@ ITEM_FONT_SIZE = 15
 FONT_FAMILY = "Corbel"
 TEXT_X = WINDOW_WIDTH / 2
 TEXT_Y = (WINDOW_HEIGHT / 2) - 10
-FOCUS_MIN = 0.2
-LONG_BREAK_MIN = 0.1
-SHORT_BREAK_MIN = 0.05
+FOCUS_MIN = 25
+LONG_BREAK_MIN = 20
+SHORT_BREAK_MIN = 5
 
 
 class Pomodoro:
