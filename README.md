@@ -16,7 +16,7 @@
 <a href="https://github.com/Py-Contributors/awesomeScripts/pulls"><img src="https://img.shields.io/github/issues-pr-closed-raw/Py-contributors/awesomescripts?style=for-the-badge" alt="closed pull request"></a>
 </p>
 <p align="center">
-<img src="https://img.shields.io/github/hacktoberfest/2020/py-contributors/awesomescripts?style=for-the-badge" alt="hacktoberfest">
+<img src="https://img.shields.io/github/hacktoberfest/2022/py-contributors/awesomescripts?style=for-the-badge" alt="hacktoberfest">
 <a href="https://raw.githubusercontent.com/Py-Contributors/awesomeScripts/master/LICENSE"><img src="https://img.shields.io/github/license/Py-Contributors/awesomeScripts?style=for-the-badge" alt="MIT license"></a>
 </p>
 <p align="center">
