@@ -1,0 +1,7 @@
+1. Import the following modules to run the script-
+    A. numpy
+    B. pandas
+    C. sklearn
+
+2. Download the dataset to train and test the model from the link given below:
+https://drive.google.com/file/d/1fUIVvhRer7vHYoBtMejAp4CvRNfrV3DS/view?usp=sharing
