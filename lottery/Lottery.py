@@ -1,11 +1,14 @@
 import random
 
 def game_player():
-    guess_times = 0
+    guess_times = 1
     guessed_numbers = []
     print('this is a game, guess 3 numbers between 1-49')
-    while guess_times < 3:
-        num = int(input('enter a number :'))
+    while guess_times < 4:
+        num = int(input('[{}] enter a number : '.format(guess_times)))
+        while num < 1 or num > 49:
+            print("please enter numbers between 1-49")
+            num = int(input('[{}] enter a number : '.format(guess_times)))
         guessed_numbers.append(num)
         guess_times += 1
 
@@ -27,9 +30,10 @@ def game_player():
     num_correct = len(correct_guess)
     if num_correct < 3:
         points = num_correct * 5
-        print('you got ' + str(points))
+        print('\nyou got ' + str(points))
     else:
         points = 100
-        print("JACKPOT WINNER!!!")
+        print("\nJACKPOT WINNER!!!")
         print('you won all ' + str(points))
+
 game_player()
