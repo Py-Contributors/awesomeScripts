@@ -1,0 +1,4 @@
+wx == 3.0.2.0
+Python == 2.7.12
+ftplib == 20.8.
+pyftpdlib == 1.5.3
