@@ -1,24 +1,12 @@
 # Title :- The Hangaman game using python
 
 # importing all the required libraries
-from random import randint
+from words import Word
+
 
 print('This is the Hangman game You have got 7 chances to guess the Color')
 print('BEST OF LUCK!!.. Enjoy the game..')
 
-# list of the words to guess
-WORD_LIST = {
-    'rand_word_1': 'red',
-    'rand_word_2': 'blue',
-    'rand_word_3': 'green',
-    'rand_word_4': 'yellow',
-    'rand_word_5': 'orange',
-    'rand_word_6': 'white',
-    'rand_word_7': 'indigo',
-    'rand_word_8': 'purple',
-    'rand_word_9': 'black',
-    'rand_word_10': 'gray'
-}
 
 # hangman tuple to display if user guesses wrong words.
 HANGMAN = (
@@ -78,10 +66,7 @@ HANGMAN = (
 
 
 MAX = len(HANGMAN) - 1
-num = randint(1, 10)
-num_string = str(num)
-words = 'rand_word_{}'.format(num_string)
-WORD_TO_GUESS = WORD_LIST[words]
+WORD_TO_GUESS = Word()
 HIDDEN = ['_'] * len(WORD_TO_GUESS)
 LETTERS_GUESSED = []
 
