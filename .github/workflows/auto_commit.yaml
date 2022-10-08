@@ -14,12 +14,12 @@ jobs:
             
             Please keep in mind these instructions.
             
-            - [x] Create an issue for making any changes to code. When the issue is approved you can make changes.
-            - [x] Pull latest change from upstream branch before starting the changing of code.
-            - [x] Add your file in a properly named directory (lowercase) 
-            - [x] Use Flake8 locally for linting Python Code. `pip install flake8`
-            - [x] Add pytest/unittest if possible
-            - [x] Add README.md for your script instructions to run the script with required dependencies.
+            - [x] Create an issue for making any changes to the code. When the issue is approved you can make changes.
+            - [x] Pull the latest change from an upstream branch before starting the changing of code.
+            - [x] Add your file to a properly named directory (lowercase) 
+            - [x] Use Flake8 locally for linting Python Code. - `pip install flake8`    
+            - [x] Add pytest/unit test if possible
+            - [x] Add README.md for your script instructions to run the script with the required dependencies.
             - [x] Script should be in plugin format. (if possible, it will be great)
 
           pullRequestOpened: |
@@ -29,12 +29,12 @@ jobs:
             
             Pleae check once the below instruction and mark.
 
-            - [] Create an issue for making any changes to code. When the issue is approved you can make changes.
-            - [] Pull latest change from upstream branch before starting the changing of code.
-            - [] Add your file in a properly named directory (lowercase) 
-            - [] Use Flake8 locally for linting Python Code. `pip install flake8`              
-            - [] Add pytest/unittest if possible
-            - [] Add README.md for your script instructions to run the script with required dependencies.
-            - [] Script should be in plugin format. (if possible, it will be great)
-            
-            
+            - [x] Create an issue for making any changes to the code. When the issue is approved you can make changes.
+            - [x] Pull the latest change from an upstream branch before starting the changing of code.
+            - [x] Add your file to a properly named directory (lowercase) 
+            - [x] Use Flake8 locally for linting Python Code. - `pip install flake8`
+            - [x] Add pytest/unit test if possible
+            - [x] Add README.md for your script instructions to run the script with the required dependencies.
+            - [x] Script should be in plugin format. (if possible, it will be great)
+
+
