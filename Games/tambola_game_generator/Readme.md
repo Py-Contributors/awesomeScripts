@@ -1,12 +1,19 @@
-Tambola ticket generator
+# Tambola ticket generator
 This is a simple utility to generate tambola tickets
 
-Requirement
-Python 3
-numpy
-tabulate
+## Requirement
+
+* Python 3
+* numpy
+* tabulate
+
+```bash
 pip install -r requirements.txt
-Usage
+```
+
+## Usage 
+
+```bash
 $ python main.py 
 ╒═══╤════╤════╤════╤════╤════╤════╤════╤════╕
 │ 0 │ 14 │  0 │ 32 │  0 │  0 │ 61 │ 71 │ 81 │
@@ -15,6 +22,9 @@ $ python main.py
 ├───┼────┼────┼────┼────┼────┼────┼────┼────┤
 │ 0 │  0 │ 25 │ 37 │ 49 │ 59 │  0 │ 79 │  0 │
 ╘═══╧════╧════╧════╧════╧════╧════╧════╧════╛
+```
+
+```bash
 $ python main.py --count 2
 ╒═══╤════╤════╤════╤════╤════╤════╤════╤════╕
 │ 0 │ 14 │  0 │ 32 │  0 │  0 │ 61 │ 71 │ 81 │
@@ -31,3 +41,4 @@ $ python main.py --count 2
 ├───┼────┼────┼────┼────┼────┼────┼────┼────┤
 │ 5 │  0 │ 26 │ 39 │ 49 │ 59 │  0 │  0 │  0 │
 ╘═══╧════╧════╧════╧════╧════╧════╧════╧════╛
+```
