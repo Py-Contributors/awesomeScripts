@@ -37,10 +37,12 @@ before making a Pull Request:
 
 - [x] Create an issue for making any changes to code. When the issue is approved you can make changes.
 - [x] Pull latest change from upstream branch before starting the changing of code.
-- [x] Add your file in a properly named directory (lowercase) with a README.md in it. Add requirements.txt if needed.
+- [x] Add your file in a properly named directory (lowercase) 
 - [x] Use Flake8 locally for linting Python Code. (We have linting checks so if your code fails it we will not merge the PR.)
   - `pip install flake8`
-- [x] add pytest/unittest if possible
+- [x] Add pytest/unittest if possible
+- [x] Add README.md for your script instructions to run the script with required dependencies.
+- [x] Script should be in plugin format. (if possible, it will be great)
 
 ## Show instructions
 
