@@ -21,4 +21,7 @@ jobs:
             - [x] Add pytest/unit test if possible
             - [x] Add README.md for your script instructions to run the script with the required dependencies.
             - [x] Script should be in plugin format. (if possible, it will be great)
+            
+            Please Read Once the [CONTRIBUTING](https://github.com/codePerfectPlus/awesomeScripts/blob/master/CONTRIBUTING.md) Guidelines 
+            for further instructions. 
   
