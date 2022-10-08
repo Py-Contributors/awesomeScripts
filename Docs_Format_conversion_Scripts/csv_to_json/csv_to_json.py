@@ -1,15 +1,18 @@
 import pandas as pd
-import sys
 import os
+import argparse
 
-args = sys.argv[1:]  # get command line *args
-assert args, "No file was provided; Provide a CSV filename"
+arg = argparse.ArgumentParser()
+arg.add_argument("--csv-path", required=True, help="Path to csv file")
+args = vars(arg.parse_args())
 
-
-isdir = os.path.isdir(args[-1])
-# If input is CSV file
-if not isdir:
-    assert args[-1].endswith(".csv"), "Input file is not CSV"
-    data = pd.read_csv(args[-1])  # load CSV data as Pd object
-    data.to_json(args[-1][:-4] + ".json", orient='records')
-    del data
+# checking if file exists
+csv_path = args["csv_path"]
+if os.path.exists(csv_path):
+    basename = os.path.basename(csv_path)
+    json_file_name = os.path.splitext(basename)[0] + ".json"
+    if basename.endswith(".csv"):
+        data = pd.read_csv(csv_path)
+        
+        data.to_json(json_file_name, orient='records')
+        del data
